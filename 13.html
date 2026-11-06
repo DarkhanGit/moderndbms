@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ZHANGIR KHAN UNIVERSITY</title>
+    <style>
+        .fig {
+         text-align: center; /* Выравнивание по центру */ 
+        }
+
+       table {
+       
+       font-size: 12px;
+
+}
+
+        TD, TH {
+            border: solid 1px;
+    padding: 5px; /* Поля вокруг текста */
+    
+   
+}
+.scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-top:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+        img {
+            max-width: 100%; /* Ограничивает размер изображения */
+            height: auto; /* Сохраняет пропорции */
+        }
+       
+        .fig {
+         text-align: center; /* Выравнивание по центру */ 
+        }
+        TD, TH {
+    padding: 5px; /* Поля вокруг текста */
+       }
+
+
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            background-color: #333;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            list-style-type: none;
+            padding: 0;
+            background-color: #444;
+            z-index: 1;
+        }
+
+        .submenu li {
+            display: block;
+        }
+
+        .submenu a {
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+        }
+
+        .submenu a:hover {
+            background-color: #666;
+        }
+
+        /* Показывать подменю при наведении на родительский элемент */
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        /* Стили для мобильных устройств */
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+            }
+
+            .menu li {
+                width: 100%;
+            }
+
+            .submenu {
+                position: static;
+            }
+
+            .menu li:hover .submenu {
+                display: none; /* Отключаем поведение наведения на мобильных устройствах */
+            }
+
+            .menu li.active .submenu {
+                display: block; /* Показывать подменю, если элемент активен */
+            }
+        }
+        
+.scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-top:hover {
+            background-color: #333;
+            transform: scale(1.1);
+        }
+        img {
+            max-width: 100%; /* Ограничивает размер изображения */
+            height: auto; /* Сохраняет пропорции */
+        }
+       </style>
+<!--
+Neaty HTML Template
+http://www.templatemo.com/tm-501-neaty
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/magnific-popup.css">                                <!-- Magnific pop up style, http://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
+    <body>        
+        <div class="container">
+            <div class="row">
+                <div class="tm-left-right-container">
+                    <!-- Left column: logo and menu -->
+                    <div class="tm-blue-bg tm-left-column"> 
+                        <ul class="menu">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="obuch.html">Об учебнике</a></li>           
+                            <li><a href="authors.html">Авторы</a></li>
+                        </ul>
+                   
+                        
+                                
+                        <div class="tm-logo-div text-xs-center">
+                            
+                            <a href="index.html">
+                                
+                                <h1 class="tm-site-name">СОВРЕМЕННЫЕ СУБД</h1></a>
+                      
+                                Мизамова Г.Н. <br>
+       Жаксыбаев Д.О.
+ 
+                        </div>
+                        <nav class="tm-main-nav">
+                            <ul class="tm-main-nav-ul">
+                               
+                                <li class="tm-nav-item">
+                                    <a href="mazmuny.html" class="tm-nav-item-link"><ul>
+                                        <li>Предисловие</li></ul>
+                                        </a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="1.html" class="tm-nav-item-link"><ul>
+                                        <li>1. Знакомства с MS SQL Server 
+                                             </li></ul></li>
+                                        </a>
+                                </li>
+
+                                <li class="tm-nav-item">
+                                    <a href="2.html" class="tm-nav-item-link"><ul>
+                                        <li>2. Выборка данных из БД </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="3.html" class="tm-nav-item-link"><ul>
+                                        <li>3. Фильтрация данных</li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="4.html" class="tm-nav-item-link"><ul>
+                                        <li>4. Типы данных и встроенные функции</li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="5.html" class="tm-nav-item-link"><ul>
+                                        <li>5. Объединение данных
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="6.html" class="tm-nav-item-link"><ul>
+                                        <li>6. Вложенные запросы В SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="7.html" class="tm-nav-item-link"><ul>
+                                        <li>7. Основы DDL, DML
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="8.html" class="tm-nav-item-link"><ul>
+                                        <li>8. Программирование на SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="9.html" class="tm-nav-item-link"><ul>
+                                        <li>9. Пользовательские функции 
+                                             </li></ul></li>
+                                        </a>
+                                </li>
+
+                                <li class="tm-nav-item">
+                                    <a href="10.html" class="tm-nav-item-link"><ul>
+                                        <li>10. Хранимые процедуры </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="11.html" class="tm-nav-item-link"><ul>
+                                        <li>11. Триггеры DML </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="12.html" class="tm-nav-item-link"><ul>
+                                        <li>12. Представления и табличные объекты </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="13.html" class="tm-nav-item-link"><ul>
+                                        <li>13. Курсоры В SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="14.html" class="tm-nav-item-link"><ul>
+                                        <li>14. Оконные функции
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="15.html" class="tm-nav-item-link"><ul>
+                                        <li>15. Операторы получения итоговых данных 
+                                             </li></ul></a>
+                                </li>
+                              
+                                
+                                <li class="tm-nav-item">
+                                    <a href="literatura.html" class="tm-nav-item-link"><ul>
+                                        <li>Список использованных литератур
+                                             </li></ul></a>
+                                </li>      
+                                            
+                               
+                            </ul>
+                        </nav>   
+                        </div>
+                    </div>                               
+                    </div>  <!-- Left column: logo and menu -->
+                    
+                    <!-- Right column: content -->
+                    <div class="tm-right-column">
+                       <div class="tm-content-div">
+                            <!-- Welcome section -->
+                            <section id="welcome" class="tm-section">
+                                <header>  
+                                    <h3 class="tm-blue-text tm-welcome-title tm-margin-b-45">13. Курсоры
+                                        </h3>
+                                   
+                                </header>
+                                <!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
+                   
+                                <p><strong>13.1. Виды курсоров</strong></p>
+                                <p>Инструкции Transact-SQL выполняют операции над множествами, но интерактивным приложениям иногда требуется обрабатывать результаты построчно. Для выполнения команд над отдельной строкой предусмотрены <em>курсоры</em>. Открытие курсора в результирующем наборе делает возможной его построчную обработку. Можно присвоить курсор переменной или па- раметру с типом данных CURSOR.</p>
+                                <p>Курсоры позволяют усовершенствовать обработку результатов: позиционируясь на отдельные строки результирующего набора;</p>
+                                <p>получая одну или несколько строк от текущей позиции в результирующем наборе; поддерживая изменение данных в строках в текущей позиции результирующего</p>
+                                <p>набора;</p>
+                                <p>поддерживая разные уровни видимости изменений, сделанных другими пользова-</p>
+                                <p>телями для данных, представленных в результирующем наборе;</p>
+                                <p>предоставляя инструкциям Transact-SQL в скриптах, хранимых процедурах и триг- герах доступ к данным результирующего набора.</p>
+                                <p>Обычно курсоры используются для выбора из базы данных некоторого подмножества хранимой в ней информации. В каждый момент времени прикладной программой может быть проверена одна строка курсора. Курсоры часто применяются в операторах SQL, встроенных в написанные на языках процедурного типа прикладные программы. Некоторые из них неявно создаются сервером базы данных, в то время как другие определяются программистами.</p>
+                                <p>В соответствии со стандартом SQL при работе с курсорами можно выделить следую- щие основные действия:</p>
+                                <p>создание или объявление курсора;</p>
+                                <p>откытие курсора, т.е. наполнение его данными, которые сохраняются в много- уровневой памяти;</p>
+                                <p>выборка из курсора и изменение с его помощью строк данных;</p>
+                                <p>закрытие курсора, после чего он становится недоступным для пользовательских</p>
+                                <p>освобождение курсора, т.е. удаление курсора как объекта, поскольку его закрытие программ</p>
+                                <p>необязательно освобождает ассоциированную с ним память.</p>
+                                <p>После освобождения курсора ассоциированная с ним память также освобождается. При этом становится возможным повторное использование его имени.</p>
+                                <p>В некоторых случаях применение курсора неизбежно. Однако по возможности этого следует избегать и работать со стандартными командами обработки данных: SELECT, UPDATE, INSERT, DELETE. Помимо того, что курсоры не позволяют проводить операции изменения над всем объемом данных, скорость выполнения операций обработки данных по- средством курсора заметно ниже, чем у стандартных средств Transact-SQL.</p>
+                                <p>SQL Server поддерживает <em>четыре типа курсоров</em>:</p>
+                                <p><em>Однонаправленный курсор </em>&ndash; указывается как FORWARD_ONLY и не поддерживает прокрутку. Он также называется курсором FIREHOSE и поддерживает только получение строк последовательно, от начала до конца курсора. Строки нельзя получить из базы данных, пока они не будут выбраны. Результаты всех инструкций INSERT, UPDATE и DELETE, вли- яющих на строки результирующего набора (выполненных текущим пользователем или зафик- сированных другими пользователями), отображаются как строки, выбранные из курсора.</p>
+                                <p><em>Статический курсор </em>&ndash; полный результирующий набор статического курсора создается в базе данных TEMPDB при открытии курсора. Статический курсор всегда отображает резуль- тирующий набор точно в том виде, в котором он был при открытии курсора. Статическими курсорами обнаруживаются лишь некоторые изменения или не обнаруживаются вовсе, но при этом в процессе прокрутки такие курсоры потребляют сравнительно мало ресурсов. Статиче- ские курсоры всегда доступны только для чтения.</p>
+                                <p><em>KEYSET курсор </em>&ndash; членство и порядок строк в курсоре, управляемом набором ключей, являются фиксированными при открытии курсора. Такие курсоры управляются с помощью набора уникальных идентификаторов &ndash; ключей. Ключи создаются из набора столбцов, кото- рый уникально идентифицирует строки результирующего набора.</p>
+                                <p><em>Динамический курсор </em>&ndash; это противоположность статических курсоров. Динамические курсоры отражают все изменения строк в результирующем наборе при прокрутке курсора. Значения типа данных, порядок и членство строк в результирующем наборе могут меняться для каждой выборки. Все инструкции UPDATE, INSERT и DELETE, выполняемые пользова- телями, видимы посредством курсора.</p>
+                                <p><strong>13.2. Прокрутка курсоров</strong></p>
+                                <p>Упрощенный шаблон использования курсора имеет следующий синтаксис:</p>
+                                <p>DECLARE &lt;имя_курсора&gt; CURSOR [FORWARD_ONLY | SCROLL]</p>
+                                <p>FOR &lt;SELECT_оператор&gt; OPEN &lt;имя_курсора&gt;</p>
+                                <p>FETCH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;NEXT|PRIOR|FIRST|LAST|ABSOLUTE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;число&gt;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RELATIVE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                                <p>&lt;число&gt;&gt;</p>
+                                <p>FROM &lt;имя_курсора&gt; INTO &lt;@переменная&gt; CLOSE &lt;имя_курсора&gt; DEALLOCATE &lt;имя_курсора&gt;</p>
+                                <p>Инструкция DEALLOCATE удаляет связь между курсором и переменной, и освобож- дает структуры данных, составляющие курсор.</p>
+                                <p>После создания курсора, чтобы его использовать, надо открыть курсор с помощью ко- манды OPEN. А команда CLOSE закрывает открытый курсор, высвобождая текущий резуль- тирующий набор и снимая блокировки курсоров для строк.</p>
+                                <p>Для получения определенной строки используется команда FETCH.</p>
+                                <p>Ключевое слово NEXT возвращает следующую строку и перемещает указатель теку- щей строки на возвращенную строку. Если инструкция FETCH NEXT выполняет первую вы- борку в отношении курсора, она возвращает первую строку в результирующем наборе. NEXT является параметром по умолчанию выборки из курсора.</p>
+                                <p>Ключевое слово PRIOR возвращает предыдущую строку и перемещает указатель теку- щей строки на возвращенную строку. Если инструкция FETCH PRIOR выполняет первую вы- борку из курсора, не возвращается никакая строка и положение курсора остается перед первой строкой.</p>
+                                <p>Ключевое слово FIRST возвращает первую строку в курсоре и делает ее текущей. Ключевое слово LAST возвращает последнюю строку в курсоре, делая ее текущей. Ключевое слово ABSOLUTE с аргументом &ndash; положительным целым числом, возвра-</p>
+                                <p>щает строку с указанным номером от начала курсора, и делает ее текущей строкой. Если число отрицательное, возвращает строку с указанным номером от конца курсора, делая ее текущей строкой.</p>
+                                <p>Ключевое слово RELATIVE с аргументом &ndash; положительным целым числом возвращает строку с указанным номером после текущей строки и делает ее текущей строкой. Если число отрицательное, возвращает строку с указанным номером до текущей строки и делает ее теку- щей строкой. Если число равно 0, возвращает текущую строку.</p>
+                                <p>Ключевое слово INTO позволяет поместить данные из столбцов выборки в локальные переменные. Каждая переменная из списка, слева направо, связывается с соответствующим столбцом в результирующем наборе курсора. Типы данных переменных должны соответство- вать типам данных соответствующего столбца результирующего набора. Количество перемен- ных и столбцов тоже должны совпадать.</p>
+                                <p>Для обработки результирующего набора построчно можно использовать инструкцию FETCH NEXT в цикле WHILE. Как условие в цикле используется функция @@FETCH_STATUS, которая возвращает состояние последней инструкции FETCH, вызван- ной в любом курсоре, открытом в рамках этого подключения.</p>
+                                <p>Функция @@FETCH_STATUS возвращает одно из четырех значений:</p>
+                                <p>0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Инструкция FETCH была выполнена успешно.</p>
+                                <p>-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Выполнение инструкции FETCH завершилось неудачно или строка оказалась вне пределов результирующего набора.</p>
+                                <p>-2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Выбранная строка отсутствует.</p>
+                                <p>-9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Курсор не выполняет операцию выборки.</p>
+                                <p>Упрощенный синтаксис использования функции @@FETCH_STATUS имеет следую- щий вид:</p>
+                                <p>FETCH NEXT FROM &lt;имя_курсора&gt; WHILE @@FETCH_STATUS = 0 BEGIN</p>
+                                <p>FETCH NEXT FROM &lt;имя_курсора&gt; END</p>
+                                <p><strong><em>Пример 1: </em></strong>Создайте курсор, содержащий отсортированные по алфавиту фамилии уче- ников и названия их предметов, откройте его, выведите первую строку, закройте и освободите курсор:</p>
+                                <p>DECLARE MyCursor CURSOR FOR</p>
+                                <p>SELECT</p>
+                                <p>Фамилия</p>
+                                <p>,Предмет</p>
+                                <p>FROM</p>
+                                <p>Ученики</p>
+                                <p>ORDER BY</p>
+                                <p>Фамилия OPEN MyCursor FETCH MyCursor</p>
+                                <p>CLOSE MyCursor DEALLOCATE MyCursor</p>
+                                <p>&nbsp;</p>
+                                <p><strong><em>Пример 2: </em></strong>Создайте курсор с прокруткой, содержащий список учеников, откройте его, выведите пятую, предыдущую, с конца четвертую, шесть позиций назад находящуюся, четыре позиций вперед находящуюся, следующую, первую, последнюю строку, закройте и освобо- дите курсор:</p>
+                                <p>,Фамилия</p>
+                                <p>,Предмет</p>
+                                <p>,Школа</p>
+                                <p>,Баллы</p>
+                                <p>FROM</p>
+                                <p>Ученики</p>
+                                <p>&nbsp;</p>
+                                <p>OPEN MyCursor</p>
+                                <p>FETCH ABSOLUTE 5 FROM MyCursor FETCH PRIOR FROM MyCursor FETCH ABSOLUTE -4 FROM MyCursor FETCH RELATIVE -6 FROM MyCursor FETCH RELATIVE 4 FROM MyCursor FETCH NEXT FROM MyCursor</p>
+                                <p>FETCH FIRST FROM MyCursor FETCH LAST FROM MyCursor</p>
+                                <p>CLOSE MyCursor DEALLOCATE MyCursor</p>
+                                <p>&nbsp;</p>
+                                <p><strong><em>Пример 3: </em></strong>С помощью курсора, вычислите среднее арифметическое значение балла у учеников с наибольшим и наименьшим баллом:</p>
+                                <p>DECLARE MyCursor CURSOR SCROLL FOR</p>
+                                <p>SELECT</p>
+                                <p>Баллы</p>
+                                <p>FROM</p>
+                                <p>Ученики</p>
+                                <p>ORDER BY</p>
+                                <p>БаллыDECLARE @S FLOAT = 0, @B FLOAT</p>
+                                <p>OPEN MyCursor</p>
+                                <p>&nbsp;</p>
+                                <p>FETCH FIRST FROM MyCursor INTO @B SET @S = @S + @B</p>
+                                <p>FETCH LAST FROM MyCursor INTO @B SET @S = @S + @B</p>
+                                <p>&nbsp;</p>
+                                <p>SET @S = @S / 2 PRINT @S</p>
+                                <p>&nbsp;</p>
+                                <p>CLOSE MyCursor DEALLOCATE MyCursor</p>
+                                <p>&nbsp;</p>
+                                <p><strong><em>Пример 4: </em></strong>С помощью курсора, сгенерируйте строку вида &laquo;Ученики &lt;список фамилий и названий школ, разделенных запятыми&gt; участвовали в олимпиаде&raquo;:</p>
+                                <p>DECLARE MyCursor CURSOR SCROLL FOR</p>
+                                <p>SELECT</p>
+                                <p>Фамилия</p>
+                                <p>,Школа</p>
+                                <p>FROM</p>
+                                <p>Ученики</p>
+                                <p>&nbsp;</p>
+                                <p>DECLARE @S VARCHAR(2000), @F VARCHAR(50), @W VARCHAR(50)</p>
+                                <p>OPEN MyCursor</p>
+                                <p>SET @S = 'Ученики'</p>
+                                <p>FETCH NEXT FROM MyCursor INTO @F, @W WHILE @@FETCH_STATUS = 0</p>
+                                <p>BEGIN</p>
+                                <p>SET @S = @S + ', ' + @F + ' из школы "' + @W + '"' FETCH NEXT FROM MyCursor INTO @F, @W</p>
+                                <p>END</p>
+                                <p>SET @S = @S + ' участвовали на олимпиаде.' PRINT @S</p>
+                                <p>CLOSE MyCursor DEALLOCATE MyCursor</p>
+                                <p><strong><em>Пример 5: </em></strong>Создайте курсор, содержащий список учеников, с его помощью выведите учеников с четной позицией:</p>
+                                <p>,Фамилия</p>
+                                <p>,Предмет</p>
+                                <p>,Школа</p>
+                                <p>,Баллы</p>
+                                <p>FROM</p>
+                                <p>Ученики</p>
+                                <p>&nbsp;</p>
+                                <p>OPEN MyCursor</p>
+                                <p>FETCH ABSOLUTE 2 FROM MyCursor WHILE @@FETCH_STATUS = 0 BEGIN</p>
+                                <p>FETCH RELATIVE 2 FROM MyCursor</p>
+                                <p>END</p>
+                                <p>CLOSE MyCursor DEALLOCATE MyCursor</p>
+                                <p>&nbsp;</p>
+                                <p><strong><em>Пример 6: </em></strong>Создайте курсор, содержащий отсортированный по убыванию баллов спи- сок учеников, откройте его, для каждого ученика выведите фамилию, предмет, школу, баллы и разницу баллов с предыдущим учеником:</p>
+                                <p>DECLARE MyCursor CURSOR SCROLL FOR</p>
+                                <p>SELECT</p>
+                                <p>Фамилия</p>
+                                <p>,Предмет</p>
+                                <p>,Школа</p>
+                                <p>,Баллы</p>
+                                <p>FROM</p>
+                                <p>Ученики</p>
+                                <p>&nbsp;</p>
+                                <p>DECLARE @F VARCHAR(50) DECLARE @P VARCHAR(50) DECLARE @S VARCHAR(50) DECLARE @B FLOAT DECLARE @OB FLOAT = 0</p>
+                                <p>OPEN MyCursor</p>
+                                <p>FETCH NEXT FROM MyCursor INTO @F, @P, @S, @B WHILE @@FETCH_STATUS = 0</p>
+                                <p>BEGIN</p>
+                                <p>SELECT</p>
+                                <p>@F AS Фамилия</p>
+                                <p>,@P AS Предмет</p>
+                                <p>,@S AS Школа</p>
+                                <p>,@B AS Баллы</p>
+                                <p>,ABS(@B - @OB) AS Разница SET @OB = @B</p>
+                                <p>FETCH NEXT FROM MyCursor INTO @F, @P, @S, @B</p>
+                                <p>END</p>
+                                <p>CLOSE MyCursor DEALLOCATE MyCursor</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p><strong>13.3. </strong><strong>Заданий</strong></p>
+                                <p><strong><em>&nbsp;</em></strong></p>
+                                <ol>
+                                <li>Создайте курсор, содержащий отсортированные по баллам фамилии и баллы уче- ников, откройте его, выведите первую строку, закройте и освободите курсор.</li>
+                                <li>Создайте курсор с прокруткой, содержащий список учеников, откройте его, выве- дите пятую, предыдущую, с конца четвертую, следующую, первую строку, закройте и освобо- дите курсор.</li>
+                                <li>Создайте курсор с прокруткой, содержащий список учеников, откройте его, выве- дите последнюю, шесть позиций назад находящуюся, четыре позиций вперед находящуюся строку, закройте и освободите курсор.</li>
+                                <li>С помощью курсора, вычислите сумму баллов у учеников с наибольшим и наименьшим баллом.</li>
+                                <li>С помощью курсора, сгенерируйте строку вида &laquo;Ученики &lt;список фамилий и названий предметов, разделенных запятыми&gt; участвовали в олимпиаде&raquo;.</li>
+                                <li>Создайте курсор, содержащий список учеников, с его помощью выведите учеников с нечетной позицией.</li>
+                                <li>Создайте курсор, содержащий отсортированный по убыванию баллов список уче- ников, откройте его, для каждого ученика выведите фамилию, предмет, школу, баллы и про- центное соотношение баллов с предыдущим учеником.</li>
+                                </ol>
+
+                            </section>
+                           
+                            <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+                          
+                        </div>  
+                        
+                    </div> <!-- Right column: content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+                
+                   
+</body>
+</html>

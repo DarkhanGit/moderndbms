@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ZHANGIR KHAN UNIVERSITY</title>
+    <style>
+        .fig {
+         text-align: center; /* Выравнивание по центру */ 
+        }
+
+       table {
+       
+       font-size: 12px;
+
+}
+
+        TD, TH {
+            border: solid 1px;
+    padding: 5px; /* Поля вокруг текста */
+    
+   
+}
+.scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-top:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+        img {
+            max-width: 100%; /* Ограничивает размер изображения */
+            height: auto; /* Сохраняет пропорции */
+        }
+       
+        .fig {
+         text-align: center; /* Выравнивание по центру */ 
+        }
+        TD, TH {
+    padding: 5px; /* Поля вокруг текста */
+       }
+
+
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            background-color: #333;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            list-style-type: none;
+            padding: 0;
+            background-color: #444;
+            z-index: 1;
+        }
+
+        .submenu li {
+            display: block;
+        }
+
+        .submenu a {
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+        }
+
+        .submenu a:hover {
+            background-color: #666;
+        }
+
+        /* Показывать подменю при наведении на родительский элемент */
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        /* Стили для мобильных устройств */
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+            }
+
+            .menu li {
+                width: 100%;
+            }
+
+            .submenu {
+                position: static;
+            }
+
+            .menu li:hover .submenu {
+                display: none; /* Отключаем поведение наведения на мобильных устройствах */
+            }
+
+            .menu li.active .submenu {
+                display: block; /* Показывать подменю, если элемент активен */
+            }
+        }
+        
+.scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-top:hover {
+            background-color: #333;
+            transform: scale(1.1);
+        }
+        img {
+            max-width: 100%; /* Ограничивает размер изображения */
+            height: auto; /* Сохраняет пропорции */
+        }
+       </style>
+<!--
+Neaty HTML Template
+http://www.templatemo.com/tm-501-neaty
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/magnific-popup.css">                                <!-- Magnific pop up style, http://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
+    <body>        
+        <div class="container">
+            <div class="row">
+                <div class="tm-left-right-container">
+                    <!-- Left column: logo and menu -->
+                    <div class="tm-blue-bg tm-left-column"> 
+                        <ul class="menu">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="obuch.html">Об учебнике</a></li>           
+                            <li><a href="authors.html">Авторы</a></li>
+                        </ul>
+                   
+                        
+                                
+                        <div class="tm-logo-div text-xs-center">
+                            
+                            <a href="index.html">
+                                
+                                <h1 class="tm-site-name">СОВРЕМЕННЫЕ СУБД</h1></a>
+                      
+                                Мизамова Г.Н. <br>
+       Жаксыбаев Д.О.
+ 
+                        </div>
+                        <nav class="tm-main-nav">
+                            <ul class="tm-main-nav-ul">
+                               
+                                <li class="tm-nav-item">
+                                    <a href="mazmuny.html" class="tm-nav-item-link"><ul>
+                                        <li>Предисловие</li></ul>
+                                        </a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="1.html" class="tm-nav-item-link"><ul>
+                                        <li>1. Знакомства с MS SQL Server 
+                                             </li></ul></li>
+                                        </a>
+                                </li>
+
+                                <li class="tm-nav-item">
+                                    <a href="2.html" class="tm-nav-item-link"><ul>
+                                        <li>2. Выборка данных из БД </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="3.html" class="tm-nav-item-link"><ul>
+                                        <li>3. Фильтрация данных</li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="4.html" class="tm-nav-item-link"><ul>
+                                        <li>4. Типы данных и встроенные функции</li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="5.html" class="tm-nav-item-link"><ul>
+                                        <li>5. Объединение данных
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="6.html" class="tm-nav-item-link"><ul>
+                                        <li>6. Вложенные запросы В SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="7.html" class="tm-nav-item-link"><ul>
+                                        <li>7. Основы DDL, DML
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="8.html" class="tm-nav-item-link"><ul>
+                                        <li>8. Программирование на SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="9.html" class="tm-nav-item-link"><ul>
+                                        <li>9. Пользовательские функции 
+                                             </li></ul></li>
+                                        </a>
+                                </li>
+
+                                <li class="tm-nav-item">
+                                    <a href="10.html" class="tm-nav-item-link"><ul>
+                                        <li>10. Хранимые процедуры </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="11.html" class="tm-nav-item-link"><ul>
+                                        <li>11. Триггеры DML </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="12.html" class="tm-nav-item-link"><ul>
+                                        <li>12. Представления и табличные объекты </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="13.html" class="tm-nav-item-link"><ul>
+                                        <li>13. Курсоры В SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="14.html" class="tm-nav-item-link"><ul>
+                                        <li>14. Оконные функции
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="15.html" class="tm-nav-item-link"><ul>
+                                        <li>15. Операторы получения итоговых данных 
+                                             </li></ul></a>
+                                </li>
+                               
+                                
+                                <li class="tm-nav-item">
+                                    <a href="literatura.html" class="tm-nav-item-link"><ul>
+                                        <li>Список использованных литератур
+                                             </li></ul></a>
+                                </li>      
+                                            
+                               
+                            </ul>
+                        </nav>   
+                        </div>
+                    </div>                               
+                    </div>  <!-- Left column: logo and menu -->
+                    <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+                    <!-- Right column: content -->
+                    <div class="tm-right-column">
+                       <div class="tm-content-div">
+                            <!-- Welcome section -->
+                            <section id="welcome" class="tm-section">
+                                <header>  
+                                    <h3 class="tm-blue-text tm-welcome-title tm-margin-b-45">15. Операторы получения итоговых данных
+                                        </h3>
+                                   
+                                </header>
+                                <!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
+                   
+                                <p><strong>15.1. Оператор ROLLUP</strong></p>
+<p>Operator ROLLUP создаёт группу для каждого сочетания выражений столбцов. Кроме того, выполняет сведение результатов в промежуточные и общие итоги. Для этого запрос пе- ремещается справа налево, уменьшая количество выражений столбцов, по которым он создает группы и агрегаты. Синтаксис команды имеет следующий вид:</p>
+<p>GROUP BY ROLLUP(&lt;список столбцов&gt;) или</p>
+<p>GROUP BY &lt;список столбцов&gt; WITH ROLLUP</p>
+<p>Порядок столбцов влияет на выходные данные ROLLUP и может отразиться на коли- честве строк в результирующем наборе.</p>
+<p>GROUP BY ROLLUP(col1, col2) создает группы для каждой комбинации выражений столбцов в следующих списках:</p>
+<p>col1, col2 col1, NULL</p>
+<p>NULL, NULL &ndash; это общий итог.</p>
+<p><strong>15.2. Оператор CUBE</strong></p>
+<p>Оператор CUBE создает группы для всех возможных сочетаний столбцов. Синтаксис команды имеет следующий вид:</p>
+<p>GROUP BY CUBE(&lt;список столбцов&gt;) или</p>
+<p>GROUP BY &lt;список столбцов&gt; WITH CUBE</p>
+<p>GROUP BY CUBE(col1, col2) создает группы для каждой комбинации выражений столбцов в следующих списках:</p>
+<p>col1, col2 col1, NULL</p>
+<p>NULL, col2</p>
+<p>NULL, NULL &ndash; это общий итог.</p>
+<p>Оператор GROUPING SETS позволяет объединять несколько предложений GROUP BY в одно предложение GROUP BY. Результаты эквивалентны тем, что формируются с применением конструкции UNION ALL к указанным группам. Синтаксис команды имеет следующий вид:</p>
+<p>GROUP BY GROUPING SETS(&lt;список столбцов&gt;)</p>
+<p>Если параметр GROUPING SETS имеет два или более элементов, результатом будет объединение элементов.</p>
+<p>SQL не консолидирует повторяющиеся группы, созданные для списка GROUPING</p>
+<p>SETS.</p>
+<p>GROUP BY GROUPING SETS(col1, col2) создает группы для каждой комбинации выражений столбцов в следующих списках: col1, NULL</p>
+<p>NULL, col2</p>
+<p>Для предложения GROUP BY, использующего ROLLUP, CUBE или GROUPING SETS, допускается максимум 32 выражения.</p>
+<p><strong>15.3. Оператор GROUPING SETS</strong></p>
+<p>Функция GROUPING указывает, является ли указанное выражение столбца в списке GROUP BY статистическим или нет. В результирующем наборе возврат будет 1 (статистиче- ское выражение) или ноль (нестатистическое выражение). Функция GROUPING может ис- пользоваться только в предложениях SELECT, HAVING и ORDER BY, если указано предло- жение GROUP BY.</p>
+<p>Функция GROUPING_ID вычисляет уровень группирования. Функция GROUPING_ID может использоваться только в предложениях SELECT, HAVING и ORDER BY, если указано предложение GROUP BY.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>15.4. Операторы&nbsp; PIVOT и UNPIVOT</strong></p>
+<p>Оператор PIVOT поворачивает возвращающее табличное значение выражение, преоб- разуя уникальные значения одного столбца выражения в несколько выходных столбцов. В случае необходимости PIVOT также объединяет оставшиеся повторяющиеся значения столбца и отображает их в выходных данных.</p>
+<p>Синтаксис PIVOT является более простым и понятным, чем синтаксис, который может выполнить то же действие с помощью последовательности инструкций SELECT...CASE. Син- таксис имеет следующий вид:</p>
+<p>SELECT &lt; столбцы для группировки&gt;, &lt;пивотируемые столбцы &gt; FROM</p>
+<p>(&lt;запрос возвращающий данных&gt;) AS &lt;псевдоним&gt;</p>
+<p>PIVOT</p>
+<p>(&lt;агрегирующая функция&gt;(&lt;столбец&gt;)</p>
+<p>FOR [&lt;столбец, значения которого будут заголовками&gt;] IN (&lt;список пивотируемых столбцов&gt;)) AS &lt;псевдоним для пивот-таблицы&gt;</p>
+<p>Оператор UNPIVOT поворачивает возвращающее табличное значение выражения, пре- образуя нескольких выходных столбцов в один столбец. Синтаксис имеет следующий вид:</p>
+<p>SELECT &lt;список столбцов&gt; FROM</p>
+<p>&lt;таблица&gt; UNPIVOT</p>
+<p>(&lt;столбец значения строк&gt; FOR [&lt;столбец, значения заголовок&gt;] IN (&lt;список анпивотируемых столбцов&gt;)</p>
+<p>) AS &lt;псевдоним для анпивот-таблицы&gt;</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 1: </em></strong>Напишите запрос, который выводит количество учеников по предметам по каждой школе, и промежуточные итоги:</p>
+<p>SELECT</p>
+<p>Предмет</p>
+<p>,Школа</p>
+<p>,COUNT(Фамилия) AS Количество</p>
+<p>FROM</p>
+<p>Ученики</p>
+<p>GROUP BY</p>
+<p>Предмет, Школа WITH ROLLUP</p>
+<p><strong><em>Пример 2: </em></strong>Напишите запрос, который выводит количество учеников по предметам и по школам, и промежуточные итоги:</p>
+<p>SELECT</p>
+<p>GROUP BY</p>
+<p>Предмет, Школа WITH CUBE</p>
+<p><strong><em>Пример 3: </em></strong>Напишите запрос, который выводит количество учеников по предметам и по школам:</p>
+<p>SELECT</p>
+<p>Предмет</p>
+<p>,Школа</p>
+<p>,COUNT(Фамилия) AS Количество</p>
+<p>FROM</p>
+<p>Ученики</p>
+<p>GROUP BY</p>
+<p>GROUPING SETS(Предмет, Школа)</p>
+<p><strong><em>Пример 4: </em></strong>Напишите запрос, который выводит количество учеников по предметам по каждой школе и промежуточные итоги. NULL значения заменить на соответствующий текст:</p>
+<p>SELECT</p>
+<p>COALESCE(Предмет, 'ИТОГО') AS Предмет</p>
+<p>,COALESCE(Школа, 'Итого') AS Школа</p>
+<p>,COUNT(Фамилия) AS Количество</p>
+<p>FROM</p>
+<p>Ученики</p>
+<p>GROUP BY</p>
+<p>ROLLUP(Предмет, Школа)</p>
+<p><strong><em>Пример 5: </em></strong>Напишите запрос, который выводит количество учеников по предметам и по школам, и промежуточные итоги. В итоговых строках NULL значения заменить на соот- ветствующий текст в зависимости от группировки:</p>
+<p>SELECT</p>
+<p>IIF(GROUPING(Предмет)=1, 'ИТОГО', Предмет) AS Предмет</p>
+<p>,IIF(GROUPING(Школа)=1, 'Итого', Школа) AS Школа</p>
+<p>,COUNT(Фамилия) AS Количество</p>
+<p>FROM</p>
+<p>Ученики</p>
+<p>GROUP BY</p>
+<p>CUBE(Предмет, Школа)</p>
+<p><strong><em>Пример 6: </em></strong>Напишите запрос, который выводит количество учеников по предметам и по школам. В итоговых строках NULL значения заменить на соответствующий текст в зави- симости от уровней группировки:</p>
+<p>SELECT</p>
+<p>CASE GROUPING_ID(Предмет, Школа) WHEN 1 THEN 'Итого по предметам' WHEN 3 THEN 'Итого'</p>
+<p>ELSE ''</p>
+<p>END AS Итого</p>
+<p>,ISNULL(Предмет, '') AS Предмет</p>
+<p>,ISNULL(Школа, '') AS Школа</p>
+<p>,COUNT(Фамилия) AS Количество</p>
+<p>FROM</p>
+<p>Ученики</p>
+<p>GROUP BY</p>
+<p>ROLLUP(Предмет, Школа)</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 7: </em></strong>Напишите запрос, который выводит количество учеников по предметам по столбцам:</p>
+<p>SELECT</p>
+<p>'Количество' AS [Количество учеников по предметам]</p>
+<p>,Математика</p>
+<p>,Физика</p>
+<p>,Химия</p>
+<p>FROM</p>
+<p>(</p>
+<p>SELECT</p>
+<p>Предмет</p>
+<p>,Фамилия</p>
+<p>FROM</p>
+<p>Ученики</p>
+<p>) AS SOURCE_TABLE PIVOT</p>
+<p>(</p>
+<p>COUNT(Фамилия)</p>
+<p>FOR Предмет IN (Математика, Физика, Химия)</p>
+<p>) AS PIVOT_TABLE</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 8: </em></strong>Напишите запрос для вывода количества учеников для каждой школы по каждому предмету (школы должны быть указаны в строках, предметы в столбцах):</p>
+<p>SELECT</p>
+<p>Школа</p>
+<p>,Математика</p>
+<p>,Физика</p>
+<p>,Химия</p>
+<p>FROM</p>
+<p>(</p>
+<p>SELECT</p>
+<p>Школа</p>
+<p>,Предмет</p>
+<p>,Фамилия</p>
+<p>FROM</p>
+<p>Ученики</p>
+<p>) AS SOURCE_TABLE PIVOT</p>
+<p>(</p>
+<p>COUNT(Фамилия)</p>
+<p>FOR Предмет IN (Математика, Физика, Химия)</p>
+<p>) AS PIVOT_TABLE</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 9: </em></strong>Напишите запрос, который выводит фамилию учеников и предметы вместе со школами в один столбец:</p>
+<p>SELECT</p>
+<p>Фамилия,</p>
+<p>[Предмет или школа] FROM Ученики</p>
+<p>UNPIVOT (</p>
+<p>[Предмет или школа] FOR Значение IN (Предмет, Школа)</p>
+<p>) unpvt</p>
+<p><strong>15.5. Заданий</strong></p>
+<ol>
+<li>Напишите запрос, который выводит максимальный балл учеников по школам, по каждому предмету по каждой школе и промежуточные итоги.</li>
+<li>Напишите запрос, который выводит минимальный балл учеников по школам и по предметам, и промежуточные итоги.</li>
+<li>Напишите запрос, который выводит средний балл учеников по школам и по предметам.</li>
+</ol>
+<p>&nbsp;</p>
+<ol start="4">
+<li>Напишите запрос, который выводит количество учеников по каждой школе по пред- метам и промежуточные итоги. NULL значения заменить на соответствующий текст.</li>
+<li>Напишите запрос, который выводит суммарный балл учеников по школам и по пред- метам, и промежуточные итоги. В итоговых строках NULL значения заменить на соответствующий текст в зависимости от группировки.</li>
+<li>Напишите запрос, который выводит максимальный балл учеников по школам и по предметам. В итоговых строках NULL значения заменить на соответствующий текст в зависимости от уровней группировки.</li>
+<li>Напишите запрос, который выводит средний балл учеников по школам в столбцы.</li>
+<li>Напишите запрос, который выводит средний балл учеников по школам в столбцы и по предметам в строки.</li>
+<li>Напишите запрос, который выводит названия предметов, фамилии учеников и школы в один столбец.</li>
+</ol>
+                            </section>
+                           
+                       
+                          
+                        </div>  
+                        
+                    </div> <!-- Right column: content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+                
+                   
+</body>
+</html>

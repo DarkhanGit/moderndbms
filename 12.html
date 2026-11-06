@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ZHANGIR KHAN UNIVERSITY</title>
+    <style>
+        .fig {
+         text-align: center; /* Выравнивание по центру */ 
+        }
+
+       table {
+       
+       font-size: 12px;
+
+}
+
+        TD, TH {
+            border: solid 1px;
+    padding: 5px; /* Поля вокруг текста */
+    
+   
+}
+.scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-top:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+        img {
+            max-width: 100%; /* Ограничивает размер изображения */
+            height: auto; /* Сохраняет пропорции */
+        }
+       
+        .fig {
+         text-align: center; /* Выравнивание по центру */ 
+        }
+        TD, TH {
+    padding: 5px; /* Поля вокруг текста */
+       }
+
+
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            background-color: #333;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            list-style-type: none;
+            padding: 0;
+            background-color: #444;
+            z-index: 1;
+        }
+
+        .submenu li {
+            display: block;
+        }
+
+        .submenu a {
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+        }
+
+        .submenu a:hover {
+            background-color: #666;
+        }
+
+        /* Показывать подменю при наведении на родительский элемент */
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        /* Стили для мобильных устройств */
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+            }
+
+            .menu li {
+                width: 100%;
+            }
+
+            .submenu {
+                position: static;
+            }
+
+            .menu li:hover .submenu {
+                display: none; /* Отключаем поведение наведения на мобильных устройствах */
+            }
+
+            .menu li.active .submenu {
+                display: block; /* Показывать подменю, если элемент активен */
+            }
+        }
+        
+.scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-top:hover {
+            background-color: #333;
+            transform: scale(1.1);
+        }
+        img {
+            max-width: 100%; /* Ограничивает размер изображения */
+            height: auto; /* Сохраняет пропорции */
+        }
+       </style>
+<!--
+Neaty HTML Template
+http://www.templatemo.com/tm-501-neaty
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/magnific-popup.css">                                <!-- Magnific pop up style, http://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
+    <body>        
+        <div class="container">
+            <div class="row">
+                <div class="tm-left-right-container">
+                    <!-- Left column: logo and menu -->
+                    <div class="tm-blue-bg tm-left-column"> 
+                        <ul class="menu">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="obuch.html">Об учебнике</a></li>           
+                            <li><a href="authors.html">Авторы</a></li>
+                        </ul>
+                   
+                        
+                                
+                        <div class="tm-logo-div text-xs-center">
+                            
+                            <a href="index.html">
+                                
+                                <h1 class="tm-site-name">СОВРЕМЕННЫЕ СУБД</h1></a>
+                      
+                                Мизамова Г.Н. <br>
+       Жаксыбаев Д.О.
+ 
+                        </div>
+                        <nav class="tm-main-nav">
+                            <ul class="tm-main-nav-ul">
+                               
+                                <li class="tm-nav-item">
+                                    <a href="mazmuny.html" class="tm-nav-item-link"><ul>
+                                        <li>Предисловие</li></ul>
+                                        </a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="1.html" class="tm-nav-item-link"><ul>
+                                        <li>1. Знакомства с MS SQL Server 
+                                             </li></ul></li>
+                                        </a>
+                                </li>
+
+                                <li class="tm-nav-item">
+                                    <a href="2.html" class="tm-nav-item-link"><ul>
+                                        <li>2. Выборка данных из БД </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="3.html" class="tm-nav-item-link"><ul>
+                                        <li>3. Фильтрация данных</li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="4.html" class="tm-nav-item-link"><ul>
+                                        <li>4. Типы данных и встроенные функции</li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="5.html" class="tm-nav-item-link"><ul>
+                                        <li>5. Объединение данных
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="6.html" class="tm-nav-item-link"><ul>
+                                        <li>6. Вложенные запросы В SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="7.html" class="tm-nav-item-link"><ul>
+                                        <li>7. Основы DDL, DML
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="8.html" class="tm-nav-item-link"><ul>
+                                        <li>8. Программирование на SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="9.html" class="tm-nav-item-link"><ul>
+                                        <li>9. Пользовательские функции 
+                                             </li></ul></li>
+                                        </a>
+                                </li>
+
+                                <li class="tm-nav-item">
+                                    <a href="10.html" class="tm-nav-item-link"><ul>
+                                        <li>10. Хранимые процедуры </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="11.html" class="tm-nav-item-link"><ul>
+                                        <li>11. Триггеры DML </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="12.html" class="tm-nav-item-link"><ul>
+                                        <li>12. Представления и табличные объекты </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="13.html" class="tm-nav-item-link"><ul>
+                                        <li>13. Курсоры В SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="14.html" class="tm-nav-item-link"><ul>
+                                        <li>14. Оконные функции
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="15.html" class="tm-nav-item-link"><ul>
+                                        <li>15. Операторы получения итоговых данных 
+                                             </li></ul></a>
+                                </li>
+                             
+                                
+                                <li class="tm-nav-item">
+                                    <a href="literatura.html" class="tm-nav-item-link"><ul>
+                                        <li>Список использованных литератур
+                                             </li></ul></a>
+                                </li>      
+                                            
+                               
+                            </ul>
+                        </nav>   
+                        </div>
+                    </div>                               
+                    </div>  <!-- Left column: logo and menu -->
+                    
+                    <!-- Right column: content -->
+                    <div class="tm-right-column">
+                       <div class="tm-content-div">
+                            <!-- Welcome section -->
+                            <section id="welcome" class="tm-section">
+                                <header>  
+                                    <h3 class="tm-blue-text tm-welcome-title tm-margin-b-45">12. Представления и табличные объекты
+                                        </h3>
+                                   
+                                </header>
+                                <!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
+                   
+                                <p><strong>12.1. Создание и удаление представлений</strong></p>
+                                <p><em>Представление </em>&ndash; это виртуальная таблица, содержимое которой определяется запро- сом. Как и таблица, представление состоит из ряда именованных столбцов и строк данных.</p>
+                                <p>Представления, как таблицы, могут иметь до 1024 столбцов.</p>
+                                <p>Запрос для создания представления может обращаться не более чем к 256 таблицам.</p>
+                                <p>Можно создавать представления на основе других представлений, при этом уровень вложенности не может быть больше 32-х.</p>
+                                <p>Представление можно использовать как обычную таблицу. Упрощенный синтаксис создания преставления имеет следующий вид:</p>
+                                <p>CREATE VIEW &lt;название&gt; &lt;список столбцов&gt; AS &lt;запрос SELECT&gt;</p>
+                                <p>Запрос SELECT, используемый в определении представления, не может включать пред- ложение ORDER BY, если только в списке выбора инструкции SELECT нет также предложе- ния TOP.</p>
+                                <p>Для удаления представления используется команда DROP VIEW, его синтаксис: DROP VIEW &lt;название&gt;</p>
+                                <p><strong>12.2. Табличные переменные</strong></p>
+                                <p>В Transact-SQL есть специальный тип данных для хранения результирующего набора для обработки в будущем. Его используют в основном для временного хранения набора строк, возвращаемых как результирующий набор функций с табличным значением. Функции и пере- менные могут быть объявлены как табличные переменные. Табличные переменные могут ис- пользоваться в функциях, хранимых процедурах и пакетах. Для объявления табличных пере- менных используется следующий синтаксис:</p>
+                                <p>DECLARE &lt;@название переменной&gt; TABLE (&lt;объявление столбцов&gt;)</p>
+                                <p>Табличная переменная ведет себя как локальная переменная, она имеет точно опреде- ленную область применения.</p>
+                                <p>Табличная переменная может быть применена в любом месте, где используется таблица или табличное выражение в инструкциях SELECT, INSERT, UPDATE и DELETE. Но таблич- ную переменную нельзя использовать в инструкции SELECT &hellip; INTO &hellip;</p>
+                                <p>Табличные переменные автоматически очищаются в конце функции, хранимой проце- дуры или пакета, в котором они были определены.</p>
+                                <p>Операция присвоения между табличными переменными не поддерживается.</p>
+                                <p><strong>12.3. Временные таблицы.</strong></p>
+                                <p>В MS SQL Server для хранения промежуточных данных можно использовать времен- ные таблицы. Они по поведению не отличаются от базовых таблиц. Создание, удаление и об- ращение к ним аналогично к базовым.</p>
+                                <p>Первый символ в названии временной таблицы должен быть знак решетки #. Для ло- кальных временных таблиц используется один знак #. Локальные временные таблицы до- ступны в течение текущей сессии и удаляются, когда пользователь отсоединяется от сервера. Для глобальных временных таблиц используются два знака ##. Глобальные временные таблицы доступны всем открытым сессиям базы данных и удаляются, когдавсе пользователи, ссылающиеся на таблицы, отсоединяются от сервера.</p>
+                                <p>Временные таблицы хранятся в системной базе данных TEMPDB.</p>
+                                <p>Для принудительного удаления временных таблиц используется команда DROP TABLE.</p>
+                                <p><strong>12.4. Производные таблицы</strong></p>
+                                <p>В MS SQL Server можно создать временно именованный результирующий набор, называемый обобщенным табличным выражением. Он формируется при выполнении простого за проса.</p>
+                                <p>За обобщенным табличным выражением должны следовать одиночные инструкции SELECT, INSERT, UPDATE или DELETE, ссылающиеся на некоторые или на все столбцы.</p>
+                                <p>Обобщенные табличные выражения хранятся в оперативной памяти и существуют только во время первого выполнения запроса, который представляет эту таблицу.</p>
+                                <p>&nbsp;</p>
+                                <p><strong><em>Пример 1: </em></strong>Создайте представление, содержащее список стран, население которых меньше 1 млн. чел., а площадь больше 100 тыс. кв. км, и используйте его:</p>
+                                <p>CREATE VIEW Пример1 AS</p>
+                                <p>SELECT</p>
+                                <p>Название</p>
+                                <p>,Столица</p>
+                                <p>,Площадь</p>
+                                <p>,Население</p>
+                                <p>,Континент</p>
+                                <p>FROM</p>
+                                <p>Страны</p>
+                                <p>WHERE</p>
+                                <p>Население &lt; 1000000 AND</p>
+                                <p>Площадь &gt; 100000</p>
+                                <p>SELECT Название ,Столица ,Площадь ,Население ,Континент</p>
+                                <p>FROM</p>
+                                <p>Пример1</p>
+                                <p><strong><em>Пример 2: </em></strong>Создайте представление, содержащее список континентов, суммарную пло- щадь и суммарное население стран, которые находятся на каждом континенте и используйте его:</p>
+                                <p>CREATE VIEW Пример2 (</p>
+                                <p>Континент</p>
+                                <p>,Площадь</p>
+                                <p>,Население</p>
+                                <p>) AS</p>
+                                <p>SELECT</p>
+                                <p>Континент</p>
+                                <p>,SUM(Площадь)</p>
+                                <p>,SUM(Население)</p>
+                                <p>FROM</p>
+                                <p>Страны</p>
+                                <p>GROUP BY</p>
+                                <p>Континент</p>
+                                <p>SELECT</p>
+                                <p>Континент</p>
+                                <p>,Площадь</p>
+                                <p>,Население</p>
+                                <p>FROM</p>
+                                <p>Пример2</p>
+                                <p><strong><em>Пример 3: </em></strong>Создайте представление, содержащее фамилии преподавателей, должность, каждого преподавателя, звание, степень, место работы, зарплату и используйте его:</p>
+                                <p>CREATE VIEW Пример3 (</p>
+                                <p>Фамилия</p>
+                                <p>,Должность</p>
+                                <p>,Звание</p>
+                                <p>,Степень</p>
+                                <p>,Кафедра</p>
+                                <p>,Зарплата</p>
+                                <p>) AS</p>
+                                <p>SELECT Фамилия,Должность,Звание,Степень,Название,Зарплата</p>
+                                <p>SELECTФамилия,Должность,Звание,Степень,Кафедра,Зарплата</p>
+                                <p>FROM Пример3</p>
+                                <p><strong><em>Пример 4: </em></strong>Создайте табличную переменную, содержащую три столбца (&laquo;Номер не- дели&raquo;, &laquo;Дата начала&raquo;, &laquo;Дата конца&raquo;). Заполните ее для текущего года и используйте:</p>
+                                <p>DECLARE @Пример4 TABLE (</p>
+                                <p>[Номер недели] INT, [Дата начала] DATE, [Дата конца] DATE</p>
+                                <p>)</p>
+                                <p>DECLARE @T AS DATE, @N INT = 1</p>
+                                <p>SET @T = CAST(YEAR(GETDATE()) AS CHAR(4)) + '0101' WHILE DATEPART(WEEKDAY, @T) &gt; 1</p>
+                                <p>SET @T = DATEADD(DAY, -1, @T) PRINT DATEPART(WEEK, @T)</p>
+                                <p>WHILE YEAR(@T) &lt; YEAR(DATEADD(YEAR, 1, GETDATE())) BEGIN</p>
+                                <p>INSERT</p>
+                                <p>@Пример4 VALUES</p>
+                                <p>(@N, @T, DATEADD(DAY, 6, @T))</p>
+                                <p>SELECT</p>
+                                <p>[Номер недели]</p>
+                                <p>,[Дата начала]</p>
+                                <p>,[Дата конца]</p>
+                                <p>FROM</p>
+                                <p>@Пример4</p>
+                                <p><strong><em>Пример 5: </em></strong>Создайте табличную переменную, содержащую список стран, площадь ко- торых в 1000 раз меньше, чем средняя площадь стран в мире и используйте:</p>
+                                <p>DECLARE @Пример5 TABLE (</p>
+                                <p>Название VARCHAR(50), Столица VARCHAR(50), Площадь FLOAT, Население BIGINT, Континент VARCHAR(50)</p>
+                                <p>)</p>
+                                <p>INSERT INTO@Пример5</p>
+                                <p>SELECT Название,Столица,Площадь,Население,Континент</p>
+                                <p>FROM</p>
+                                <p>Страны</p>
+                                <p>WHERE</p>
+                                <p>Площадь * 1000 &lt; (</p>
+                                <p>SELECT&nbsp; Название,Столица,Площадь,Население,Континент</p>
+                                <p>FROM )</p>
+                                <p>@Пример5</p>
+                                <p><strong><em>Пример</em></strong> <strong><em>6:</em></strong> Создайте локальную временную таблицу, имеющую три столбца (&laquo;Название месяца&raquo;, &laquo;Количество экзаменов&raquo;, &laquo;Количество студентов&raquo;), заполните и используйте ее:</p>
+                                <p>SELECT</p>
+                                <p>DATENAME(MONTH, Дата) AS [Название месяца]</p>
+                                <p>, COUNT(DISTINCT Код) AS [Количество экзаменов]</p>
+                                <p>, COUNT(DISTINCT Рег_номер) AS [Количество студентов]</p>
+                                <p>GROUP BY</p>
+                                <p>DATENAME(MONTH, Дата)</p>
+                                <p>&nbsp;</p>
+                                <p>SELECT * FROM #Пример6</p>
+                                <p>&nbsp;</p>
+                                <p><strong><em>Пример 7: </em></strong>Создайте глобальную временную таблицу, содержащую название стран и плотность их населения, заполните и используйте ее:</p>
+                                <p>CREATE TABLE ##Пример7 (</p>
+                                <p>Название VARCHAR(50), Плотность FLOAT</p>
+                                <p>)</p>
+                                <p>INSERT INTO</p>
+                                <p>##Пример7</p>
+                                <p>(Название, Плотность)</p>
+                                <p>SELECT</p>
+                                <p>Название, ROUND(Население / Площадь, 0) AS Плотность</p>
+                                <p>FROM</p>
+                                <p>Страны</p>
+                                <p>SELECT * FROM ##Пример7 DROP TABLE #Пример6</p>
+                                <p>&nbsp;</p>
+                                <p><strong><em>Пример 8: </em></strong><em>С </em>помощью обобщенных табличных выражений, напишите запрос для вы- вода списка сотрудников, чьи зарплаты меньше, чем средняя зарплата по кафедре, их зарплаты и название кафедры:</p>
+                                <p>WITH СЗК AS (</p>
+                                <p>SELECT</p>
+                                <p>К.Название AS Кафедра</p>
+                                <p>,К.Шифр</p>
+                                <p>,AVG(Зарплата) AS [Средняя зарплата по кафедре]</p>
+                                <p>FROM</p>
+                                <p>Сотрудник С</p>
+                                <p>INNER JOIN Кафедра К ON С.Шифр = К.Шифр</p>
+                                <p>GROUP BY</p>
+                                <p>К.Название, К.Шифр</p>
+                                <p>) SELECT</p>
+                                <p>С.Фамилия</p>
+                                <p>, С.Зарплата</p>
+                                <p>, З.Кафедра</p>
+                                <p>, З.[Средняя зарплата по кафедре]</p>
+                                <p>WHERE</p>
+                                <p>С.Зарплата &lt; З.[Средняя зарплата по кафедре]</p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                                <p><strong>12.5. Заданий</strong></p>
+                                <ol>
+                                <li>Создайте представление, содержащее список африканских стран, население которых больше 10 млн. чел., а площадь больше 500 тыс. кв. км, и используйте его.</li>
+                                <li>Создайте представление, содержащее список континентов, среднюю площадь стран, которые находятся на нем, среднюю плотность населения, и используйте его.</li>
+                                <li>Создайте представление, содержащее фамилии преподавателей, их должность, зва- ние, степень, место работы, количество их экзаменов, и используйте его.</li>
+                                <li>Создайте табличную переменную, содержащую три столбца (&laquo;Номер месяца&raquo;,</li>
+                                </ol>
+                                <p>&laquo;Название месяца&raquo;, &laquo;Количество дней&raquo;), заполните ее для текущего года, и используйте ее.</p>
+                                <ol start="5">
+                                <li>Создайте табличную переменную, содержащую список стран, площадь которых в 100 раз меньше, чем средняя площадь стран на континенте, где они находятся, и используйте ее.</li>
+                                <li>Создайте локальную временную таблицу, имеющую три столбца (&laquo;Номер недели&raquo;,</li>
+                                </ol>
+                                <p>&laquo;Количество экзаменов&raquo;, &laquo;Количество студентов&raquo;), заполните и используйте ее.</p>
+                                <ol start="7">
+                                <li>Создайте глобальную временную таблицу, содержащую название континентов, наибольшую и наименьшую площадь стран на них, заполните и используйте ее.</li>
+                                <li>С помощью обобщенных табличных выражений напишите запрос для вывода списка сотрудников, чьи зарплаты меньше, чем средняя зарплата по факультету, их зарплаты и назва- ние факультета.</li>
+                                <li>Напишите команды для удаления всех созданных вами представлений.</li>
+                                </ol>
+
+                            </section>
+                            <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+                            
+                          
+                        </div>  
+                        
+                    </div> <!-- Right column: content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+                
+                   
+</body>
+</html>

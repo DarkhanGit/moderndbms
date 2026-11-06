@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ZHANGIR KHAN UNIVERSITY</title>
+    <style>
+        .fig {
+         text-align: center; /* Выравнивание по центру */ 
+        }
+
+       table {
+       
+       font-size: 12px;
+
+}
+
+        TD, TH {
+            border: solid 1px;
+    padding: 5px; /* Поля вокруг текста */
+    
+   
+}
+.scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-top:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+        img {
+            max-width: 100%; /* Ограничивает размер изображения */
+            height: auto; /* Сохраняет пропорции */
+        }
+       
+        .fig {
+         text-align: center; /* Выравнивание по центру */ 
+        }
+        TD, TH {
+    padding: 5px; /* Поля вокруг текста */
+       }
+
+
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            background-color: #333;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            list-style-type: none;
+            padding: 0;
+            background-color: #444;
+            z-index: 1;
+        }
+
+        .submenu li {
+            display: block;
+        }
+
+        .submenu a {
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+        }
+
+        .submenu a:hover {
+            background-color: #666;
+        }
+
+        /* Показывать подменю при наведении на родительский элемент */
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        /* Стили для мобильных устройств */
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+            }
+
+            .menu li {
+                width: 100%;
+            }
+
+            .submenu {
+                position: static;
+            }
+
+            .menu li:hover .submenu {
+                display: none; /* Отключаем поведение наведения на мобильных устройствах */
+            }
+
+            .menu li.active .submenu {
+                display: block; /* Показывать подменю, если элемент активен */
+            }
+        }
+        
+.scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-top:hover {
+            background-color: #333;
+            transform: scale(1.1);
+        }
+        img {
+            max-width: 100%; /* Ограничивает размер изображения */
+            height: auto; /* Сохраняет пропорции */
+        }
+       </style>
+<!--
+Neaty HTML Template
+http://www.templatemo.com/tm-501-neaty
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/magnific-popup.css">                                <!-- Magnific pop up style, http://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
+    <body>        
+        <div class="container">
+            <div class="row">
+                <div class="tm-left-right-container">
+                    <!-- Left column: logo and menu -->
+                    <div class="tm-blue-bg tm-left-column"> 
+                        <ul class="menu">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="obuch.html">Об учебнике</a></li>           
+                            <li><a href="authors.html">Авторы</a></li>
+                        </ul>
+                   
+                        
+                                
+                        <div class="tm-logo-div text-xs-center">
+                            
+                            <a href="index.html">
+                                
+                                <h1 class="tm-site-name">СОВРЕМЕННЫЕ СУБД</h1></a>
+                      
+                                Мизамова Г.Н. <br>
+       Жаксыбаев Д.О.
+ 
+                        </div>
+                        <nav class="tm-main-nav">
+                            <ul class="tm-main-nav-ul">
+                               
+                                <li class="tm-nav-item">
+                                    <a href="mazmuny.html" class="tm-nav-item-link"><ul>
+                                        <li>Предисловие</li></ul>
+                                        </a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="1.html" class="tm-nav-item-link"><ul>
+                                        <li>1. Знакомства с MS SQL Server 
+                                             </li></ul></li>
+                                        </a>
+                                </li>
+
+                                <li class="tm-nav-item">
+                                    <a href="2.html" class="tm-nav-item-link"><ul>
+                                        <li>2. Выборка данных из БД </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="3.html" class="tm-nav-item-link"><ul>
+                                        <li>3. Фильтрация данных</li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="4.html" class="tm-nav-item-link"><ul>
+                                        <li>4. Типы данных и встроенные функции</li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="5.html" class="tm-nav-item-link"><ul>
+                                        <li>5. Объединение данных
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="6.html" class="tm-nav-item-link"><ul>
+                                        <li>6. Вложенные запросы В SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="7.html" class="tm-nav-item-link"><ul>
+                                        <li>7. Основы DDL, DML
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="8.html" class="tm-nav-item-link"><ul>
+                                        <li>8. Программирование на SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="9.html" class="tm-nav-item-link"><ul>
+                                        <li>9. Пользовательские функции 
+                                             </li></ul></li>
+                                        </a>
+                                </li>
+
+                                <li class="tm-nav-item">
+                                    <a href="10.html" class="tm-nav-item-link"><ul>
+                                        <li>10. Хранимые процедуры </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="11.html" class="tm-nav-item-link"><ul>
+                                        <li>11. Триггеры DML </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="12.html" class="tm-nav-item-link"><ul>
+                                        <li>12. Представления и табличные объекты </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="13.html" class="tm-nav-item-link"><ul>
+                                        <li>13. Курсоры В SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="14.html" class="tm-nav-item-link"><ul>
+                                        <li>14. Оконные функции
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="15.html" class="tm-nav-item-link"><ul>
+                                        <li>15. Операторы получения итоговых данных 
+                                             </li></ul></a>
+                                </li>
+                          
+                                
+                                <li class="tm-nav-item">
+                                    <a href="literatura.html" class="tm-nav-item-link"><ul>
+                                        <li>Список использованных литератур
+                                             </li></ul></a>
+                                </li>      
+                                            
+                               
+                            </ul>
+                        </nav>   
+                        </div>
+                    </div>                               
+                    </div>  <!-- Left column: logo and menu -->
+                    
+                    <!-- Right column: content -->
+                    <div class="tm-right-column">
+                       <div class="tm-content-div">
+                            <!-- Welcome section -->
+                            <section id="welcome" class="tm-section">
+                                <header>  
+                                    <h3 class="tm-blue-text tm-welcome-title tm-margin-b-45">4. Типы данных и встроенные функции
+                                        </h3>
+                                   
+                                </header>
+                                <!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
+                   
+                                <p><strong>4.1. Основные типы данных</strong></p>
+                                <p>На языке Transact-SQL используется множество различных <em>типов данных</em>. Всех их можно разделить на следующие группы:</p>
+                                <p><em>Числовые типы данных</em>: BIT (значение 0 или 1), TINYINT (от 0 до 255), SMALLINT (от</p>
+                                <p>-32768 до 32767), INT (от -2147483648 до 2147483647), BIGINT (от -9223372036854775808 до</p>
+                                <p>9223372036854775807), DECIMAL (числа c фиксированной точностью), NUMERIC: (аналоги- чен типу DECIMAL), SMALLMONEY (дробные значения от -214748.3648 до 214748.3647), MONEY (дробные значения от -922337203685477.5808 до 922337203685477.5807), FLOAT (от -1.79E+308 до 1.79E+308), REAL (числа от &ndash;340E+38 до 3.40E+38);</p>
+                                <p><em>Типы данных, представляющие дату и время: </em>DATE (дата от 01/01/0001 до 31/12/9999), TIME (время в диапазоне от 00:00:00.0000000 до 23:59:59.9999999), DATETIME (дата и время от 01/01/1753 до 31/12/9999), DATETIME2 (дата и время от 01/01/0001 00:00:00.0000000 до 31/12/9999 23:59:59.9999999), SMALLDATETIME (дата и время от 01/01/1900 до 06/06/2079),</p>
+                                <p>DATETIMEOFFSET (дата и время от 01/01/0001 до 31/12/9999);</p>
+                                <p><em>Строковые типы данных: </em>CHAR (фиксированная строка длиной от 1 до 8000 симво- лов), VARCHAR (переменная строка длиной от 1 до 8000 символов), NCHAR (Unicode &ndash; фик- сированная строка длиной от 1 до 4000 символов), NVARCHAR (Unicode &ndash; переменная строка длиной от 1 до 4000 символов), TEXT и NTEXT (устаревшие, не рекомендуется использовать);</p>
+                                <p><em>Бинарные типы данных: </em>BINARY (фиксированные бинарные данные от 1 до 8000 байт), VARBINARY (переменные бинарные данные от 1 до 8000 байт), IMAGE (устаревшая, не рекомендуется использовать);</p>
+                                <p><em>Другие типы данных: </em>UNIQUEIDENTIFIER (уникальный идентификатор GUID), TIMESTAMP (номер версии строки в таблице), CURSOR (набор строк таблицы),</p>
+                                <p>HIERARCHYID (позиция в иерархии), SQL_VARIANT (данные любого типа), XML (доку- менты или фрагменты XML), TABLE (таблица), GEOGRAPHY (географические данные, такие как широта и долгота), GEOMETRY (координаты на плоскости).</p>
+                                <p><strong>4.2. Встроенные функции Transact-SQL</strong></p>
+                                <p><em>Функции SQL </em>производят действия с данными и возвращают результат. <em>Встроенные функции </em>делятся на три основные группы:</p>
+                                <ul>
+                                <li><em>скалярные функции </em>&ndash; обрабатывают одиночное значение и возвращают одно значе- ние. Их можно использовать везде, где допускается применение выражений.</li>
+                                <li><em>агрегатные функции </em>&ndash; используются для получения обобщающих значений. Они, в отличие от скалярных функций, оперируют значениями столбцов множества строк;</li>
+                                </ul>
+                                <p><em>&ndash; функции для списка значений</em>.</p>
+                                <p><em>Скалярные функции </em>бывают следующих категорий:</p>
+                                <ul>
+                                <li><em>строковые</em> <em>функции</em> &ndash; выполняют определенные действия над строками и возвращают строковые или числовые значения;</li>
+                                <li><em>числовые функции </em>&ndash; возвращают числовые значения на основании заданных в аргу- менте значений того же типа;</li>
+                                <li><em>функции</em> <em>времени</em> <em>и даты </em>&ndash; выполняют различные действия над входными значениями времени и даты и возвращают строковое, числовое значение или значение в формате даты и времени;</li>
+                                <li><em>функции преобразования типа</em>.</li>
+                                </ul>
+                                <p><strong>4.2.1. Изучить встроенные функции для работы со строками</strong></p>
+                                <p>Список часто используемых <em>строковых функций</em>:</p>
+                                <table width="100%">
+                                    <tbody>
+                                    <tr>
+                                    <td width="43%">
+                                    <p>LEN(строка)</p>
+                                    </td>
+                                    <td colspan="2" width="56%">
+                                    <p>возвращает количество символов в заданной строке</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="43%">
+                                    <p>TRIM(строка)</p>
+                                    <p>TRIM([символ FROM] строка)</p>
+                                    </td>
+                                    <td colspan="2" width="56%">
+                                    <p>удаляет символ пробела или другие заданные символы</p>
+                                    <p>в начале и в конце строки.</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="43%">
+                                    <p>LTRIM(строка)</p>
+                                    </td>
+                                    <td colspan="2" width="56%">
+                                    <p>удаляет начальные пробелы из заданной строки</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="43%">
+                                    <p>RTRIM(строка)</p>
+                                    </td>
+                                    <td colspan="2" width="56%">
+                                    <p>удаляет конечные пробелы из заданной строки</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="43%">
+                                    <p>CHARINDEX(подстрока, строка) CHARINDEX(подстрока, строка, началь-</p>
+                                    <p>ная позиция)</p>
+                                    </td>
+                                    <td colspan="2" width="56%">
+                                    <p>возвращает индекс, по которому находится первое вхождение подстроки в строке.</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="43%">
+                                    <p>PATINDEX('%шаблон%', строка)</p>
+                                    </td>
+                                    <td colspan="2" width="56%">
+                                    <p>возвращает индекс, по которому находится первое</p>
+                                    <p>вхождение определенного шаблона в строке</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="43%">
+                                    <p>LEFT(строка, число)</p>
+                                    </td>
+                                    <td colspan="2" width="56%">
+                                    <p>возвращает с начала строки определенное количество</p>
+                                    <p>символов</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="43%">
+                                    <p>RIGHT(строка, число)</p>
+                                    </td>
+                                    <td colspan="2" width="56%">
+                                    <p>возвращает с конца строки определенное количество</p>
+                                    <p>символов</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="43%">
+                                    <p>SUBSTRING(строка, начальная позиция,</p>
+                                    <p>длина )</p>
+                                    </td>
+                                    <td colspan="2" width="56%">
+                                    <p>возвращает подстроку заданной длиной, начиная с дан-</p>
+                                    <p>ной позиции</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="43%">
+                                    <p>REPLACE(строка, подстрока, замена)</p>
+                                    </td>
+                                    <td colspan="2" width="56%">
+                                    <p>заменяет одну подстроку другой</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="43%">
+                                    <p>REVERSE(строка)</p>
+                                    </td>
+                                    <td colspan="2" width="56%">
+                                    <p>переворачивает строку наоборот</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td colspan="2" width="44%">
+                                    <p>CONCAT(строка1, строка2 [, строкаN ] )</p>
+                                    </td>
+                                    <td width="55%">
+                                    <p>объединяет заданные строки в одну</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td colspan="2" width="44%">
+                                    <p>LOWER(строка)</p>
+                                    </td>
+                                    <td width="55%">
+                                    <p>переводит строку в нижний регистр</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td colspan="2" width="44%">
+                                    <p>UPPER (строка)</p>
+                                    </td>
+                                    <td width="55%">
+                                    <p>переводит строку в верхний регистр</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td colspan="2" width="44%">
+                                    <p>SPACE(число)</p>
+                                    </td>
+                                    <td width="55%">
+                                    <p>возвращает заданное количество пробелов</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td colspan="2" width="44%">
+                                    <p>REPLICATE(строка, число)</p>
+                                    </td>
+                                    <td width="55%">
+                                    <p>повторяет значение строки указанное число раз</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td colspan="2" width="44%">
+                                    <p>STUFF(строка, начальная позиция, количество, замена)</p>
+                                    </td>
+                                    <td width="55%">
+                                    <p>удаляет указанное количество символов первой строки в начальной позиции и вставляет на их место замену.</p>
+                                    </td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                    <p><strong>4.2.1. Функции для работы с числами</strong></p>
+<p>Список часто используемых <em>числовых функций</em>:</p>
+<p>&nbsp;</p><table width="100%">
+    <tbody>
+    <tr>
+    <td width="36%">
+    <p>ABS(число)</p>
+    </td>
+    <td width="63%">
+    <p>возвращает абсолютное значение числа</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>CEILING(число)</p>
+    </td>
+    <td width="63%">
+    <p>возвращает наименьшее целое, большее или равное задан-</p>
+    <p>ного числа.</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>FLOOR(число)</p>
+    </td>
+    <td width="63%">
+    <p>возвращает наибольшее целое число, меньшее или равное</p>
+    <p>заданного числа</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>POWER(число, степень)</p>
+    </td>
+    <td width="63%">
+    <p>возвращает значение указанного выражения, возведенное в</p>
+    <p>заданную степень</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>RAND([начальное значение])</p>
+    </td>
+    <td width="63%">
+    <p>возвращает псевдослучайное значение от 0 до 1</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>ROUND(число, точность)</p>
+    </td>
+    <td width="63%">
+    <p>возвращает число, округленное до указанной точности</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>SIGN(число)</p>
+    </td>
+    <td width="63%">
+    <p>возвращает положительное (+1), нулевое (0) или отрица-</p>
+    <p>тельное (-1) значение, обозначающее знак заданного выра- жения</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>SQRT(число)</p>
+    </td>
+    <td width="63%">
+    <p>возвращает квадратный корень данного числа</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>SQUARE(число)</p>
+    </td>
+    <td width="63%">
+    <p>возвращает квадрат указанного числа</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>PI()</p>
+    </td>
+    <td width="63%">
+    <p>возвращает константное значение &pi;</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>ACOS(число)</p>
+    </td>
+    <td width="63%">
+    <p>возвращает угол в радианах, косинус которого задан &ndash; арк-</p>
+    <p>косинус.</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>ASIN(число)</p>
+    </td>
+    <td width="63%">
+    <p>возвращает угол в радианах, синус которого задан &ndash; аркси-</p>
+    <p>нус.</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>ATAN(число)</p>
+    </td>
+    <td width="63%">
+    <p>возвращает угол в радианах, тангенс которого задан &ndash; арк-</p>
+    <p>тангенс.</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>COS(число)</p>
+    </td>
+    <td width="63%">
+    <p>возвращает косинус указанного угла в радианах.</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>SIN(число)</p>
+    </td>
+    <td width="63%">
+    <p>возвращает синус указанного угла в радианах.</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>TAN(число)</p>
+    </td>
+    <td width="63%">
+    <p>возвращает тангенс указанного угла в радианах.</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>COT(число)</p>
+    </td>
+    <td width="63%">
+    <p>возвращает котангенс указанного угла в радианах</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>DEGREES(число)</p>
+    </td>
+    <td width="63%">
+    <p>возвращает для значения угла в радианах соответствующее</p>
+    <p>значение в градусах.</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>RADIANS(число)</p>
+    </td>
+    <td width="63%">
+    <p>возвращает для значения угла в градусах соответствующее</p>
+    <p>значение в радианах</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>EXP(число)</p>
+    </td>
+    <td width="63%">
+    <p>возвращает экспонент заданного числа</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>LOG(число)</p>
+    </td>
+    <td width="63%">
+    <p>возвращает натуральный логарифм указанного числа</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>LOG(число, основа)</p>
+    </td>
+    <td width="63%">
+    <p>возвращает логарифм указанного числа</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="36%">
+    <p>LOG10(число)</p>
+    </td>
+    <td width="63%">
+    <p>возвращает десятичный логарифм указанного числа</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <p><strong>4.2.3. Функции для работы с датами и временем</strong></p>
+<p>Список часто используемых <em>функций времени и даты</em>:</p>
+<p>&nbsp;</p><table width="100%">
+    <tbody>
+    <tr>
+    <td width="39%">
+    <p>GETDATE()</p>
+    </td>
+    <td width="60%">
+    <p>возвращает текущую дату и время</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="39%">
+    <p>CURRENT_TIMEZONE()</p>
+    </td>
+    <td width="60%">
+    <p>возвращает имя часового пояса</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="39%">
+    <p>GETUTCDATE()</p>
+    </td>
+    <td width="60%">
+    <p>возвращает текущую дату и время по Гринвичу</p>
+    <p>(UTC/GMT)</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="39%">
+    <p>DAY(дата)</p>
+    </td>
+    <td width="60%">
+    <p>возвращает день месяца указанной даты</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="39%">
+    <p>MONTH(дата)</p>
+    </td>
+    <td width="60%">
+    <p>возвращает номер месяца указанной даты</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="39%">
+    <p>YEAR(дата)</p>
+    </td>
+    <td width="60%">
+    <p>возвращает год указанной даты</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="39%">
+    <p>DATEPART(часть, дата)</p>
+    </td>
+    <td width="60%">
+    <p>возвращает целое число, представляющее указанную</p>
+    <p>часть заданной даты</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="39%">
+    <p>DATENAME(часть, дата)</p>
+    </td>
+    <td width="60%">
+    <p>возвращает строку символов, представляющую указан-</p>
+    <p>ную часть заданной даты</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="39%">
+    <p>DATEADD(часть, число, дата)</p>
+    </td>
+    <td width="60%">
+    <p>добавляет указанное целое число со знаком к части входного значения даты, а затем возвращает это изме- ненное значение</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="39%">
+    <p>DATEDIFF(часть, начальная дата, конеч-</p>
+    <p>ная дата)</p>
+    </td>
+    <td width="60%">
+    <p>возвращает разницу как целое число со знаком между</p>
+    <p>частями заданных дат</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="39%">
+    <p>EOMONTH(дата)</p>
+    </td>
+    <td width="60%">
+    <p>возвращает последний день месяца, заданной даты</p>
+    </td>
+    </tr>
+    </tbody>
+    </table><p>Для функций времени и даты используются следующие аргументы как часть даты и времени:</p>
+    <p>&nbsp;</p><table width="100%">
+        <tbody>
+        <tr>
+        <td width="58%">
+        <p><strong><em>Часть даты и времени</em></strong></p>
+        </td>
+        <td width="41%">
+        <p><strong><em>Сокращения</em></strong></p>
+        </td>
+        </tr>
+        <tr>
+        <td width="58%">
+        <p>year</p>
+        </td>
+        <td width="41%">
+        <p>yy, yyyy</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="58%">
+        <p>quarter</p>
+        </td>
+        <td width="41%">
+        <p>qq, q</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="58%">
+        <p>month</p>
+        </td>
+        <td width="41%">
+        <p>mm, m</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="58%">
+        <p>dayofyear</p>
+        </td>
+        <td width="41%">
+        <p>dy, y</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="58%">
+        <p>day</p>
+        </td>
+        <td width="41%">
+        <p>dd, d</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="58%">
+        <p>week</p>
+        </td>
+        <td width="41%">
+        <p>wk, ww</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="58%">
+        <p>weekday</p>
+        </td>
+        <td width="41%">
+        <p>dw</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="58%">
+        <p>hour</p>
+        </td>
+        <td width="41%">
+        <p>hh</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="58%">
+        <p>minute</p>
+        </td>
+        <td width="41%">
+        <p>mi, n</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="58%">
+        <p>second</p>
+        </td>
+        <td width="41%">
+        <p>ss, s</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="58%">
+        <p>millisecond</p>
+        </td>
+        <td width="41%">
+        <p>ms</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="58%">
+        <p>microsecond</p>
+        </td>
+        <td width="41%">
+        <p>mcs</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="58%">
+        <p>nanosecond</p>
+        </td>
+        <td width="41%">
+        <p>ns</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="58%">
+        <p>tzoffset</p>
+        </td>
+        <td width="41%">
+        <p>tz</p>
+        </td>
+        </tr>
+        <tr>
+        <td width="58%">
+        <p>iso_week</p>
+        </td>
+        <td width="41%">
+        <p>isowk, isoww</p>
+        </td>
+        </tr>
+        </tbody>
+        </table><p><strong>4.2.4. Функции преобразования данных</strong></p>
+        <p>Список часто используемых <em>функций преобразования</em>:</p>
+        <p>&nbsp;</p><table width="100%">
+            <tbody>
+            <tr>
+            <td width="47%">
+            <p>CAST(выражение AS тип)</p>
+            </td>
+            <td rowspan="2" width="52%">
+            <p>преобразуют выражение в заданный тип</p>
+            </td>
+            </tr>
+            <tr>
+            <td width="47%">
+            <p>CONVERT(тип, выражение [, стиль])</p>
+            </td>
+            </tr>
+            <tr>
+            <td width="47%">
+            <p>ASCII(строка)</p>
+            </td>
+            <td width="52%">
+            <p>возвращает код ASCII первого символа указанного</p>
+            <p>символьного выражения</p>
+            </td>
+            </tr>
+            <tr>
+            <td width="47%">
+            <p>UNICODE(строка)</p>
+            </td>
+            <td width="52%">
+            <p>возвращает код Юникод первого символа указанного</p>
+            <p>символьного выражения</p>
+            </td>
+            </tr>
+            <tr>
+            <td width="47%">
+            <p>CHAR(число)</p>
+            </td>
+            <td width="52%">
+            <p>возвращает символ ASCII с указанным кодом</p>
+            </td>
+            </tr>
+            <tr>
+            <td width="47%">
+            <p>NCHAR(число)</p>
+            </td>
+            <td width="52%">
+            <p>возвращает символ Юникода с указанным кодом</p>
+            </td>
+            </tr>
+            <tr>
+            <td width="47%">
+            <p>STR(число)</p>
+            </td>
+            <td width="52%">
+            <p>возвращает символьные данные, преобразованные из</p>
+            <p>числовых данных</p>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+            <p>Список часто используемых <em>функций проверки значений</em>:</p>
+<p>&nbsp;</p><table width="100%">
+    <tbody>
+    <tr>
+    <td width="33%">
+    <p>ISDATE(выражение)</p>
+    </td>
+    <td width="66%">
+    <p>возвращает 1, если выражение имеет допустимое значение</p>
+    <p>типа даты и времени, иначе возвращает значение 0</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="33%">
+    <p>ISNUMERIC(выражение)</p>
+    </td>
+    <td width="66%">
+    <p>возвращает 1, если выражение имеет допустимое значение</p>
+    <p>числовой тип данных, иначе возвращает 0</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="33%">
+    <p>ISNULL(выражение, замена)</p>
+    </td>
+    <td width="66%">
+    <p>заменяет значение NULL указанным замещающим значением</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="33%">
+    <p>COALESCE(выражение [,...n ])</p>
+    </td>
+    <td width="66%">
+    <p>вычисляет аргументы по порядку и возвращает текущее зна- чение первого выражения, изначально не вычисленного как</p>
+    <p>NULL.</p>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    <p>&nbsp;</p>
+    <p>Особое место среди встроенных скалярных функций языка SQL занимают функции вы- вода, которые являются разновидностью CASE-выражений. Функция CASE проверяет значение некоторого выражения, и в зависимости от результата проверки может возвращать тот или иной результат.</p>
+<p>Выражение CASE имеет два формата:</p>
+<ul>
+<li>простое выражение CASE для определения результата сравнивает выражение с набо- ром простых выражений;</li>
+<li>поисковое выражение CASE для определения результата вычисляет набор логических выражений.</li>
+</ul>
+<p>Оба формата поддерживают дополнительный аргумент ELSE.</p>
+<p>Функция IIF(условие, выражение_если_истина, выражение_если_ложь) &ndash; возвращает одно из двух значений в зависимости от того, принимает логическое выражение значение true или false.</p>
+<p><strong><em>Пример 1: </em></strong>Вывести ФИО академиков и длину ФИО: SELECT</p>
+<p>ФИО</p>
+<p>,LEN(ФИО) AS Количество_символов</p>
+<p>FROM</p>
+<p>Академики</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 2: </em></strong>Вывести список академиков, убрать лишние пробелы в ФИО: SELECT</p>
+<p>TRIM(ФИО) AS ФИО</p>
+<p>,Дата_рождения</p>
+<p>,Специализация</p>
+<p>,Год_присвоения_звания</p>
+<p>FROM</p>
+<p>Академики</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 3: </em></strong>Найти позиции буквы &laquo;о&raquo; в ФИО каждого академика. Вывести ФИО и по- зицию:</p>
+<p>SELECT</p>
+<p>ФИО</p>
+<p>,CHARINDEX('о',ФИО) AS Позиция_о</p>
+<p>FROM</p>
+<p>Академики</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 4: </em></strong>Вывести ФИО и первые три буквы специализации каждого академика: SELECT</p>
+<p>ФИО</p>
+<p>,LEFT(Специализация, 3) AS Спец_3</p>
+<p>FROM</p>
+<p>Академики</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>мика:</p>
+<p><strong><em>Пример 5: </em></strong>Вывести ФИО и от второй до пятой буквы специализации каждого акаде-</p>
+<p>&nbsp;</p>
+<p>SELECT</p>
+<p>ФИО</p>
+<p>,SUBSTRING(Специализация, 2, 4) AS Спец_2_5</p>
+<p>&nbsp;</p>
+<p>FROM</p>
+<p>Академики</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 6: </em></strong>Вывести список академиков, заменить специализацию &laquo;лингвист&raquo; на &laquo;язы- ковед&raquo;:</p>
+<p>SELECT</p>
+<p>ФИО</p>
+<p>,Дата_рождения</p>
+<p>,REPLACE(Специализация, 'лингвист', 'языковед') AS Спец</p>
+<p>,Год_присвоения_звания</p>
+<p>FROM</p>
+<p>Академики</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 7: </em></strong>Вывести список академиков, специализацию на верхнем регистре: SELECT</p>
+<p>ФИО</p>
+<p>,Дата_рождения</p>
+<p>,UPPER(Специализация) AS Спец</p>
+<p>,Год_присвоения_звания</p>
+<p>FROM</p>
+<p>Академики</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 8: </em></strong>Вывести ФИО академиков в правильном и обратном виде: SELECT</p>
+<p>ФИО</p>
+<p>,REVERSE(ФИО) AS ФИО_Обр</p>
+<p>&nbsp;</p>
+<p>FROM</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Академики Название</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 9: </em></strong>Вывести каждую специализацию 4 раза в одной строке. Убрать дубликаты: SELECT DISTINCT</p>
+<p>REPLICATE(Специализация, 4) AS Спец_4</p>
+<p>FROM</p>
+<p>Академики</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 10: </em></strong>Вывести абсолютное значение тригонометрических функций на точке &pi;: SELECT</p>
+<p>ABS(COS(PI())) AS Косинус_Пи</p>
+<p>,ABS(SIN(PI())) AS Синус_Пи</p>
+<p>,ABS(TAN(PI())) AS Тангенс_Пи</p>
+<p>,ABS(COT(PI())) AS КоТангенс_Пи</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 11: </em></strong>Вывести число 132.456, округленное с точностью от 3 до -3: SELECT</p>
+<p>ROUND(123.456, 3) AS Окр3</p>
+<p>,ROUND(123.456, 2) AS Окр2</p>
+<p>,ROUND(123.456, 1) AS Окр1</p>
+<p>,ROUND(123.456, 0) AS Окр0</p>
+<p>,ROUND(123.456, -1) AS Окр_1</p>
+<p>,ROUND(123.456, -2) AS Окр_2</p>
+<p>,ROUND(123.456, -3) AS Окр_3</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 12: </em></strong>Вывести наименьшее целое число, которое больше или равно 123.456, и наибольшее целое число, которое меньше или равно 123.456:</p>
+<p>SELECT</p>
+<p>CEILING(123.456) AS Больше</p>
+<p>,FLOOR(123.456)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AS Меньше</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 13: </em></strong>Вывести квадратный корень, квадрат и куб числа 25: SELECT</p>
+<p>SQRT(25)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AS Корень</p>
+<p>,SQUARE(25) AS Квадрат</p>
+<p>,POWER(25, 3) AS Куб</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 14: </em></strong>Вывести текущую дату и время:</p>
+<p>SELECT</p>
+<p>GETDATE() AS Сейчас</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 15: </em></strong>Вывести день, месяц, год, час, минуту, секунду, номер квартала, номер не- дели, день года, день недели для текущей даты и времени:</p>
+<p>SELECT</p>
+<p>DAY(GETDATE()) AS День</p>
+<p>,MONTH(GETDATE()) AS Месяц</p>
+<p>,YEAR(GETDATE()) AS Год</p>
+<p>,DATEPART(HOUR, GETDATE()) AS Час</p>
+<p>,DATEPART(MINUTE, GETDATE()) AS Минута</p>
+<p>,DATEPART(SECOND, GETDATE()) AS Секунда</p>
+<p>,DATEPART(QUARTER, GETDATE()) AS Квартал</p>
+<p>,DATEPART(WEEK, GETDATE()) AS Неделя</p>
+<p>,DATEPART(DAYOFYEAR, GETDATE()) AS День_года</p>
+<p>,DATEPART(WEEKDAY, GETDATE()) AS День_недели</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 16: </em></strong>Вывести дату 100 дней назад от текущей:</p>
+<p>SELECT</p>
+<p>DATEADD(DAY, -100, GETDATE()) AS День_100_Назад</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 17: </em></strong>Академик Игорь Евгеньевич Тамм родился 8 июля 1895 года. И.Е. Тамм скончался 12 апреля 1971 года. Вывести количество прожитых дней:</p>
+<p>SELECT</p>
+<p>DATEDIFF(DAY, '18950708', '19710412') AS Количество_прожитых_дней</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 18: </em></strong>Вывести ФИО и время года рождения каждого академика: SELECT</p>
+<p>ФИО</p>
+<p>, CASE MONTH(Дата_рождения) WHEN 3 THEN 'Весна' WHEN 4 THEN 'Весна' WHEN 5 THEN 'Весна' WHEN 6 THEN 'Лето' WHEN 7 THEN 'Лето' WHEN 8 THEN 'Лето' WHEN 9 THEN 'Осень' WHEN 10 THEN 'Осень' WHEN 11 THEN 'Осень' ELSE 'Зима'</p>
+<p>END AS Времени_года FROM Академики</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 19: </em></strong>Вывести ФИО, дату рождения и знак зодиака каждого академика: SELECT</p>
+<p>ФИО</p>
+<p>, Дата_рождения</p>
+<p>, CASE</p>
+<p>WHEN (MONTH(Дата_рождения)=3 AND DAY(Дата_рождения) &gt;= 21) OR (MONTH(Дата_рождения)=4 AND DAY(Дата_рождения) &lt;= 20) THEN 'Овен'</p>
+<p>WHEN (MONTH(Дата_рождения)=4 AND DAY(Дата_рождения) &gt;= 21) OR (MONTH(Дата_рождения)=5 AND DAY(Дата_рождения) &lt;= 21) THEN 'Телец'</p>
+<p>WHEN (MONTH(Дата_рождения)=5 AND DAY(Дата_рождения) &gt;= 22) OR (MONTH(Дата_рождения)=6 AND DAY(Дата_рождения) &lt;= 21) THEN 'Близнецы'</p>
+<p>WHEN (MONTH(Дата_рождения)=6 AND DAY(Дата_рождения) &gt;= 22) OR (MONTH(Дата_рождения)=7 AND DAY(Дата_рождения) &lt;= 22) THEN 'Рак'</p>
+<p>WHEN (MONTH(Дата_рождения)=7 AND DAY(Дата_рождения) &gt;= 23) OR (MONTH(Дата_рождения)=8 AND DAY(Дата_рождения) &lt;= 21) THEN 'Лев'</p>
+<p>WHEN (MONTH(Дата_рождения)=8 AND DAY(Дата_рождения) &gt;= 22) OR (MONTH(Дата_рождения)=9 AND DAY(Дата_рождения) &lt;= 23) THEN 'Дева'</p>
+<p>WHEN (MONTH(Дата_рождения)=9 AND DAY(Дата_рождения) &gt;= 24) OR (MONTH(Дата_рождения)=10 AND DAY(Дата_рождения) &lt;= 23) THEN 'Весы'</p>
+<p>WHEN (MONTH(Дата_рождения)=10 AND DAY(Дата_рождения) &gt;= 24) OR (MONTH(Дата_рождения)=11 AND DAY(Дата_рождения) &lt;= 22) THEN 'Скорпион'</p>
+<p>WHEN (MONTH(Дата_рождения)=11 AND DAY(Дата_рождения) &gt;= 23) OR (MONTH(Дата_рождения)=12 AND DAY(Дата_рождения) &lt;= 22) THEN 'Стрелец'</p>
+<p>WHEN (MONTH(Дата_рождения)=12 AND DAY(Дата_рождения) &gt;= 23) OR (MONTH(Дата_рождения)=1 AND DAY(Дата_рождения) &lt;= 20) THEN 'Козерог'</p>
+<p>WHEN (MONTH(Дата_рождения)=1 AND DAY(Дата_рождения) &gt;= 21) OR (MONTH(Дата_рождения)=2 AND DAY(Дата_рождения) &lt;= 19) THEN 'Водолей'</p>
+<p>WHEN (MONTH(Дата_рождения)=2 AND DAY(Дата_рождения) &gt;= 20) OR (MONTH(Дата_рождения)=3 AND DAY(Дата_рождения) &lt;= 20) THEN 'Рыбы'</p>
+<p>END AS Знак_зодиака FROM Академики</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 20: </em></strong>Вывести список академиков. Для каждого академика, в зависимости от воз- раста, при присвоении звания вывести &laquo;молодой&raquo; или &laquo;старый&raquo; в дополнительном столбце:</p>
+<p>SELECT</p>
+<p>ФИО</p>
+<p>,Дата_рождения</p>
+<p>,Специализация</p>
+<p>,Год_присвоения_звания</p>
+<p>,IIF(Год_присвоения_звания - Year(Дата_рождения) &lt;= 45, 'Молодой','Старый') AS Возраст_при_присвоении</p>
+<p>FROM Академики</p>
+<p>&nbsp;</p>
+<h2>Задание</h2>
+<ol>
+<li>Вывести список академиков, отсортированный по количеству символов в ФИО.</li>
+<li>Вывести список академиков, убрать лишние пробелы в ФИО.</li>
+<li>Найти позиции &laquo;ов&raquo; в ФИО каждого академика. Вывести ФИО и номер позиции.</li>
+<li>Вывести ФИО и последние две буквы специализации для каждого академика.</li>
+<li>Вывести список академиков, ФИО в формате Фамилия и Инициалы.</li>
+<li>Вывести список специализаций в правильном и обратном виде. Убрать дубликаты.</li>
+<li>Вывести свою фамилию в одной строке столько раз, сколько вам лет.</li>
+<li>Вывести абсолютное значение функций 𝑠𝑖𝑛<sup>2</sup> (<u><sup>𝜋</sup></u>) &minus; 𝑐𝑜𝑠 (<u><sup>3𝜋</sup></u>) с точностью два знака</li>
+</ol>
+<p>2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2</p>
+<p>после десятичной запятой.</p>
+<ol start="9">
+<li>Вывести количество дней до конца семестра.</li>
+<li>Вывести количество месяцев от вашего рождения.</li>
+<li>Вывести ФИО и високосность года рождения каждого академика.</li>
+<li>Вывести список специализаций без повторений. Для каждой специализации выве- сти &laquo;длинный&raquo; или &laquo;короткий&raquo;, в зависимости от количества символов.</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>4.3. Агрегатные функции</strong></p>
+<p><em>Агрегатные функции </em>используются для получения обобщающих значений. Они, в от- личие от скалярных функций, оперируют значениями столбцов множества строк. К агрегат- ным функциям относятся:</p>
+<ul>
+<li>SUM &ndash; вычисляет итог;</li>
+<li>MAX &ndash; возвращает наибольшее значение;</li>
+<li>MIN &ndash; возвращает наименьшее значение;</li>
+<li>AVG &ndash; вычисляет среднее значение;</li>
+<li>COUNT &ndash; вычисляет количество значений в столбце.</li>
+</ul>
+<p>Аргументами функций выступают поля таблицы или результаты выражений над ними.</p>
+<p>Вложенность не допускается.</p>
+<p>Из агрегатных функций можно составлять любые выражения.</p>
+<p>Для функций SUM и AVG столбец должен содержать числовые значения.</p>
+<p>Для функций COUNT() можно указать аргумент * для подсчета всех строк без исклю-</p>
+<p>чения.</p>
+<p>По умолчанию вышеперечисленные пять функций учитывают все строки выборки для вычисления результата. Но выборка может содержать повторяющиеся значения. Если необхо- димо выполнить вычисления только над уникальными значениями, исключив из набора зна- чений повторяющиеся данные, то для этого применяется оператор DISTINCT (кроме COUNT (*)). По умолчанию вместо DISTINCT применяется оператор ALL, который выбирает все строки. Так как этот оператор неявно подразумевается при отсутствии DISTINCT, то его можно не указывать.</p>
+<p><strong>4.4. Применение фильтрации в группировке данных</strong></p>
+<p>Агрегатные функции можно применить не только на всю таблицу, но также на группу значений. Для этого применяется команда GROUP BY, которая пишется после WHERE. После команды GROUP BY перечисляется название столбцов, по которым следует группировать данные. Предложение GROUP BY указывает, что результаты запроса следует разделить на группы, применить агрегатную функцию по отдельности к каждой группе и получить для каж- дой группы одну строку результатов.</p>
+<p>В качестве элемента группировки должен выступать любой возвращаемый элемент, указанный в предложении SELECT, кроме значений агрегатных функций.</p>
+<p>Если столбец, по которому производится группировка, содержит значение NULL, то строки со значением NULL составят отдельную группу.</p>
+<p>Команда HAVING &lt;условие&gt; применяется для фильтрации строк, возвращаемых при использовании предложения GROUP BY. HAVING пишется после GROUP BY, имеет такой формат, как WHERE, но в качестве значения используется значение, возвращаемое агрегат- ными функциями.</p>
+<p><strong><em>Пример 1: </em></strong>Вывести максимальную площадь стран: SELECT</p>
+<p>MAX(Площадь) AS Макс_площадь</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 2: </em></strong>Вывести наименьшее население стран в Африке: SELECT</p>
+<p>MIN(Население) AS Мин_население</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>WHERE</p>
+<p>Континент = 'Африка'</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 3: </em></strong>Вывести суммарное население стран Северной и Южной Америки: SELECT</p>
+<p>SUM(Население) AS Суммарное_население</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>WHERE</p>
+<p>Континент = 'Северная Америка' OR Континент = 'Южная Америка'</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 4: </em></strong>Вывести среднее население стран, кроме европейских. Результат округлить до двух знаков:</p>
+<p>SELECT</p>
+<p>ROUND(AVG(CAST(Население AS FLOAT)), 2) AS Среднее_население</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>WHERE</p>
+<p>Континент != 'Европа'</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 5: </em></strong>Вывести количество стран, название которых начинается с буквы &laquo;С&raquo;: SELECT</p>
+<p>COUNT(*) AS Количество</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>WHERE</p>
+<p>LEFT(Название, 1) = 'С'</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 6: </em></strong>Вывести количество континентов, где есть страны: SELECT</p>
+<p>COUNT(DISTINCT Континент) AS Количество_Континентов</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 7: </em></strong>Вывести разницу населения между странами с наибольшим и наименьшим количеством граждан:</p>
+<p>SELECT</p>
+<p>MAX(Население) - MIN(Население) AS Разница</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 8: </em></strong>Вывести количество стран на каждом континенте. Результат отсортировать по количеству стран по убыванию:</p>
+<p>SELECT</p>
+<p>Континент</p>
+<p>, COUNT(Название) AS Количество_Стран FROM</p>
+<p>Страны GROUP BY</p>
+<p>Континент ORDER BY</p>
+<p>Количество_Стран DESC</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 9: </em></strong>Вывести количество стран по первым буквам в названии. Результат отсор- тировать в алфавитном порядке:</p>
+<p>SELECT</p>
+<p>LEFT(Название, 1) AS Первая_буква</p>
+<p>, COUNT(Название) AS Количество_Стран</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>GROUP BY</p>
+<p>LEFT(Название, 1) ORDER BY</p>
+<p>Первая_буква</p>
+<p><strong><em>Пример 10: </em></strong>Вывести список континентов, где плотность населения больше, чем 100 чел. на кв. км:</p>
+<p>SELECT</p>
+<p>Континент</p>
+<p>, AVG(CAST(Население AS FLOAT) / Площадь) AS Сред_Плотность</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>GROUP BY</p>
+<p>Континент HAVING</p>
+<p>AVG(CAST(Население AS FLOAT) / Площадь) &gt; 100</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 11: </em></strong>Ожидается, что через 25 лет население Европы и Азии вырастет на 20%, Северной Америки и Африки на 50%, а остальных частей мира &ndash; на 70%. Вывести список континентов с прогнозируемым населением:</p>
+<p>SELECT</p>
+<p>Континент</p>
+<p>, CASE</p>
+<p>WHEN Континент IN ('Европа', 'Азия') THEN FLOOR(SUM(Население) * 1.2)</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 12: </em></strong>Вывести список континентов, где разница по населению между наиболь- шими и наименьшими странами не более в 1000 раз:</p>
+<p>SELECT</p>
+<p>Континент</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>GROUP BY</p>
+<p>Континент</p>
+<p>HAVING MAX(Население) &lt;= 1000 * MIN(Население)</p>
+<p><strong><em>Пример 13: </em></strong>Вывести количество стран, у которых нет столицы (не введена в базу): SELECT</p>
+<p>COUNT(*) AS Количество</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>WHERE</p>
+<p>Столица IS NULL</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 14: </em></strong>Вывести количество символов в самых длинных и коротких названиях стран и столиц:</p>
+<p>SELECT</p>
+<p>MAX(LEN(Название)) AS Дл_Название</p>
+<p>, MAX(LEN(Столица)) AS Дл_Столица</p>
+<p>, MIN(LEN(Название)) AS Кр_Название</p>
+<p>, MIN(LEN(Столица)) AS Кр_Столица</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 15: </em></strong>Вывести список континентов, у которых средняя плотность среди стран с площадью более 1 млн. кв. км больше, чем 30 чел. на кв. км. Результат отсортировать по плот- ности по убыванию:</p>
+<p>SELECT</p>
+<p>Континент</p>
+<p>,AVG(CAST(Население AS FLOAT) / Площадь) AS Плотность</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>WHERE</p>
+<p>Площадь &gt; 1000000 GROUP BY</p>
+<p>Континент HAVING</p>
+<p>AVG(CAST(Население AS FLOAT) / Площадь) &gt; 30 ORDER</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>4.5. Заданий</strong></p>
+<ol>
+<li>Вывести минимальную площадь стран.</li>
+<li>Вывести наибольшую по населению страну в Северной и Южной Америке.</li>
+<li>Вывести среднее население стран. Результат округлить до одного знака.</li>
+<li>Вывести количество стран, у которых название заканчивается на &laquo;ан&raquo;, кроме стран, у которых название заканчивается на &laquo;стан&raquo;.</li>
+<li>Вывести количество континентов, где есть страны, название которых начинается с буквы &laquo;Р&raquo;.</li>
+<li>Сколько раз страна с наибольшей площадью больше, чем страна с наименьшей площадью?</li>
+<li>Вывести количество стран с населением больше, чем 100 млн. чел. на каждом континенте. Результат отсортировать по количеству стран по возрастанию.</li>
+<li>Вывести количество стран по количеству букв в названии. Результат отсортировать по убыванию.</li>
+<li>Ожидается, что через 20 лет население мира вырастет на 10%. Вывести список континентов с прогнозируемым населением:</li>
+<li>Вывести список континентов, где разница по площади между наибольшими и наименьшими странами не более в 10000 раз:</li>
+<li>Вывести среднюю длину названий Африканских стран.</li>
+<li>Вывести список континентов, у которых средняя плотность среди стран с населением более 1 млн. чел. больше, чем 30 чел. на кв. км.</li>
+</ol>
+
+                            </section>
+                           
+                            <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+                          
+                        </div>  
+                        
+                    </div> <!-- Right column: content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+                
+                   
+</body>
+</html>

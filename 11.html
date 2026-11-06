@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ZHANGIR KHAN UNIVERSITY</title>
+    <style>
+        .fig {
+         text-align: center; /* Выравнивание по центру */ 
+        }
+
+       table {
+       
+       font-size: 12px;
+
+}
+
+        TD, TH {
+            border: solid 1px;
+    padding: 5px; /* Поля вокруг текста */
+    
+   
+}
+.scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-top:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+        img {
+            max-width: 100%; /* Ограничивает размер изображения */
+            height: auto; /* Сохраняет пропорции */
+        }
+       
+        .fig {
+         text-align: center; /* Выравнивание по центру */ 
+        }
+        TD, TH {
+    padding: 5px; /* Поля вокруг текста */
+       }
+
+
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            background-color: #333;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            list-style-type: none;
+            padding: 0;
+            background-color: #444;
+            z-index: 1;
+        }
+
+        .submenu li {
+            display: block;
+        }
+
+        .submenu a {
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+        }
+
+        .submenu a:hover {
+            background-color: #666;
+        }
+
+        /* Показывать подменю при наведении на родительский элемент */
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        /* Стили для мобильных устройств */
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+            }
+
+            .menu li {
+                width: 100%;
+            }
+
+            .submenu {
+                position: static;
+            }
+
+            .menu li:hover .submenu {
+                display: none; /* Отключаем поведение наведения на мобильных устройствах */
+            }
+
+            .menu li.active .submenu {
+                display: block; /* Показывать подменю, если элемент активен */
+            }
+        }
+        
+.scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-top:hover {
+            background-color: #333;
+            transform: scale(1.1);
+        }
+        img {
+            max-width: 100%; /* Ограничивает размер изображения */
+            height: auto; /* Сохраняет пропорции */
+        }
+       </style>
+<!--
+Neaty HTML Template
+http://www.templatemo.com/tm-501-neaty
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/magnific-popup.css">                                <!-- Magnific pop up style, http://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
+    <body>        
+        <div class="container">
+            <div class="row">
+                <div class="tm-left-right-container">
+                    <!-- Left column: logo and menu -->
+                    <div class="tm-blue-bg tm-left-column"> 
+                        <ul class="menu">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="obuch.html">Об учебнике</a></li>           
+                            <li><a href="authors.html">Авторы</a></li>
+                        </ul>
+                   
+                        
+                                
+                        <div class="tm-logo-div text-xs-center">
+                            
+                            <a href="index.html">
+                                
+                                <h1 class="tm-site-name">СОВРЕМЕННЫЕ СУБД</h1></a>
+                      
+                                Мизамова Г.Н. <br>
+       Жаксыбаев Д.О.
+ 
+                        </div>
+                        <nav class="tm-main-nav">
+                            <ul class="tm-main-nav-ul">
+                               
+                                <li class="tm-nav-item">
+                                    <a href="mazmuny.html" class="tm-nav-item-link"><ul>
+                                        <li>Предисловие</li></ul>
+                                        </a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="1.html" class="tm-nav-item-link"><ul>
+                                        <li>1. Знакомства с MS SQL Server 
+                                             </li></ul></li>
+                                        </a>
+                                </li>
+
+                                <li class="tm-nav-item">
+                                    <a href="2.html" class="tm-nav-item-link"><ul>
+                                        <li>2. Выборка данных из БД </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="3.html" class="tm-nav-item-link"><ul>
+                                        <li>3. Фильтрация данных</li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="4.html" class="tm-nav-item-link"><ul>
+                                        <li>4. Типы данных и встроенные функции</li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="5.html" class="tm-nav-item-link"><ul>
+                                        <li>5. Объединение данных
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="6.html" class="tm-nav-item-link"><ul>
+                                        <li>6. Вложенные запросы В SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="7.html" class="tm-nav-item-link"><ul>
+                                        <li>7. Основы DDL, DML
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="8.html" class="tm-nav-item-link"><ul>
+                                        <li>8. Программирование на SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="9.html" class="tm-nav-item-link"><ul>
+                                        <li>9. Пользовательские функции 
+                                             </li></ul></li>
+                                        </a>
+                                </li>
+
+                                <li class="tm-nav-item">
+                                    <a href="10.html" class="tm-nav-item-link"><ul>
+                                        <li>10. Хранимые процедуры </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="11.html" class="tm-nav-item-link"><ul>
+                                        <li>11. Триггеры DML </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="12.html" class="tm-nav-item-link"><ul>
+                                        <li>12. Представления и табличные объекты </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="13.html" class="tm-nav-item-link"><ul>
+                                        <li>13. Курсоры В SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="14.html" class="tm-nav-item-link"><ul>
+                                        <li>14. Оконные функции
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="15.html" class="tm-nav-item-link"><ul>
+                                        <li>15. Операторы получения итоговых данных 
+                                             </li></ul></a>
+                                </li>
+                            
+                                
+                                <li class="tm-nav-item">
+                                    <a href="literatura.html" class="tm-nav-item-link"><ul>
+                                        <li>Список использованных литератур
+                                             </li></ul></a>
+                                </li>      
+                                            
+                               
+                            </ul>
+                        </nav>   
+                        </div>
+                    </div>                               
+                    </div>  <!-- Left column: logo and menu -->
+                    
+                    <!-- Right column: content -->
+                    <div class="tm-right-column">
+                       <div class="tm-content-div">
+                            <!-- Welcome section -->
+                            <section id="welcome" class="tm-section">
+                                <header>  
+                                    <h3 class="tm-blue-text tm-welcome-title tm-margin-b-45">11. Триггеры DML
+                                        </h3>
+                                   
+                                </header>
+                                <!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
+                   
+                                <p><strong>11.1. Создание триггера после событий</strong></p>
+                                <p><em>Триггер </em>&ndash; это вид хранимой процедуры, который вызывается автоматически при опре- деленных событиях. Часто триггеры применяются для автоматической поддержки целостно- сти и защиты БД.</p>
+                                <p>В MS SQL Server существует <em>три вида триггеров</em>, которые отличаются по функциям и по синтаксису создания и изменения:</p>
+                                <p><em>Триггеры DML </em>вызываются при выполнении команд INSERT, UPDATE или DELETE. Можно создать триггер, реагирующий на две или на все три команды.</p>
+                                <p><em>Триггеры DDL </em>реагируют на события изменения структуры БД: создание, изменение &nbsp;или удаление отдельных объектов БД.</p>
+                                <p><em>Триггеры входа в систему </em>запускаются при соединении пользователя с экземпляром сервера. Их можно применять для дополнительной проверки полномочий пользователей.</p>
+                                <p>Триггеры DML можно вызвать после событий (FOR | AFTER), или вместо него (INSTEAD OF).</p>
+                                <p>Триггер AFTER выполняется после успешного завершения вызвавшего его события.</p>
+                                <p>Можно определить несколько АFТЕR-триггеров для каждой операции.</p>
+                                <p><strong>11.2. Триггеры вместо событий</strong></p>
+                                <p>Триггер INSTEAD OF вызывается вместо выполнения команд. Для каждой операции INSERT, UPDATE, DELETE можно определить только один INSTEAD ОF-триггер.</p>
+                                <p>Упрощенный синтаксис создания триггера имеет следующий вид:</p>
+                                <p><strong>11.3. Таблицы в триггерах.</strong></p>
+                                <p>CREATE TRIGGER &lt;название триггера&gt; ON &lt;название таблицы&gt;</p>
+                                <p>&lt;FOR | AFTER | INSTEAD OF&gt; &lt;INSERT | UPDATE | DELETE&gt; AS</p>
+                                <p>[BEGIN]</p>
+                                <p>&lt;команды&gt; [END]</p>
+                                <p>Ключевое слово FOR или AFTER указывает, что триггер DML срабатывает только после успешного запуска всех операций в инструкции SQL, по которой срабатывает триггер.</p>
+                                <p>Ключевое слово INSTEAD OF указывает, что триггер DML выполняется вместо инструкции SQL, по которой он срабатывает, то есть переопределяет действия запускающих ин струкций.</p>
+                                <p>В определении триггера ключевые слова INSERT | UPDATE | DELETE определяют инструкции изменения данных, при применении которых к таблице или представлению срабатывает триггер DML. Указание хотя бы одного варианта обязательно. В определении триггера разрешены любые сочетания вариантов в любом порядке.</p>
+                                <p>Триггеры не вызываются рекурсивно.</p>
+                                <p>Хотя инструкция TRUNCATE TABLE по сути аналогичная инструкции DELETE, она не активирует триггер.</p>
+                                <p>Если триггер выполняется для события добавления данных (команды INSERT), в теле триггера доступна виртуальная таблица INSERTED, которая содержит список добавленных данных.</p>
+                                <p>Если триггер выполняется для события удаления данных (команды DELETE), в теле триггера доступна виртуальная таблица DELETED, которая содержит список удаленных дан- ных.</p>
+                                <p>Если триггер выполняется для события изменения данных (команды UPDATE), в теле триггера доступны две виртуальные таблицы INSERTED и DELETED, которые содержат спи- сок новых и старых данных, соответственно.</p>
+                                <p><strong>11.4. Приостановление и&nbsp; удаление триггеров</strong></p>
+                                <p>Если при определенных обстоятельствах выполнение триггера нежелательно, то можно его отключить. Для этого используется команда DISABLE TRIGGER, его синтаксис:</p>
+                                <p>DISABLE TRIGGER &lt;название триггера&gt; ON &lt;название таблицы&gt;</p>
+                                <p>А когда триггер снова понадобится, его можно включить с помощью команды ENABLE TRIGGER, его синтаксис:</p>
+                                <p>ENABLE TRIGGER &lt;название триггера&gt; ON &lt;название таблицы&gt;</p>
+                                <p>Для удаления триггера используется команда DROP TRIGGER, его синтаксис: DROP TRIGGER &lt;название триггера&gt;</p>
+                                <p><strong><em>Пример 1: </em></strong>Напишите триггер на добавление записи в таблицу &laquo;Ученики&raquo;. Данный триггер, в случае успешного добавления данных, выводит &laquo;Запись добавлена&raquo;:</p>
+                                <p>CREATE TRIGGER Пример1 ON Ученики FOR INSERT</p>
+                                <p>AS BEGIN</p>
+                                <p>PRINT 'Запись добавлена'</p>
+                                <p>END</p>
+                                <p><strong><em>Пример</em></strong> <strong><em>2: </em></strong>Напишите триггер на удаление записи из таблицы &laquo;Ученики&raquo;. Данный триг- гер, в случае успешного удаления данных, выводит &laquo;Запись удалена&raquo;:</p>
+                                <p>CREATE TRIGGER Пример2 ON Ученики AFTER DELETE</p>
+                                <p>AS BEGIN</p>
+                                <p>PRINT 'Запись удалена'</p>
+                                <p>END</p>
+                                <p><strong><em>Пример 3: </em></strong>Напишите триггер на добавление, изменение и удаление данных для таб- лицы &laquo;Ученики&raquo;. Данный триггер выводит &laquo;Таблица изменена&raquo;:</p>
+                                <p>CREATE TRIGGER Пример3 ON Ученики FOR INSERT, UPDATE, DELETE</p>
+                                <p>AS BEGIN</p>
+                                <p>PRINT 'Таблица изменена'</p>
+                                <p>END</p>
+                                <p><strong><em>Пример</em></strong> <strong><em>4: </em></strong>Напишите триггер на удаление записи из таблицы &laquo;Ученики&raquo;. Данный триг- гер, при попытке удаления данных, выводит &laquo;Нельзя удалить данные&raquo;:</p>
+                                <p>CREATE TRIGGER Пример4 ON Ученики INSTEAD OF DELETE</p>
+                                <p>AS BEGIN</p>
+                                <p>PRINT 'Нельзя удалить данные'</p>
+                                <p>END</p>
+                                <p>&nbsp;</p>
+                                <p><strong><em>Пример 5: </em></strong>Создать таблицу &laquo;Ученики_Архив&raquo;, которая будет содержать все данные об удаленных учениках и даты их удаления. Написать триггер, который будет фиксировать в таб- лице &laquo;Ученики_Архив&raquo; данные ученика, удаленного из таблицы &laquo;Ученики&raquo;:</p>
+                                <p>CREATE TABLE Ученики_Архив (</p>
+                                <p>ID INT NOT NULL,</p>
+                                <p>Фамилия VARCHAR(50) NULL, Предмет VARCHAR(50) NULL, Школа VARCHAR(50) NULL, Баллы FLOAT NULL,</p>
+                                <p>Удалено DATETIME NOT NULL</p>
+                                <p>)</p>
+                                <p>CREATE TRIGGER Пример5 ON Ученики FOR DELETE</p>
+                                <p>AS BEGIN</p>
+                                <p>INSERT</p>
+                                <p>Ученики_Архив SELECT</p>
+                                <p>ID,</p>
+                                <p>Фамилия, Предмет, Школа, Баллы,</p>
+                                <p>GETDATE() AS Удалено</p>
+                                <p><strong><em>Пример 6: </em></strong>Напишите команды для приостановления и запуска триггера из примера 5: DISABLE TRIGGER Пример5 ON Ученики</p>
+                                <p>ENABLE TRIGGER Пример5 ON Ученики</p>
+                                <p><strong><em>Пример 7: </em></strong>Напишите команды для удаления триггера из примера 5: DROP TRIGGER Пример5</p>
+                                <p><strong>11.5. Заданий</strong></p>
+                                <ol>
+                                <li>Напишите триггер на изменение записи в таблице &laquo;Ученики&raquo;. Данный триггер, в случае изменения данных, должен вывести &laquo;Запись изменена&raquo;.</li>
+                                <li>Напишите триггер на добавление и удаление записи из таблицы &laquo;Ученики&raquo;. Данный триггер, в случае успешного добавления или удаления данных, должен вывести &laquo;Количество строк изменено&raquo;.</li>
+                                <li>Напишите триггер на добавление, изменение и удаление данных в таблице &laquo;Уче- ники&raquo;. Данный триггер должен вывести &laquo;{Текущий пользователь} изменил таблицу. Время:</li>
+                                </ol>
+                                <p>{текущее время}&raquo;.</p>
+                                <ol start="4">
+                                <li>Напишите триггер на изменение записи в таблице &laquo;Ученики&raquo;. Данный триггер, при попытке изменения данных, должен вывести &laquo;Нельзя редактировать данные&raquo;.</li>
+                                <li>Создать таблицу &laquo;Ученики_{Ваша_фамилия}&raquo;, которая будет содержать фамилии удаленных учеников и даты их удаления. Написать триггер, который будет фиксировать в таб- лице &laquo;Ученики_{Ваша_фамилия}&raquo; данные учеников при удалении из таблицы &laquo;Ученики&raquo;, в том случае, если у них остались однофамильцы в таблице &laquo;Ученики&raquo;.</li>
+                                <li>Напишите команды для приостановления и запуска триггера из предыдущей задачи.</li>
+                                <li>Напишите команды для удаления всех созданных вами триггеров.</li>
+                                </ol>
+
+                            </section>
+                           
+                            <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+                          
+                        </div>  
+                        
+                    </div> <!-- Right column: content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+                
+                   
+</body>
+</html>

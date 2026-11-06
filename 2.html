@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ZHANGIR KHAN UNIVERSITY</title>
+    <style>
+        .fig {
+         text-align: center; /* Выравнивание по центру */ 
+        }
+
+       table {
+       
+       font-size: 12px;
+
+}
+
+        TD, TH {
+            border: solid 1px;
+    padding: 5px; /* Поля вокруг текста */
+    
+   
+}
+.scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-top:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+        img {
+            max-width: 100%; /* Ограничивает размер изображения */
+            height: auto; /* Сохраняет пропорции */
+        }
+
+       
+        .fig {
+         text-align: center; /* Выравнивание по центру */ 
+        }
+        TD, TH {
+    padding: 5px; /* Поля вокруг текста */
+       }
+
+
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            background-color: #333;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            list-style-type: none;
+            padding: 0;
+            background-color: #444;
+            z-index: 1;
+        }
+
+        .submenu li {
+            display: block;
+        }
+
+        .submenu a {
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+        }
+
+        .submenu a:hover {
+            background-color: #666;
+        }
+
+        /* Показывать подменю при наведении на родительский элемент */
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        /* Стили для мобильных устройств */
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+            }
+
+            .menu li {
+                width: 100%;
+            }
+
+            .submenu {
+                position: static;
+            }
+
+            .menu li:hover .submenu {
+                display: none; /* Отключаем поведение наведения на мобильных устройствах */
+            }
+
+            .menu li.active .submenu {
+                display: block; /* Показывать подменю, если элемент активен */
+            }
+        }
+        
+.scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-top:hover {
+            background-color: #333;
+            transform: scale(1.1);
+        }
+        img {
+            max-width: 100%; /* Ограничивает размер изображения */
+            height: auto; /* Сохраняет пропорции */
+        }
+       </style>
+<!--
+Neaty HTML Template
+http://www.templatemo.com/tm-501-neaty
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/magnific-popup.css">                                <!-- Magnific pop up style, http://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
+    <body>        
+        <div class="container">
+            <div class="row">
+                <div class="tm-left-right-container">
+                    <!-- Left column: logo and menu -->
+                    <div class="tm-blue-bg tm-left-column"> 
+                        <ul class="menu">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="obuch.html">Об учебнике</a></li>           
+                            <li><a href="authors.html">Авторы</a></li>
+                        </ul>
+                   
+                        
+                                
+                        <div class="tm-logo-div text-xs-center">
+                            
+                            <a href="index.html">
+                                
+                                <h1 class="tm-site-name">СОВРЕМЕННЫЕ СУБД</h1></a>
+                      
+                                Мизамова Г.Н. <br>
+       Жаксыбаев Д.О.
+ 
+                        </div>
+                        <nav class="tm-main-nav">
+                            <ul class="tm-main-nav-ul">
+                               
+                                <li class="tm-nav-item">
+                                    <a href="mazmuny.html" class="tm-nav-item-link"><ul>
+                                        <li>Предисловие</li></ul>
+                                        </a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="1.html" class="tm-nav-item-link"><ul>
+                                        <li>1. Знакомства с MS SQL Server 
+                                             </li></ul></li>
+                                        </a>
+                                </li>
+
+                                <li class="tm-nav-item">
+                                    <a href="2.html" class="tm-nav-item-link"><ul>
+                                        <li>2. Выборка данных из БД </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="3.html" class="tm-nav-item-link"><ul>
+                                        <li>3. Фильтрация данных</li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="4.html" class="tm-nav-item-link"><ul>
+                                        <li>4. Типы данных и встроенные функции</li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="5.html" class="tm-nav-item-link"><ul>
+                                        <li>5. Объединение данных
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="6.html" class="tm-nav-item-link"><ul>
+                                        <li>6. Вложенные запросы В SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="7.html" class="tm-nav-item-link"><ul>
+                                        <li>7. Основы DDL, DML
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="8.html" class="tm-nav-item-link"><ul>
+                                        <li>8. Программирование на SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="9.html" class="tm-nav-item-link"><ul>
+                                        <li>9. Пользовательские функции 
+                                             </li></ul></li>
+                                        </a>
+                                </li>
+
+                                <li class="tm-nav-item">
+                                    <a href="10.html" class="tm-nav-item-link"><ul>
+                                        <li>10. Хранимые процедуры </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="11.html" class="tm-nav-item-link"><ul>
+                                        <li>11. Триггеры DML </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="12.html" class="tm-nav-item-link"><ul>
+                                        <li>12. Представления и табличные объекты </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="13.html" class="tm-nav-item-link"><ul>
+                                        <li>13. Курсоры В SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="14.html" class="tm-nav-item-link"><ul>
+                                        <li>14. Оконные функции
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="15.html" class="tm-nav-item-link"><ul>
+                                        <li>15. Операторы получения итоговых данных 
+                                             </li></ul></a>
+                                </li>
+                            
+                                
+                                <li class="tm-nav-item">
+                                    <a href="literatura.html" class="tm-nav-item-link"><ul>
+                                        <li>Список использованных литератур
+                                             </li></ul></a>
+                                </li>      
+                                            
+                               
+                            </ul>
+                        </nav>   
+                        </div>
+                    </div>                               
+                    </div>  <!-- Left column: logo and menu -->
+                    
+                    <!-- Right column: content -->
+                    <div class="tm-right-column">
+                       <div class="tm-content-div">
+                            <!-- Welcome section -->
+                            <section id="welcome" class="tm-section">
+                                <header>  
+                                    <h2 class="tm-blue-text tm-welcome-title tm-margin-b-45">2. Выборка данных из БД 
+                                        </h2>
+                                   
+                                </header>
+                                <!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
+                   
+                   
+                                <p><strong>2.1. Основы выборки данных</strong></p>
+                                <p>Подавляющее большинство пользователей используют SQL для организации выборки данных. Для выборки данных из БД используется запрос SELECT. Он позволяет фильтровать выбранные данные и преобразовать их к нужному виду. Результатом выполнения запроса SE- LECT является другая таблица, к которой снова может быть применен запрос SELECT.</p>
+                                <p>Полный синтаксис инструкции SELECT сложен, однако основные предложения можно вкратце описать следующим образом:</p>
+                                <p>[ WITH { [ XMLNAMESPACES ,] [ &lt;common_table_expression&gt; ] } ] SELECT select_list [ INTO new_table ]</p>
+                                <p>[ FROM table_source ]</p>
+                                <p>[ WHERE search_condition ]</p>
+                                <p>[ GROUP BY group_by_expression ] [ HAVING search_condition ]</p>
+                                <p>[ ORDER BY order_expression [ ASC | DESC ] ]</p>
+                                <p>Обработка элементов запроса SELECT выполняется в следующей последовательности:</p>
+                                <ul>
+                                <li>FROM &ndash; определяет имена используемых таблиц;</li>
+                                <li>WHERE &ndash; фильтрует строки таблицы в соответствии с заданными условиями;</li>
+                                <li>GROUP BY &ndash; группирует строки, имеющие одинаковые значения в указанном столбце;</li>
+                                <li>HAVING &ndash; фильтрует группы строк в соответствии с указанным условием;</li>
+                                <li>SELECT &ndash; форматирует выходные данные;</li>
+                                <li>ORDER BY &ndash; сортирует результаты выполнения запроса.</li>
+                                </ul>
+                                <p>Порядок предложений в запросе SELECT не может быть изменен. Предложения SE- LECT и FROM являются обязательными, присутствие остальных зависит от контекста.</p>
+                                <p>В предложении SELECT указывается список столбцов, которые должны быть возвращены запросом. Можно указать исходные элементы или вычисляемые поля во время выпол- нения запроса.</p>
+                                <p>Конструкция DISTINCT | ALL исключает / разрешает вывод повторяющихся строк.</p>
+                                <p>Конструкция ALL используется по умолчанию. * означает вывод всех столбцов указанной таблицы. В случае, если выборка производится из нескольких таблиц, перед символом звездочки может указываться имя таблицы.</p>
+                                <p>SQL-запрос может содержать вычисляемые столбцы, значения которых могут опреде- лятся на основе значений данных, хранящихся в БД конструкции. Вычисляемым столбцам следует давать название с помощью ключевого слова AS.</p>
+                                <p>Вычисляемый столбец можно создать как: &lt;Новое поле&gt; = &lt;выражение&gt;</p>
+                                <p>Если название столбца состоит из нескольких слов, разделенных пробелами, следует их записать в квадратных скобках: [].</p>
+                                <p>Сортировка данных выполняется с помощью команды ORDER BY, которая добавля- ется в конец запроса, после чего перечисляется список столбцов. Для каждого столбца указы- вается тип сортировки ASC | DESC (ascending &ndash; по возрастанию | descending &ndash; по убыванию). ASC &ndash; по умолчанию, можно не указывать.</p>
+                                <p>Конструкция TOP &lt;N&gt; позволяет выбрать определенное количество строк из таблицы. Дополнительный оператор PERCENT позволяет выбрать процентное количество строк из таб- лицы. Дополнительный оператор WITH TIES позволяет выбрать все строки с такими же свой- ствами.</p>
+                                <p>Конструкция OFFSET &lt;N&gt; ROWS указывает число строк, которые необходимо пропу- стить, прежде чем будет начат возврат строк из выражения запроса.</p>
+                                <p>Конструкция FETCH NEXT &lt;N&gt; ROWS ONLY указывает число строк, возвращаемых после обработки предложения OFFSET.</p>
+                                <p>На языке T-SQL регистр не имеет значение (case insensitive).</p>
+                                <p>&nbsp;</p>
+                                <p>Дана таблица <strong><em>Академики:</em></strong></p>
+                                
+                                <table width="100%">
+                                    <tbody>
+                                    <tr>
+                                    <td width="38%">
+                                    <p><strong>ФИО</strong></p>
+                                    </td>
+                                    <td width="19%">
+                                    <p><strong>Дата_рождения</strong></p>
+                                    </td>
+                                    <td width="19%">
+                                    <p><strong>Специализация</strong></p>
+                                    </td>
+                                    <td width="21%">
+                                    <p><strong>Год_присвоения_звания</strong></p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="38%">
+                                    <p>Аничков Николай Николаевич</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>1885-11-03</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>медицина</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>1939</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="38%">
+                                    <p>Бартольд Василий Владимирович</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>1869-11-15</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>историк</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>1913</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="38%">
+                                    <p>Бепольский Аристарх Апонович</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>1854-07-13</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>астрофизик</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>1903</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="38%">
+                                    <p>Бородин Иван Парфеньевич</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>1847-01-30</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>ботаник</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>1902</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="38%">
+                                    <p>Вальден Павел Иванович</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>1863-07-26</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>химик-технолог</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>1910</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="38%">
+                                    <p>Вернадский Владимир Иванович</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>1863-03-12</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>геохимик</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>1908</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="38%">
+                                    <p>Виноградов Павел Гаврилович</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>1854-11-30</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>историк</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>1914</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="38%">
+                                    <p>Ипатьев Владимир Николаевич</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>1867-11-21</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>химик</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>1916</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="38%">
+                                    <p>Истрин Василий Михайлович</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>1865-02-22</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>филолог</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>1907</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="38%">
+                                    <p>Карпинский Александр Петрович</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>1847-01-07</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>геолог</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>1889</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="38%">
+                                    <p>Коковцов Павел Константинович</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>1861-07-01</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>историк</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>1906</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="38%">
+                                    <p>Курнаков Николай Семёнович</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>1860-12-06</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>химик</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>1913</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="38%">
+                                    <p>Марр Николай Яковлевич</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>1865-01-06</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>лингвист</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>1912</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="38%">
+                                    <p>Насонов Николай Викторович</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>1855-02-26</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>зоолог</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>1906</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="38%">
+                                    <p>Ольденбург Сергей Фёдорович</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>1863-09-26</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>историк</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>1903</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="38%">
+                                    <p>Павлов Иван Петрович</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>1849-09-26</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>физиолог</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>1907</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="38%">
+                                    <p>Перетц Владимир Николаевич</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>1870-01-31</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>филолог</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>1914</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="38%">
+                                    <p>Соболевский Алексей Иванович</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>1857-01-07</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>лингвист</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>1900</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="38%">
+                                    <p>Стеклов Владимир Андреевич</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>1864-01-09</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>математик</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>1912</p>
+                                    </td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                    <p>&nbsp;</p>
+                                    <p><strong><em>Пример 1: </em></strong>Вывести список академиков:</p>
+<p>SELECT * FROM Академики</p>
+<p><strong><em>Пример 2: </em></strong>Вывести ФИО и дату рождения всех академиков:</p>
+<p>SELECT ФИО, Дата_рождения FROM Академики</p>
+<p><strong><em>Пример 3: </em></strong>Создайте вычисляемое поле &laquo;Информация&raquo;, содержащее информацию об академиках в таком виде: &laquo;Академик Петров Петр Петрович, специализация: математика&raquo;:</p>
+<p>SELECT 'Академик ' + ФИО + ', специализация: ' + Специализация AS Информация</p>
+<p>FROM Академики</p>
+<p><strong><em>Пример</em></strong> <strong><em>4:</em></strong> Вывести ФИО академиков и номер следующего года после присвоения звания:</p>
+<p>SELECT ФИО ,[Через год] = Год_присвоения_звания + 1 FROM Академики</p>
+<p><strong><em>Пример 5: </em></strong>Выведите список специализаций, убрав дубликаты:</p>
+<p>SELECT DISTINCT Специализация FROM Академики</p>
+<p><strong><em>Пример 6: </em></strong>Вывести список академиков, отсортированный по возрастанию года присво- ения звания:</p>
+<p>SELECT * FROM Академики</p>
+<p>ORDER BY Год_присвоения_звания</p>
+<p><strong><em>Пример 7: </em></strong>Вывести список академиков, отсортированный в обратном алфавитном по- рядке по полю &laquo;Специализация&raquo; и в алфавитном порядке по полю &laquo;ФИО&raquo;:</p>
+<p>SELECT * FROM Академики</p>
+<p>ORDER BY Специализация DESC, ФИО ASC</p>
+<p><strong><em>Пример 8: </em></strong>Вывести первые две строки из списка академиков, отсортированного в ал- фавитном порядке по полю &laquo;ФИО&raquo;:</p>
+<p>SELECT TOP 2 * FROM Академики</p>
+<p>ORDER BY ФИО ASC</p>
+<p><strong><em>Пример 9: </em></strong>Вывести первые 30% строк из списка академиков, отсортированного по воз- растанию года присвоения звания:</p>
+<p>SELECT TOP 30 PERCENT * FROM Академики</p>
+<p>ORDER BY Год_присвоения_звания</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Пример 10: </strong>Вывести из таблицы &laquo;Академики&raquo;, отсортированной по возрастанию года присвоения звания, список академиков, у которых год присвоения звания &ndash; один из первых четырех в отсортированной таблице:</p>
+<p>SELECT TOP 4 WITH TIES * FROM Академики</p>
+<p>ORDER BY Год_присвоения_звания</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>Пример 11: </strong>Вывести, начиная с третьего, список академиков, отсортированный в алфа- витном порядке ФИО:</p>
+<p>SELECT * FROM Академики</p>
+<p>ORDER BY ФИО</p>
+<p>OFFSET 2 ROWS</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 12: </em></strong>Вывести, начиная с третьего и до десятого, список академиков, отсортированный в алфавитном порядке ФИО:</p>
+<p>SELECT * FROM Академики</p>
+<p>ORDER BY ФИО</p>
+<p>OFFSET 2 ROWS</p>
+<p>FETCH NEXT 8 ROWS ONLY</p>
+<h2>Заданий<strong><em>&nbsp;</em></strong></h2>
+<ol>
+<li>Вывести ФИО, специализацию и дату рождения всех академиков.</li>
+<li>Создать вычисляемое поле &laquo;О присвоении звания&raquo;, которое содержит информацию об академиках в виде: &laquo;Петров Петр Петрович получил звание в 1974&raquo;.</li>
+<li>Вывести список годов присвоения званий, убрав дубликаты.</li>
+<li>Вывести список академиков, отсортированный по убыванию даты рождения.</li>
+<li>Вывести ФИО академиков и вычисляемое поле &laquo;Через 5 лет после присвоения звания</li>
+<li>Вывести список академиков, отсортированный в обратном алфавитном порядке специализаций, по убыванию года присвоения звания, и в алфавитном порядке ФИО.</li>
+<li>Вывести первую строку из списка академиков, отсортированного в обратном алфавитном порядке ФИО.</li>
+<li>Вывести фамилию академика, который раньше всех получил звание.</li>
+<li>Вывести первые 10% строк из списка академиков, отсортированного в алфавитном порядке ФИО.</li>
+<li>Вывести из таблицы &laquo;Академики&raquo;, отсортированной по возрастанию года присвоения звания, список академиков, у которых год присвоения звания &ndash; один из первых пяти в отсортированной таблице.</li>
+<li>Вывести, начиная с десятого, список академиков, отсортированный по возрастанию даты рождения.</li>
+<li>Вывести девятую и десятую строку из списка академиков, отсортированного в алфавитном порядке ФИО.</li>
+</ol>
+                            </section>
+                           
+                            <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+                          
+                        </div>  
+                        
+                    </div> <!-- Right column: content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+                
+                   
+</body>
+</html>

@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ZHANGIR KHAN UNIVERSITY</title>
+    <style>
+        .fig {
+         text-align: center; /* Выравнивание по центру */ 
+        }
+
+       table {
+       
+       font-size: 12px;
+
+}
+
+        TD, TH {
+            border: solid 1px;
+    padding: 5px; /* Поля вокруг текста */
+    
+   
+}
+.scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-top:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+        img {
+            max-width: 100%; /* Ограничивает размер изображения */
+            height: auto; /* Сохраняет пропорции */
+        }
+       
+        .fig {
+         text-align: center; /* Выравнивание по центру */ 
+        }
+        TD, TH {
+    padding: 5px; /* Поля вокруг текста */
+       }
+
+
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            background-color: #333;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            list-style-type: none;
+            padding: 0;
+            background-color: #444;
+            z-index: 1;
+        }
+
+        .submenu li {
+            display: block;
+        }
+
+        .submenu a {
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+        }
+
+        .submenu a:hover {
+            background-color: #666;
+        }
+
+        /* Показывать подменю при наведении на родительский элемент */
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        /* Стили для мобильных устройств */
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+            }
+
+            .menu li {
+                width: 100%;
+            }
+
+            .submenu {
+                position: static;
+            }
+
+            .menu li:hover .submenu {
+                display: none; /* Отключаем поведение наведения на мобильных устройствах */
+            }
+
+            .menu li.active .submenu {
+                display: block; /* Показывать подменю, если элемент активен */
+            }
+        }
+        
+.scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-top:hover {
+            background-color: #333;
+            transform: scale(1.1);
+        }
+        img {
+            max-width: 100%; /* Ограничивает размер изображения */
+            height: auto; /* Сохраняет пропорции */
+        }
+       </style>
+<!--
+Neaty HTML Template
+http://www.templatemo.com/tm-501-neaty
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/magnific-popup.css">                                <!-- Magnific pop up style, http://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
+    <body>        
+        <div class="container">
+            <div class="row">
+                <div class="tm-left-right-container">
+                    <!-- Left column: logo and menu -->
+                    <div class="tm-blue-bg tm-left-column"> 
+                        <ul class="menu">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="obuch.html">Об учебнике</a></li>           
+                            <li><a href="authors.html">Авторы</a></li>
+                        </ul>
+                   
+                        
+                                
+                        <div class="tm-logo-div text-xs-center">
+                            
+                            <a href="index.html">
+                                
+                                <h1 class="tm-site-name">СОВРЕМЕННЫЕ СУБД</h1></a>
+                      
+                                Мизамова Г.Н. <br>
+       Жаксыбаев Д.О.
+ 
+                        </div>
+                        <nav class="tm-main-nav">
+                            <ul class="tm-main-nav-ul">
+                               
+                                <li class="tm-nav-item">
+                                    <a href="mazmuny.html" class="tm-nav-item-link"><ul>
+                                        <li>Предисловие</li></ul>
+                                        </a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="1.html" class="tm-nav-item-link"><ul>
+                                        <li>1. Знакомства с MS SQL Server 
+                                             </li></ul></li>
+                                        </a>
+                                </li>
+
+                                <li class="tm-nav-item">
+                                    <a href="2.html" class="tm-nav-item-link"><ul>
+                                        <li>2. Выборка данных из БД </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="3.html" class="tm-nav-item-link"><ul>
+                                        <li>3. Фильтрация данных</li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="4.html" class="tm-nav-item-link"><ul>
+                                        <li>4. Типы данных и встроенные функции</li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="5.html" class="tm-nav-item-link"><ul>
+                                        <li>5. Объединение данных
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="6.html" class="tm-nav-item-link"><ul>
+                                        <li>6. Вложенные запросы В SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="7.html" class="tm-nav-item-link"><ul>
+                                        <li>7. Основы DDL, DML
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="8.html" class="tm-nav-item-link"><ul>
+                                        <li>8. Программирование на SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="9.html" class="tm-nav-item-link"><ul>
+                                        <li>9. Пользовательские функции 
+                                             </li></ul></li>
+                                        </a>
+                                </li>
+
+                                <li class="tm-nav-item">
+                                    <a href="10.html" class="tm-nav-item-link"><ul>
+                                        <li>10. Хранимые процедуры </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="11.html" class="tm-nav-item-link"><ul>
+                                        <li>11. Триггеры DML </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="12.html" class="tm-nav-item-link"><ul>
+                                        <li>12. Представления и табличные объекты </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="13.html" class="tm-nav-item-link"><ul>
+                                        <li>13. Курсоры В SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="14.html" class="tm-nav-item-link"><ul>
+                                        <li>14. Оконные функции
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="15.html" class="tm-nav-item-link"><ul>
+                                        <li>15. Операторы получения итоговых данных 
+                                             </li></ul></a>
+                                </li>
+                            
+                                
+                                <li class="tm-nav-item">
+                                    <a href="literatura.html" class="tm-nav-item-link"><ul>
+                                        <li>Список использованных литератур
+                                             </li></ul></a>
+                                </li>      
+                                            
+                               
+                            </ul>
+                        </nav>   
+                        </div>
+                    </div>                               
+                    </div>  <!-- Left column: logo and menu -->
+                    
+                    <!-- Right column: content -->
+                    <div class="tm-right-column">
+                       <div class="tm-content-div">
+                            <!-- Welcome section -->
+                            <section id="welcome" class="tm-section">
+                                <header>  
+                                    <h3 class="tm-blue-text tm-welcome-title tm-margin-b-45">3. Фильтрация данных
+                                        </h3>
+                                   
+                                </header>
+                                <!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
+                   
+                                <p><strong>3.1. Основы фильтрации данных</strong></p>
+                                <p>Для фильтрации данных применяется оператор WHERE. Синтаксис: WHERE &lt;усло- вие&gt;. В условиях поле таблицы сравнивается с константой или с выражением. Символьные константы пишутся в одинарных кавычках. Числовые константы и названия столбцов пишутся без кавычек.</p>
+                                <p><strong>3.1.1. Операций сравнения</strong></p>
+                                <p>Чтобы строка попала в результат, условие должно быть истинно. В условиях используются операции сравнения. В Transact-SQL применяются следующие операции сравнения:</p>
+                                <p>= &ndash; равенство;</p>
+                                <p>&lt;&gt; или != &ndash; неравенство;</p>
+                                <p>&lt; &ndash; меньше;</p>
+                                <p>&gt; &ndash; больше;</p>
+                                <p>!&lt; &ndash; не меньше;</p>
+                                <p>!&gt; &ndash; не больше;</p>
+                                <p>&lt;= &ndash; меньше или равно;</p>
+                                <p>&gt;= &ndash; больше или равно.</p>
+                                <p><strong>3.1.2. Логические операторы</strong></p>
+                                <p>Можно использовать несколько условий для фильтрации данных. Для объединения их в одно выражение используются логические операторы. В Transact-SQL применяются следующие логические операторы:</p>
+                                <p>AND &ndash; логическое умножение или конъюнкция (И). Бинарный оператор, объединяет два условия; если оба условия истинны, результат &ndash; истина, иначе &ndash; ложь.</p>
+                                <p>OR &ndash; логическое сложение или дизъюнкция (ИЛИ). Бинарный оператор, объединяет два условия; если хотя бы одно из этих условий истинно, то общее условие оператора OR также будет истинно.</p>
+                                <p>NOT &ndash; логическое отрицание или инверсия (НЕ). Унарный оператор, применяется к одному условию. Если выражение в этой операции ложно, то общее условие истинно.</p>
+                                <p>Самый высокий приоритет у оператора NOT. Самый низкий &ndash; у OR. Если эти опера- торы встречаются в одном выражении, то сначала выполняется NOT, потом AND, а затем OR. При записи условий использование скобок &ndash; хороший тон программирования.</p>
+                                <p><strong>3.1.3.Операторы сравнения</strong></p>
+                                <p>Оператор BETWEEN используется для сравнения с диапазоном от начального и до ко- нечного значения. Начальное и конечное значения включены в промежуток.</p>
+                                <p>Оператор LIKE используется для сравнения с шаблоном строки. Для определения шаблона применяются специальные символы:</p>
+                                <p>% &ndash; любая последовательность символов, в том числе пустая;</p>
+                                <p>_&nbsp; &nbsp;&ndash; любой символ;</p>
+                                <p>[ ] &ndash; символ, который указан в квадратных скобках; [ - ] &ndash; символ из определенного диапазона;</p>
+                                <p>[ ^ ] &ndash; символ, который не указан после символа ^.</p>
+                                <p>В базах данных, для обозначения неизвестного значения, используется понятие NULL. Для проверки неизвестного значения нельзя использовать операторы сравнения. Допускается только IS NULL или IS NOT NULL.</p>
+                                <p>Оператор IN используется для сравнения с набором значений. Список значений указы- вается в скобках.</p>
+                                <p>Дана таблица <strong><em>Страны:</em></strong></p>
+                                <table width="100%">
+                                    <tbody>
+                                    <tr>
+                                    <td width="24%">
+                                    <p><strong>Название</strong></p>
+                                    </td>
+                                    <td width="21%">
+                                    <p><strong>Столица</strong></p>
+                                    </td>
+                                    <td width="17%">
+                                    <p><strong>Площадь</strong></p>
+                                    </td>
+                                    <td width="19%">
+                                    <p><strong>Население</strong></p>
+                                    </td>
+                                    <td width="18%">
+                                    <p><strong>Континент</strong></p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Австрия</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Вена</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>83858</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>8741753</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Европа</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Азербайджан</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Баку</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>86600</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>9705600</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Азия</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Албания</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Тирана</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>28748</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>2866026</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Европа</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Алжир</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Алжир</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>2381740</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>39813722</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Африка</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Ангола</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Луанда</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>1246700</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>25831000</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Африка</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Аргентина</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Буэнос-Айрес</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>2766890</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>43847000</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Южная Америка</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Афганистан</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Кабул</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>647500</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>29822848</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Азия</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Бангладеш</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Дакка</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>144000</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>160221000</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Азия</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Бахрейн</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Манама</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>701</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>1397000</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Азия</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Белиз</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Бельмопан</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>22966</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>377968</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Северная Америка</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Белоруссия</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Минск</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>207595</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>9498400</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Европа</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Бельгия</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Брюссель</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>30528</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>11250585</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Европа</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Бенин</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Порто-Ново</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>112620</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>11167000</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Африка</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Болгария</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>София</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>110910</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>7153784</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Европа</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Боливия</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Сукре</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>1098580</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>10985059</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Южная Америка</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Ботсвана</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Габороне</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>600370</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>2209208</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Африка</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Бразилия</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Бразилиа</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>8511965</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>206081432</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Южная Америка</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Буркина-Фасо</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Уагадугу</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>274200</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>19034397</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Африка</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Бутан</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Тхимпху</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>47000</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>784000</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Азия</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Великобритания</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Лондон</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>244820</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>65341183</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Европа</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Венгрия</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Будапешт</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>93030</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>9830485</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Европа</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Венесуэла</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Каракас</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>912050</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>31028637</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Южная Америка</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Восточный Тимор</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Дили</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>14874</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>1167242</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Азия</p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <td width="24%">
+                                    <p>Вьетнам</p>
+                                    </td>
+                                    <td width="21%">
+                                    <p>Ханой</p>
+                                    </td>
+                                    <td width="17%">
+                                    <p>329560</p>
+                                    </td>
+                                    <td width="19%">
+                                    <p>91713300</p>
+                                    </td>
+                                    <td width="18%">
+                                    <p>Азия</p>
+                                    </td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                    <p><strong><em>Пример 1: </em></strong>Вывести список стран, площадь которых больше 1 млн. кв. км:</p>
+<p>SELECT Название, Столица, Площадь, Население, Континент &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>FROM Страны</p>
+<p>WHERE Площадь &gt; 1000000</p>
+<p><strong><em>Пример 2: </em></strong>Вывести список стран, население которых не больше 1 млн. чел.:</p>
+<p>SELECT Название,Столица,Площадь,Население,Континент</p>
+<p>FROM Страны &nbsp;&nbsp;</p>
+<p>WHERE Население !&gt; 1000000</p>
+<p><strong><em>Пример 3: </em></strong>Вывести список африканских стран:</p>
+<p>&nbsp;SELECT Название,Столица,Площадь,Население,Континент &nbsp;</p>
+<p>FROM Страны</p>
+<p>WHERE Континент = 'Африка'</p>
+<p><strong><em>Пример 4: </em></strong>Вывести список всех стран, кроме европейских:</p>
+<p>SELECT Название,Столица,Площадь,Население,Континент</p>
+<p>FROM Страны</p>
+<p>WHERE Континент != 'Европа'</p>
+<p><strong><em>Пример 5: </em></strong>Вывести список стран, население которых больше 1 млн. чел., а площадь меньше 100 тыс. кв. км:</p>
+<p>SELECT Название,Столица,Площадь,Население,Континент</p>
+<p>FROM Страны</p>
+<p>WHERE (Население &gt; 1000000) AND (Площадь &lt; 100000)</p>
+<p><strong><em>Пример 6: </em></strong>Вывести список стран, которые находятся в Европе и их население больше 10 млн. чел., или находятся в Азии, а население больше 50 млн. чел.:</p>
+<p>SELECT Название,Столица,Площадь,Население,Континент</p>
+<p>FROM Страны</p>
+<p>&nbsp;WHERE (Континент = 'Европа') AND (Население &gt; 10000000) &nbsp;</p>
+<p>OR (Континент = 'Азия') AND (Население &gt; 50000000)</p>
+<p><strong><em>Пример 7: </em></strong>Вывести список стран, население которых от 10 до 100 млн. чел., а площадь от 100 до 200 тыс. кв. км:</p>
+<p>SELECT Название</p>
+<p>,Столица</p>
+<p>,Площадь</p>
+<p>,Население</p>
+<p>,Континент FROM</p>
+<p>Страны WHERE</p>
+<p>(Население BETWEEN 10000000 AND 100000000) AND</p>
+<p>(Площадь &gt;= 100000) AND (Площадь &lt;= 200000)</p>
+<p><strong><em>Пример 8: </em></strong>Вывести отсортированный в алфавитном порядке список стран от Бенина до Ватикана:</p>
+<p>SELECT Название,Столица,Площадь,Население,Континент</p>
+<p>FROM Страны</p>
+<p>WHERE Название BETWEEN 'Бенин' AND 'Ватикан' &nbsp;&nbsp;&nbsp;</p>
+<p>ORDER BY Название</p>
+<p><strong><em>Пример 9: </em></strong>Вывести список стран, название которых начинается с буквы &laquo;С&raquo;:</p>
+<p>SELECT Название,Столица,Площадь,Население,Континент</p>
+<p>FROM Страны</p>
+<p>WHERE Название LIKE 'С%'</p>
+<p><strong><em>Пример</em></strong> <strong><em>10:</em></strong> Вывести список стран, в названии которых вторая буква &ndash; &laquo;а&raquo;, а последняя &ndash; я&raquo;:</p>
+<p>SELECT Название,Столица,Площадь,Население,Континент</p>
+<p>FROMСтраны</p>
+<p>WHERE Название LIKE '_а%я'</p>
+<p><strong><em>Пример</em></strong> <strong><em>11:</em></strong> Вывести список стран, в названии которых третья буква &ndash; &laquo;а&raquo;, &laquo;о&raquo; или &laquo;у&raquo;:</p>
+<p>SELECT Название,Столица,Площадь,Население,Континент</p>
+<p>&nbsp;FROM Страны</p>
+<p>WHERE Название LIKE ' [аоу]%'</p>
+<p><strong><em>Пример</em></strong> <strong><em>12:</em></strong> Вывести список стран, название которых начинается с буквы от &laquo;А&raquo; до &laquo;Г&raquo;:</p>
+<p>SELECT Название,Столица,Площадь,Население,Континент</p>
+<p>&nbsp;FROM Страны</p>
+<p>WHERE Название LIKE '[А-Г]%'</p>
+<p><strong><em>Пример 13: </em></strong>Вывести список стран, название которых не начинается с буквы от &laquo;А&raquo; до</p>
+<p>&laquo;Г&raquo; или с буквы &laquo;С&raquo;:</p>
+<p>SELECT Название,Столица,Площадь,Население,Континент</p>
+<p>FROM Страны</p>
+<p>WHERE Название LIKE '[^А-Г,^С]%'</p>
+<p><strong><em>Пример 14: </em></strong>Вывести список стран, столицы которых не введены в базу:</p>
+<p>SELECT Название,Столица,Площадь,Население,Континент</p>
+<p>FROM Страны</p>
+<p>WHERE Столица IS NULL</p>
+<p><strong><em>Пример 15: </em></strong>Вывести список европейских, азиатских и африканских стран:</p>
+<p>SELECT Название,Столица,Площадь,Население,Континент</p>
+<p>FROMСтраны</p>
+<p>WHERE Континент IN ('Европа', 'Азия', 'Африка')</p>
+<p><strong>3.2. Заданий</strong></p>
+<ol>
+<li>Вывести названия и столицы пяти наибольших стран по площади.</li>
+<li>Вывести список африканских стран, население которых не превышает 1 млн. чел.</li>
+<li>Вывести список стран, население которых больше 5 млн. чел., а площадь меньше 100 тыс. кв. км, и они расположены не в Европе.</li>
+<li>Вывести список стран Северной и Южной Америки, население которых больше 20 млн. чел., или стран Африки, у которых население больше 30 млн. чел.</li>
+<li>Вывести список стран, население которых составляет от 10 до 100 млн. чел., а пло- щадь не больше 500 тыс. кв. км.</li>
+<li>Вывести список стран, названия которых не начинаются с буквы &laquo;К&raquo;.</li>
+<li>Вывести список стран, в названии которых третья буква &ndash; &laquo;а&raquo;, а предпоследняя -&laquo;и&raquo;.</li>
+<li>Вывести список стран, в названии которых вторая буква &ndash; гласная.</li>
+<li>Вывести список стран, названия которых начинаются с букв от &laquo;К&raquo; до &laquo;П&raquo;.</li>
+<li>Вывести список стран, названия которых начинаются с букв от &laquo;А&raquo; до &laquo;Г&raquo;, но не</li>
+</ol>
+<p>с буквы &laquo;Б&raquo;.</p>
+<ol start="11">
+<li>Вывести список стран, столицы которых есть в базе.</li>
+<li>Вывести список стран Африки, Северной и Южной Америки.</li>
+</ol>
+                            </section>
+                           
+                            <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+                          
+                        </div>  
+                        
+                    </div> <!-- Right column: content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+                
+                   
+</body>
+</html>

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ZHANGIR KHAN UNIVERSITY</title>
+    <style>
+        .fig {
+         text-align: center; /* Выравнивание по центру */ 
+        }
+
+       table {
+       
+       font-size: 12px;
+
+}
+
+        TD, TH {
+            border: solid 1px;
+    padding: 5px; /* Поля вокруг текста */
+    
+   
+}
+.scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-top:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+        img {
+            max-width: 100%; /* Ограничивает размер изображения */
+            height: auto; /* Сохраняет пропорции */
+        }
+       
+        .fig {
+         text-align: center; /* Выравнивание по центру */ 
+        }
+        TD, TH {
+    padding: 5px; /* Поля вокруг текста */
+       }
+
+
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            background-color: #333;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            list-style-type: none;
+            padding: 0;
+            background-color: #444;
+            z-index: 1;
+        }
+
+        .submenu li {
+            display: block;
+        }
+
+        .submenu a {
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+        }
+
+        .submenu a:hover {
+            background-color: #666;
+        }
+
+        /* Показывать подменю при наведении на родительский элемент */
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        /* Стили для мобильных устройств */
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+            }
+
+            .menu li {
+                width: 100%;
+            }
+
+            .submenu {
+                position: static;
+            }
+
+            .menu li:hover .submenu {
+                display: none; /* Отключаем поведение наведения на мобильных устройствах */
+            }
+
+            .menu li.active .submenu {
+                display: block; /* Показывать подменю, если элемент активен */
+            }
+        }
+        
+.scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-top:hover {
+            background-color: #333;
+            transform: scale(1.1);
+        }
+        img {
+            max-width: 100%; /* Ограничивает размер изображения */
+            height: auto; /* Сохраняет пропорции */
+        }
+       </style>
+<!--
+Neaty HTML Template
+http://www.templatemo.com/tm-501-neaty
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/magnific-popup.css">                                <!-- Magnific pop up style, http://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
+    <body>        
+        <div class="container">
+            <div class="row">
+                <div class="tm-left-right-container">
+                    <!-- Left column: logo and menu -->
+                    <div class="tm-blue-bg tm-left-column"> 
+                        <ul class="menu">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="obuch.html">Об учебнике</a></li>           
+                            <li><a href="authors.html">Авторы</a></li>
+                        </ul>
+                   
+                        
+                                
+                        <div class="tm-logo-div text-xs-center">
+                            
+                            <a href="index.html">
+                                
+                                <h1 class="tm-site-name">СОВРЕМЕННЫЕ СУБД</h1></a>
+                      
+                                Мизамова Г.Н. <br>
+       Жаксыбаев Д.О.
+ 
+                        </div>
+                        <nav class="tm-main-nav">
+                            <ul class="tm-main-nav-ul">
+                               
+                                <li class="tm-nav-item">
+                                    <a href="mazmuny.html" class="tm-nav-item-link"><ul>
+                                        <li>Предисловие</li></ul>
+                                        </a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="1.html" class="tm-nav-item-link"><ul>
+                                        <li>1. Знакомства с MS SQL Server 
+                                             </li></ul></li>
+                                        </a>
+                                </li>
+
+                                <li class="tm-nav-item">
+                                    <a href="2.html" class="tm-nav-item-link"><ul>
+                                        <li>2. Выборка данных из БД </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="3.html" class="tm-nav-item-link"><ul>
+                                        <li>3. Фильтрация данных</li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="4.html" class="tm-nav-item-link"><ul>
+                                        <li>4. Типы данных и встроенные функции</li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="5.html" class="tm-nav-item-link"><ul>
+                                        <li>5. Объединение данных
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="6.html" class="tm-nav-item-link"><ul>
+                                        <li>6. Вложенные запросы В SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="7.html" class="tm-nav-item-link"><ul>
+                                        <li>7. Основы DDL, DML
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="8.html" class="tm-nav-item-link"><ul>
+                                        <li>8. Программирование на SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="9.html" class="tm-nav-item-link"><ul>
+                                        <li>9. Пользовательские функции 
+                                             </li></ul></li>
+                                        </a>
+                                </li>
+
+                                <li class="tm-nav-item">
+                                    <a href="10.html" class="tm-nav-item-link"><ul>
+                                        <li>10. Хранимые процедуры </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="11.html" class="tm-nav-item-link"><ul>
+                                        <li>11. Триггеры DML </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="12.html" class="tm-nav-item-link"><ul>
+                                        <li>12. Представления и табличные объекты </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="13.html" class="tm-nav-item-link"><ul>
+                                        <li>13. Курсоры В SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="14.html" class="tm-nav-item-link"><ul>
+                                        <li>14. Оконные функции
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="15.html" class="tm-nav-item-link"><ul>
+                                        <li>15. Операторы получения итоговых данных 
+                                             </li></ul></a>
+                                </li>
+                            
+                                
+                                <li class="tm-nav-item">
+                                    <a href="literatura.html" class="tm-nav-item-link"><ul>
+                                        <li>Список использованных литератур
+                                             </li></ul></a>
+                                </li>      
+                                            
+                               
+                            </ul>
+                        </nav>   
+                        </div>
+                    </div>                               
+                    </div>  <!-- Left column: logo and menu -->
+                    
+                    <!-- Right column: content -->
+                    <div class="tm-right-column">
+                       <div class="tm-content-div">
+                            <!-- Welcome section -->
+                            <section id="welcome" class="tm-section">
+                                <header>  
+                                    <h3 class="tm-blue-text tm-welcome-title tm-margin-b-45">7. Основы DDL и DML
+                                        </h3>
+                                   
+                                </header>
+                                <!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
+                   
+                                <p><strong>7.1. Основы DDL</strong></p>
+<p>В стандарте ANSI нет команды для создания базы данных. Но в языке Transact-SQL существует команда CREATE DATABASE. Процедура создания базы данных обычно закреп- ляется только за администратором базы данных, и часто выполняется с использованием гра- фического интерфейса.</p>
+<p><strong>7.1.1. Создание и удаление базы данных</strong></p>
+<p>Синтаксис команды создания базы данных имеет следующий вид: CREATE DATABASE &lt;название_базы_данных&gt;. В SQL Server можно создать до 32768 баз данных.</p>
+<p>После создания базы данных, ее можно установить в качестве текущей с помощью ко- манды USE: USE &lt;название_базы_данных&gt;.</p>
+<p>Для удаления базы данных применяется команда DROP DATABASE, которая имеет следующий синтаксис: DROP DATABASE &lt;название_базы_данных&gt;. Перед удалением реко- мендуется создать резервную копию базы данных.</p>
+<p>Основные объекты базы данных &ndash; таблицы. Они содержат все данные в базе данных. В таблицах данные организованы в виде строк и столбцов. Каждая строка представляет собой уникальную запись, а каждый столбец &ndash; поле записи.</p>
+<p>В базе данных можно создать до 2147483648 таблиц. Стандартная таблица может со- держать до 1024 столбцов. Число строк и размер таблицы ограничиваются только простран- ством для хранения на сервере.</p>
+<p>При создании таблицы можно установить отдельные свойства для каждого столбца. Данные в таблице могут быть сжаты либо по строкам, либо по страницам. Сжатие данных может позволить отображать больше строк на странице.</p>
+<p>Название базы данных и таблиц может состоять максимум из 128 символов, а имена локальных временных таблиц &ndash; из 116 символов.</p>
+<p><strong>7.1.2. Создание и удаление таблиц</strong></p>
+<p>Таблицы можно создать с помощью конструктора или с помощью команд Transact- SQL. Для создания таблиц существует команда CREATE TABLE. Ее упрощённый синтаксис имеет следующий вид:</p>
+<p>CREATE TABLE &lt;название_таблицы&gt;</p>
+<p>(&lt;название_столбца1&gt; &lt;тип_данных&gt;,</p>
+<p>&hellip;</p>
+<p>&lt;название_столбцаN&gt; &lt;тип_данных&gt;)</p>
+<p>После типа данных можно добавить ограничения к значениям столбца.</p>
+<p>Ограничение NULL | NOT NULL определяет, допустимы ли для столбца значения</p>
+<p>Ограничение UNIQUE обеспечивает уникальность значения для указанного столбца. В таблице может быть несколько ограничений UNIQUE.</p>
+<p>&nbsp;</p>
+<p>Ограничение PRIMARY KEY обеспечивает целостность и уникальность значения для указанного столбца с помощью уникального индекса. Можно создать только одно ограниче- ние PRIMARY KEY для таблицы.</p>
+<p>Ограничение CHECK обеспечивает целостность домена путем ограничения возможных значений, которые можно ввести в столбец. Условие может включать несколько логических выражений, соединенных операторами AND и OR.</p>
+<p>Ограничение DEFAULT позволяет указать значение по умолчанию, если значение не задано. Оно может содержать значения констант, функции, или значение NULL. При этом, нельзя ссылаться на другой столбец таблицы, а также на другие таблицы, представления или хранимые процедуры. Его нельзя создавать для столбцов с типом данных timestamp или столб- цов со свойством IDENTITY.</p>
+<p>Свойство IDENTITY указывает, что новый столбец является столбцом идентификато- ров. Для этого столбца формируется уникальное последовательное значение. Обычно исполь- зуется вместе с ограничением PRIMARY KEY для поддержания уникальности идентификато- ров строк в таблице. Свойство IDENTITY может назначаться столбцам типа tinyint, smallint, int, bigint, decimal(p,0) или numeric(p,0). Для таблицы можно создать только один столбец идентификаторов. Ограниченные значения по умолчанию и ограничения DEFAULT не могут использоваться в столбце идентификаторов. Необходимо указать как начальное значение, так и приращение, или же не указывать ничего. Если ничего не указано, применяется значение по умолчанию (1,1).</p>
+<p>Для удаления таблиц используется команда DROP TABLE, которая имеет следующий синтаксис: DROP TABLE &lt;название_таблицы&gt;.</p>
+<p>Таблица <strong><em>Управление</em></strong>:</p>
+<table width="100%">
+    <tbody>
+    <tr>
+    <td width="8%">
+    <p><strong>ID</strong></p>
+    </td>
+    <td width="91%">
+    <p><strong>Вид</strong></p>
+    </td>
+    </tr>
+    <tr>
+    <td width="8%">
+    <p>1</p>
+    </td>
+    <td width="91%">
+    <p>Конституционная монархия</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="8%">
+    <p>2</p>
+    </td>
+    <td width="91%">
+    <p>Абсолютная монархия</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="8%">
+    <p>3</p>
+    </td>
+    <td width="91%">
+    <p>Президентская республика</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="8%">
+    <p>4</p>
+    </td>
+    <td width="91%">
+    <p>Парламентская республика</p>
+    </td>
+    </tr>
+    <tr>
+    <td width="8%">
+    <p>5</p>
+    </td>
+    <td width="91%">
+    <p>Военная хунта</p>
+    </td>
+    </tr>
+    </tbody>
+    </table><p><strong><em>Пример 1: </em></strong>Создать таблицу &laquo;Управление&raquo;:</p>
+    <p>CREATE TABLE Управление (</p>
+    <p>ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INT ,</p>
+    <p>Вид&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VARCHAR(20)</p>
+    <p>)</p>
+    <p>&nbsp;</p>
+    <p><strong><em>Пример 2: </em></strong>Удалить таблицу &laquo;Управление&raquo;:</p>
+    <p>DROP TABLE Управление</p>
+    <p>&nbsp;</p>
+    <p><strong><em>Пример 3: </em></strong>Создать таблицу &laquo;Управление&raquo;, значения столбца &laquo;ID&raquo; сделать уникаль- ными, а столбец &laquo;Вид&raquo; запретить оставлять незаполненным:</p>
+    <p>CREATE TABLE Управление (</p>
+    <p>ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INT UNIQUE,</p>
+    <p>Вид&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VARCHAR(20) NOT NULL)</p>
+    <p><strong><em>Пример</em></strong> <strong><em>4:</em></strong> Создать таблицу &laquo;Управление&raquo;, в столбец &laquo;ID&raquo; разрешить вводить значения меньше 200, а для столбца &laquo;Вид&raquo; установить значение по умолчанию &laquo;Президентская респуб- лика&raquo;:</p>
+    <p>CREATE TABLE Управление (</p>
+    <p>ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INT CHECK (ID &lt; 200),</p>
+    <p>Вид&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VARCHAR(20) DEFAULT 'Президентская республика'</p>
+    <p>)</p>
+    <p>&nbsp;</p>
+    <p><strong><em>Пример 5: </em></strong>Создать таблицу &laquo;Управление&raquo;, столбец &laquo;ID&raquo; определить, как основной ключ, и настроить автоматический идентификатор с начальным значением 5 и с шагом 3:</p>
+    <p>CREATE TABLE Управление (</p>
+    <p>ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INT PRIMARY KEY IDENTITY(5,3), Вид&nbsp;&nbsp; VARCHAR(20)</p>
+    <p>)</p>
+    <p>&nbsp;</p>
+    <p><strong>7.2. Основы DML</strong></p>
+    <p><strong>7.2.1. Добавление данных</strong></p>
+    <p>Команда INSERT осуществляет добавление данных в определенную таблицу. После команды INSERT можно добавить необязательное ключевое слово INTO. Упрощенный син- таксис команды имеет следующий вид:</p>
+    <p>INSERT INTO &lt;таблица&gt; [(&lt;список столбцов&gt;) ] VALUES</p>
+    <p>(&lt;список значений&gt;)</p>
+    <p>Если добавляется две и более строки, тогда используется следующий синтаксис: INSERT INTO &lt;таблица&gt;</p>
+    <p>[(&lt;список столбцов&gt;) ] VALUES</p>
+    <p>(&lt;список значений&gt;),</p>
+    <p>&hellip;</p>
+    <p>(&lt;список значений&gt;)</p>
+    <p>Количество и тип значений должны совпадать со списком столбцов. Последователь- ность столбцов может не совпадать с таблицей. Список столбцов должен быть заключен в круглые скобки, а его элементы должны разделяться запятыми.</p>
+    <p>Если столбец имеет свойства идентификатор, его нельзя указать в списке. Для таких столбцов сервер автоматически вычисляет новое значение.</p>
+    <p>Если столбец имеет свойство DEFAULT, при отсутствии его, в таблицу вставляется значение по умолчанию.</p>
+    <p>Если столбец имеет свойство NULL, при отсутствии его, в таблицу вставляется значе- ние NULL.</p>
+    <p>Если столбец имеет свойство NOT NULL, его обязательно надо включить в список.</p>
+    <p>В списке значений для каждого столбца из указанных в списке столбцов должно быть одно значение. Список значений должен быть заключен в скобки.</p>
+    <p>Если значения в списке идут в том же порядке, как в таблице, и для каждого столбца таблицы определено значение, то список столбцов можно не указывать.</p>
+    <p>Если одновременно добавляется несколько строк значений, каждый список значений заключается в круглые скобки и разделяется запятыми.</p>
+    <p>Если значение для столбца неизвестно, и столбец имеет свойство NULL, для него в списке значений можно указать NULL (без кавычек).</p>
+    <p>Если требуется перенести строку из одной таблицы в другую таблицу можно использо- вать следующий синтаксис:</p>
+    <p>INSERT INTO &lt;таблица&gt; [(&lt;список столбцов&gt;) ] SELECT</p>
+    <p>[(&lt;список столбцов&gt;) ]</p>
+    <p>FROM</p>
+    <p>исходная_таблица WHERE</p>
+    <p>&lt;условие&gt;</p>
+    <p>Типы данных в исходной и целевой таблицах должны совпадать.</p>
+    <p>Если таблицы имеют одинаковую структуру, можно после команды INSERT пропустить список столбцов, а после команды SELECT указать все столбцы, с помощью астериска &laquo;*&raquo;.</p>
+    <p><strong>7.2.2. Изменение данных</strong></p>
+    <p>Для изменения строк в таблице применяется команда UPDATE. Она имеет следующий формальный синтаксис:</p>
+    <p>UPDATE &lt;таблица&gt;</p>
+    <p>SET столбец1 = значение1, столбец2 = значение2, &hellip;, столбецN = значениеN [WHERE &lt;условие&gt;]</p>
+    <p>Использование условий необязательно, но тогда обновляются все строки таблицы. Ре- комендуется сначала выполнять выборку строк с помощью SELECT, только потом иcпользо- вать команду UPDATE.</p>
+    <p><strong>7.2.3. Удаление данных</strong></p>
+    <p>Для удаления одной или нескольких строк из таблицы применяется команда DELETE. Она имеет следующий формальный синтаксис:</p>
+    <p>DELETE [FROM] &lt;таблица&gt; [WHERE &lt;условие&gt;]</p>
+    <p>Ключевое слово FROM необязательно.</p>
+    <p>Использование условий необязательно, но тогда удаляются все строки таблицы. Реко- мендуется сначала выполнять выборку строк с помощью SELECT, только потом иcпользовать команду DELETE.</p>
+    <p>Для удаления всех строк из таблицы можно использовать команду TRUNCATE TABLE. Она имеет следующий формальный синтаксис:</p>
+    <p>TRUNCATE TABLE &lt;таблица&gt;</p>
+    <p>Инструкция TRUNCATE TABLE похожа на инструкцию DELETE без предложения WHERE, однако TRUNCATE TABLE выполняется быстрее и требует меньших ресурсов си- стемы и журналов транзакций.</p>
+    <p>Для создания новой таблицы и ее заполнения можно использовать конструкцию SELECT&hellip;INTO. Она имеет следующий формальный синтаксис:</p>
+    <p>SELECT</p>
+    <p>&lt;список столбцов&gt; INTO</p>
+    <p>&lt;новая таблица&gt; FROM</p>
+    <p>&lt;исходная таблица&gt;</p>
+    <p>Столбцы в новой таблице создаются в порядке, соответствующем списку выбора и по- лучают такие же имена, значения, типы данных и свойства допустимости значений NULL, ко- торые указаны в соответствующем выражении в списке выбора.</p>
+    <p>&nbsp;</p>
+    <p>Код для создания данной таблицы:</p>
+    <p>CREATE TABLE Ученики (</p>
+    <p>ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INT PRIMARY KEY IDENTITY(1,1), Фамилия&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VARCHAR(50) NOT NULL, Предмет VARCHAR(50) NOT NULL,</p>
+    <p>Школа&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VARCHAR(50) NOT NULL,</p>
+    <p>Баллы&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FLOAT CHECK ((Баллы &gt;= 0) AND (Баллы &lt;= 100)) NULL</p>
+    <p>)</p>
+    <p>&nbsp;</p>
+    <p><strong><em>Пример 1: </em></strong>В таблицу &laquo;Ученики&raquo; внести новую запись для ученика гимназии Маркина, который по физике набрал 96 баллов:</p>
+    <p>INSERT INTO Ученики</p>
+    <p>(Фамилия, Предмет, Школа, Баллы) VALUES</p>
+    <p>('Маркин', 'Физика', 'Гимназия', 96)</p>
+    <p>&nbsp;</p>
+    <p><strong><em>Пример 2: </em></strong>В таблицу &laquo;Ученики&raquo; внести две строки, для ученицы лицея Никишиной, которая по химии набрала 77 баллов, и для ученика школы № 18 Андреева, оценка которого по математике неизвестна:</p>
+    <p>INSERT INTO Ученики</p>
+    <p>(Фамилия, Предмет, Школа, Баллы) VALUES</p>
+    <p>('Никишина', 'Химия', 'Лицей', 77),</p>
+    <p>('Андреев', 'Математика', 'Школа №18', NULL)</p>
+    <p>&nbsp;</p>
+    <p><strong><em>Пример 3: </em></strong>В таблице &laquo;Ученики&raquo; изменить данные Андреева, оценку исправить на 87: UPDATE</p>
+    <p>Ученики</p>
+    <p>SET</p>
+    <p>Баллы = 87</p>
+    <p>WHERE</p>
+    <p>Фамилия = 'Андреев'</p>
+    <p>&nbsp;</p>
+    <p><strong><em>Пример 4: </em></strong>В таблице &laquo;Ученики&raquo; изменить данные Никишиной, школу исправить на</p>
+    <p>&laquo;Школа №31&raquo;, а предмет на математику: UPDATE</p>
+    <p>Ученики</p>
+    <p>SET</p>
+    <p>Школа = 'Школа №31', Предмет = 'Математика'</p>
+    <p>WHERE</p>
+    <p>Фамилия = 'Никишина'</p>
+    <p>&nbsp;</p>
+    <p><strong><em>Пример 5: </em></strong>В таблице &laquo;Ученики&raquo; изменить данные всех учеников по математике, оценку уменьшить на 5 баллов:</p>
+    <p>UPDATE</p>
+    <p>Ученики</p>
+    <p>SET</p>
+    <p>Баллы = Баллы - 5</p>
+    <p>WHERE</p>
+    <p>Предмет = 'Математика'</p>
+    <p><strong><em>Пример 6: </em></strong>В таблице &laquo;Ученики&raquo; удалить данные всех учеников из школы №18: DELETE FROM</p>
+    <p>Ученики WHERE</p>
+    <p>Школа = 'Школа №18'</p>
+    <p>&nbsp;</p>
+    <p><strong><em>Пример 7: </em></strong>Создать таблицу &laquo;Лицеисты&raquo; и скопировать туда всех лицеистов: SELECT</p>
+    <p>ID</p>
+    <p>,Фамилия</p>
+    <p>,Предмет</p>
+    <p>,Школа</p>
+    <p>,Баллы</p>
+    <p>&nbsp;</p>
+    <p>INTO FROM</p>
+    <p>Лицеисты Ученики</p>
+    <p>WHERE</p>
+    <p>Школа = 'Лицей'</p>
+    <p><strong><em>Пример 8: </em></strong>Очистить таблицу &laquo;Лицеисты&raquo;:</p>
+    <p>TRUNCATE TABLE Лицеисты</p>
+    <p>&nbsp;</p>
+    <p>7.3. Заданий</p>
+    <p>1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Создать таблицу &laquo;Управление_ВашаФамилия&raquo;. Определить основной ключ, иден- тификатор, значение по умолчанию</p>
+    <p>2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Создать таблицу &laquo;Страны_ВашаФамилия&raquo;. Определить основной ключ, разреше- ние / запрет на NULL, условие на вводимое значение.</p>
+    <p>3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Создать таблицу &laquo;Цветы_ВашаФамилия&raquo;. Определить основной ключ, значения столбца &laquo;ID&raquo; сделать уникальными, для столбца &laquo;Класс&raquo; установить значение по умолчанию</p>
+    <p>&laquo;Двудольные&raquo;.</p>
+    <p>4.Создать таблицу &laquo;Животные_ВашаФамилия&raquo;. Определить основной ключ, значе- ния столбца &laquo;ID&raquo; сделать уникальными, для столбца &laquo;Отряд&raquo; установить значение по умол- чанию &laquo;Хищные&raquo;.</p>
+    <ol>
+    <li>
+    <p>В таблицу &laquo;Ученики&raquo; внести новую запись для ученика школы № 18 Трошкова, оценка которого по химии неизвестна.</p>
+    </li>
+    <li>
+    <p>В таблицу &laquo;Ученики&raquo; внести три строки.</p>
+    </li>
+    <li>
+    <p>В таблице &laquo;Ученики&raquo; изменить данные Трошкова, школу исправить на № 21, пред- мет на математику, а оценку на 56.</p>
+    </li>
+    <li>
+    <p>В таблице &laquo;Ученики&raquo; изменить данные всех учеников по химии, оценку увеличить на 10%, если она ниже 60 баллов.</p>
+    </li>
+    <li>
+    <p>В таблице &laquo;Ученики&raquo; удалить данные всех учеников из школы №21.</p>
+    </li>
+    <li>
+    <p>Создать таблицу &laquo;Гимназисты&raquo; и скопировать туда данные всех гимназистов, кроме тех, которые набрали меньше 60 баллов.</p>
+    </li>
+    <li>
+    <p>Очистить таблицу &laquo;Гимназисты</p>
+    </li>
+    </ol>
+    <p>&nbsp;</p>
+
+                            </section>
+                           
+                            <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+                          
+                        </div>  
+                        
+                    </div> <!-- Right column: content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+                
+                   
+</body>
+</html>

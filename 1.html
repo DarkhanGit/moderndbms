@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ZHANGIR KHAN UNIVERSITY</title>
+    <style>
+         .aligncenter {
+    text-align: center;
+}
+        .fig {
+         text-align: center; /* Выравнивание по центру */ 
+        }
+
+       table {
+        
+       font-size: 12px;
+
+}
+
+        TD, TH {
+    padding: 5px; /* Поля вокруг текста */
+    
+   
+}
+
+.scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-top:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+        img {
+            max-width: 100%; /* Ограничивает размер изображения */
+            height: auto; /* Сохраняет пропорции */
+        }
+
+       
+        .fig {
+         text-align: center; /* Выравнивание по центру */ 
+        }
+        TD, TH {
+    padding: 5px; /* Поля вокруг текста */
+       }
+
+
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            background-color: #333;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            list-style-type: none;
+            padding: 0;
+            background-color: #444;
+            z-index: 1;
+        }
+
+        .submenu li {
+            display: block;
+        }
+
+        .submenu a {
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+        }
+
+        .submenu a:hover {
+            background-color: #666;
+        }
+
+        /* Показывать подменю при наведении на родительский элемент */
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        /* Стили для мобильных устройств */
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+            }
+
+            .menu li {
+                width: 100%;
+            }
+
+            .submenu {
+                position: static;
+            }
+
+            .menu li:hover .submenu {
+                display: none; /* Отключаем поведение наведения на мобильных устройствах */
+            }
+
+            .menu li.active .submenu {
+                display: block; /* Показывать подменю, если элемент активен */
+            }
+        }
+        
+.scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-top:hover {
+            background-color: #333;
+            transform: scale(1.1);
+        }
+        img {
+            max-width: 100%; /* Ограничивает размер изображения */
+            height: auto; /* Сохраняет пропорции */
+        }
+       </style>
+<!--
+Neaty HTML Template
+http://www.templatemo.com/tm-501-neaty
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/magnific-popup.css">                                <!-- Magnific pop up style, http://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
+    <body>        
+        <div class="container">
+            <div class="row">
+                <div class="tm-left-right-container">
+                    <!-- Left column: logo and menu -->
+                    <div class="tm-blue-bg tm-left-column"> 
+                        <ul class="menu">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="obuch.html">Об учебнике</a></li>           
+                            <li><a href="authors.html">Авторы</a></li>
+                        </ul>
+                   
+                        
+                                
+                        <div class="tm-logo-div text-xs-center">
+                            
+                            <a href="index.html">
+                                
+                                <h1 class="tm-site-name">СОВРЕМЕННЫЕ СУБД</h1></a>
+                      
+                                Мизамова Г.Н. <br>
+       Жаксыбаев Д.О.
+ 
+                        </div>
+                        <nav class="tm-main-nav">
+                            <ul class="tm-main-nav-ul">
+                               
+                                <li class="tm-nav-item">
+                                    <a href="mazmuny.html" class="tm-nav-item-link"><ul>
+                                        <li>Предисловие</li></ul>
+                                        </a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="1.html" class="tm-nav-item-link"><ul>
+                                        <li>1. Знакомства с MS SQL Server 
+                                             </li></ul></li>
+                                        </a>
+                                </li>
+
+                                <li class="tm-nav-item">
+                                    <a href="2.html" class="tm-nav-item-link"><ul>
+                                        <li>2. Выборка данных из БД </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="3.html" class="tm-nav-item-link"><ul>
+                                        <li>3. Фильтрация данных</li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="4.html" class="tm-nav-item-link"><ul>
+                                        <li>4. Типы данных и встроенные функции</li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="5.html" class="tm-nav-item-link"><ul>
+                                        <li>5. Объединение данных
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="6.html" class="tm-nav-item-link"><ul>
+                                        <li>6. Вложенные запросы В SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="7.html" class="tm-nav-item-link"><ul>
+                                        <li>7. Основы DDL, DML
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="8.html" class="tm-nav-item-link"><ul>
+                                        <li>8. Программирование на SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="9.html" class="tm-nav-item-link"><ul>
+                                        <li>9. Пользовательские функции 
+                                             </li></ul></li>
+                                        </a>
+                                </li>
+
+                                <li class="tm-nav-item">
+                                    <a href="10.html" class="tm-nav-item-link"><ul>
+                                        <li>10. Хранимые процедуры </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="11.html" class="tm-nav-item-link"><ul>
+                                        <li>11. Триггеры DML </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="12.html" class="tm-nav-item-link"><ul>
+                                        <li>12. Представления и табличные объекты </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="13.html" class="tm-nav-item-link"><ul>
+                                        <li>13. Курсоры В SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="14.html" class="tm-nav-item-link"><ul>
+                                        <li>14. Оконные функции
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="15.html" class="tm-nav-item-link"><ul>
+                                        <li>15. Операторы получения итоговых данных 
+                                             </li></ul></a>
+                                </li>
+                          
+                                
+                                <li class="tm-nav-item">
+                                    <a href="literatura.html" class="tm-nav-item-link"><ul>
+                                        <li>Список использованных литератур
+                                             </li></ul></a>
+                                </li>      
+                                            
+                               
+                            </ul>
+                        </nav>   
+                        </div>
+                    </div>                               
+                    </div>  <!-- Left column: logo and menu -->
+                    
+                    <!-- Right column: content -->
+                    <div class="tm-right-column">
+                       <div class="tm-content-div">
+                            <!-- Welcome section -->
+                            <section id="welcome" class="tm-section">
+                                <header>  
+                                    <h2 class="tm-blue-text tm-welcome-title tm-margin-b-45">1. ЗНАКОМСТВА С MS SQL SERVER
+                                        </h2>
+                                   
+                                </header>
+                                <!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
+                   
+                                <p><strong>1.1. Описание программ</strong></p>
+                                <p>Управление информацией является неотъемлемой частью профессиональной деятельности, а базы данных стали жизненно важным компонентом повседневной жизни. Для поддержки баз данных необходим механизм, называемый системой управления базами данных (СУБД).</p>
+                                <p>СУБД - это программное обеспечение, которое позволяет пользователям определять, создавать и поддерживать базу данных, а также контролировать доступ к ней. Microsoft SQL Server - популярная СУБД, подходящая для различных проектов, от небольших приложений до крупных высоконагруженных. Центральным аспектом MS SQL Server является база данных, которая организована в соответствии с реляционной моделью, разработанной в 1970 году. В реляционной модели данные хранятся в таблицах, где каждая строка представляет отдельный объект, а столбцы содержат его атрибуты.</p>
+                                <p>Для взаимодействия с базой данных используется язык структурированных запросов (SQL). Язык SQL был впервые разработан в компании IBM и впоследствии стандартизирован ANSI. Однако поставщики СУБД часто имеют собственные реализации языка SQL и собственные процедурные языки, в частности, в Oracle Database используется PL/SQL (поддерживается также в DB2 и Timesten), в Interbase и Firebird &ndash; PSQL, в DB2 &ndash; SQL PL, в Microsoft SQL Server и Adaptive Server Enterprise &ndash; Transact-SQL, в PostgreSQL &ndash; PL/pgSQL.</p>
+                                <p><strong>1.1.1. SQL Server Developer Edition</strong></p>
+                                <p>SQL Server 2022 Developer &mdash; это бесплатный выпуск с полным набором функций, лицензируемый для использования в качестве базы данных для разработки и тестирования и не предназначенный для применения в рабочей среде.</p>
+                                <p>Для установки переходим на сайт <u>https://www.microsoft.com </u></p>
+                                <p class="aligncenter">
+    <img src="img/1/1.png" alt="" ></p>
+                                <p style="text-align: center;">Рис.1 Установка SQL Server 2022 Developer</p>
+                                <p><strong>&nbsp;</strong></p>
+                                <p><strong>1.1.2. SQL Server Management Studio</strong></p>
+                                <p>SQL Server Management Studio (SSMS) - это интегрированная среда для управления любой инфраструктурой SQL, от SQL Server до Azure SQL Database. SSMS предоставляет инструменты для настройки, мониторинга и администрирования экземпляров SQL Server и баз данных. Используется SSMS для развертывания, мониторинга и обновления компонентов уровня данных, используемых вашими приложениями, а также для создания запросов и сценариев.</p>
+                                <p>Скачать SQL Server Management Studio (SSMS) можно с сайта: <u>https://www.microsoft.com</u>.</p>
+                                <p><em>Открытие среды SQL Server Management Studio</em></p>
+                                <ul>
+                                <li>Запускайте SQL Server Management</li>
+                                <li>В диалоговом окне <strong><em>Соединение с сервером</em> </strong>подтвердите заданные по умолчанию параметры и нажмите кнопку <strong><em>Подключиться</em></strong>. Для соединения необходимо, чтобы поле Имя сервера содержало имя компьютера, на котором установлен SQL Server. Если компонент Database Engine представляет собой именованный экземпляр, то поле &laquo;Имя сервера&raquo; должно также содержать имя экземпляра в формате &lt;имя_компьютера&gt; \&lt;имя_экземпляра&gt;.</li>
+                                <li>Выбрать имя сервера (в данном случае это REM-DESKTOP).</li>
+                                </ul>
+                                <p class="aligncenter">
+    <img src="img/1/2.png" alt="" ></p>
+                                <p style="text-align: center;">Рис. 2. Соединение с SQL Server</p>
+<p>&nbsp;</p>
+<p>MS SQL Server использует два режима аутентификации: аутентификацию Windows и аутентификацию MS SQL Server (SQL Server authentication). Для аутентификации по умолчанию используется аутентификация Windows. Windows Authentification mode (Проверка подлинности Windows) &ndash; это режим, который использует для подключения к серверу только логины Windows (рис. 2). В этом случае пользователям нет необходимости вводить какие-то пароли при подключении к SQL Server, если они уже вошли в сеть Windows.</p>
+<p>Для использования аутентификации SQL Server вначале необходимо создать учетную запись в самом SQL Server. В отличие от логинов Windows, логины SQL Server &ndash; это самостоятельные учетные записи со своими именами и паролями, информация о которых хранится в системной базе данных SQL Server. При подключении к серверу при помощи логина SQL Server вам придется указать имя логина и пароль.</p>
+<p><strong>1.2. Создание учетной записи</strong></p>
+<p>Создайте новую учетную запись с именем STUDENT. B Management Studio список учетных записей, сконфигурированных на сервере, содержится в папке <strong><em>&laquo;\Безопасность\Имена для входа&raquo;.</em></strong> Чтобы добавить новую учетную запись, необходимо выделить узел</p>
+<p>&laquo;<strong><em>Имена для входа</em></strong>&raquo; в контекстном меню и выбрать пункт &laquo;<strong><em>Создать имя для входа&hellip;</em></strong>&raquo;.</p>
+<p>В открывшемся окне (рис. 3) в поле &laquo;<strong><em>Имя для входа</em></strong>&raquo; введите STUDENT. Далее выберите переключатель &laquo;<strong><em>Проверка подлинности SQL Server</em></strong>&raquo; и в поле &laquo;<strong><em>Пароль</em></strong>&raquo; наберите пароль. Снимите флажок &laquo;<strong><em>Пользователь должен сменить пароль при следующем входе</em></strong>&raquo;. Остальные поля оставьте без изменений.</p>
+<p class="aligncenter">
+    <img src="img/1/3.jpg" alt="" ></p>
+<p style="text-align: center;">Рис. 3. Создание новой учетной записи</p>
+<p><strong>&nbsp;</strong></p>
+<p><strong>1.3. Создание базы данных</strong></p>
+<p>Базу данных может создать только пользователь с правами администратора. Выберите в контекстном меню папки &laquo;<strong><em>Базы данных</em></strong>&raquo; команду &laquo;<strong><em>Создать базу данных&hellip;</em></strong>&raquo; (рис. 4). В поле &laquo;<strong><em>Имя базы данных</em></strong>&raquo; введите имя создаваемой базы данных (БД) &ndash; &laquo;<strong><em>Учебная</em></strong>&raquo; (рис. 5). Здесь также можно изменить путь сохранения созданной БД. Обратите внимание, что создаётся пустая база данных (контейнер).</p>
+<p class="aligncenter">
+    <img src="img/1/4.png" alt="" ></p>
+<p style="text-align: center;">Рис. 4. Пункт контекстного меню &laquo;Создать базу данных&hellip;&raquo;</p>
+<p class="aligncenter">
+    <img src="img/1/5.png" alt="" ></p>
+<p style="text-align: center;">Рис. 5. Создание новой базы данных</p>
+<p>&nbsp;</p>
+<p>После создания БД окно &laquo;<strong><em>Обозреватель объектов</em></strong>&raquo; обновится. В ветке &laquo;<strong><em>Базы данных</em></strong>&raquo; появится новая база данных &laquo;<strong><em>Учебная</em></strong>&raquo;. Эта база данных принадлежит пользователю по имени sysadmin (системный администратор).</p>
+<p>&nbsp;</p>
+<p><strong>1.3.1. Создание нового пользователя</strong></p>
+<p>Создание пользователя в SQL Server осуществляется посредством создания учетной записи. Пользователи БД &ndash; это специальные объекты, которые создаются на уровне базы данных и используются для предоставления разрешений в базе данных (на таблицы, представления, хранимые процедуры). Логины и пользователи БД &ndash; это совершенно разные объекты.</p>
+<p>Чтобы добавить в базу данных &laquo;<strong><em>Учебная</em></strong>&raquo; нового пользователя, надо:</p>
+<ul>
+<li>выделить узел <strong><em>&laquo;\Базы данных \ Учебная \ Безопасность \ Пользователи</em></strong>&raquo; и в контекстном меню выбрать пункт &laquo;<strong><em>Создать пользователя&hellip;</em></strong>&raquo; (рис. 6).</li>
+</ul>
+<p class="aligncenter">
+    <img src="img/1/6.png" alt="" ></p>
+<p style="text-align: center;">Рис. 6. Пункт контекстного меню &laquo;Создать пользователя...&raquo;</p>
+<p>&nbsp;</p>
+<ul>
+<li>В открывшемся окне в поля &laquo;<strong><em>Имя пользователя</em></strong>&raquo; и &laquo;<strong><em>Имя для входа</em></strong>&raquo; ввести имя &ndash; <em>Student.</em></li>
+<li>На странице &laquo;<strong><em>Собственные схемы</em></strong>&raquo; в списке &laquo;<strong><em>Схемы, принадлежащие данному пользователю</em></strong>:&raquo; установить флажок db_owner&rarr; OK (рис. 7).</li>
+</ul>
+<p class="aligncenter">
+    <img src="img/1/7.png" alt="" ></p>
+<p style="text-align: center;">Рис. 7. Добавление в БД нового пользователя</p>
+<p>&nbsp;</p>
+<p>Таким образом, на основе учетной записи <em>Student </em>будет создан новый пользователь для БД &laquo;<strong><em>Учебная</em></strong>&raquo; с правами владельца этой базы данных.</p>
+<p><strong>1.3.3. Резервное копирование БД</strong></p>
+<p>Сведения, хранящиеся в базах данных, являются стратегической ценностью любой компании, поэтому их сохранность очень важна.</p>
+<ul>
+<li>Выберем в контекстном меню базы данных &laquo;Учебная&raquo; пункт &laquo;Задачи&raquo; &rarr; &laquo;Создать резервную копию&raquo; (рис. 8).</li>
+</ul>
+<p class="aligncenter">
+    <img src="img/1/8.png" alt="" ></p>
+<p style="text-align: center;">Рис. 8. Пункт контекстного меню &laquo;Создать резервное копию&hellip;&raquo;</p>
+<p>&nbsp;</p>
+<ul>
+<li>В открывшемся диалоге &laquo;<strong><em>Резервное копирование базы данных &ndash; Учебная</em></strong>&raquo; (рис. 10) установите некоторые параметры:</li>
+<li>База данных &ndash; <em>Учебная </em>(это база данных для резервного копирования);</li>
+<li>Тип архивной копии &ndash; <em>Полная</em> (тип резервной копии &ndash; полный; для первого резервного копирования применяется только такой; если резервная копия уже имеется, и вы желаете не создавать заново полную копию, а внести изменения в старую, выберите <em>Разностная</em>);</li>
+<li>Компонент архивной копии &ndash; <em>База данных</em>;</li>
+<li>Архивировать в: &ndash; <em>Диск.</em></li>
+</ul>
+<p class="aligncenter">
+    <img src="img/1/9.png" alt="" ></p>
+<p style="text-align: center;">Рис. 10. Диалоговое окно Back Up Database</p>
+<p>&nbsp;</p>
+<ul>
+<li>Нажмите кнопку &laquo;Добавить&hellip;&raquo; в этом диалоге. Откроется диалоговое окно &laquo;Выбор места расположения резервной копии&raquo; (рис. 11). В поле окна &laquo;Имя файла&raquo; введите имя файла, в который будет выполнено резервное копирование.</li>
+</ul><p class="aligncenter">
+    <img src="img/1/10.png" alt="" ></p>
+<p style="text-align: center;">Рис. 11. Диалоговое окно &laquo;Выбор места расположения&hellip;&raquo;</p>
+<p>&nbsp;</p>
+<ul>
+<li>Нажмите OK в диалоговом окне &laquo;Выбор места расположения резервной копии&raquo;. Оно закроется, а в списке &laquo;Назначение&raquo; появится строка, которую ввели. Выберите ее и нажмите кнопку ОК. Произойдет резервное копирование по указанному пути.</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>1.4. Заданий</strong></p>
+<ol>
+<li>Установите SQL Server Developer Edition.</li>
+<li>Установите SQL Server Management Studio (SSMS).</li>
+<li>Создайте учетную запись пользователя MS SQL-Server.</li>
+<li>Создайте новую базу данных.</li>
+<li>Создайте нового пользователя базы данных.</li>
+<li>Соединитесь с базой данных под учетной записью пользователя.</li>
+<li>Создайте структуру базы в соответствии с порядком выполнения работы.</li>
+<li>Выполните резервное копирование базы данных.</li>
+</ol>
+
+                            </section>
+                           
+                            <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+                          
+                        </div>  
+                        
+                    </div> <!-- Right column: content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+                
+                   
+</body>
+</html>

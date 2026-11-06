@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ZHANGIR KHAN UNIVERSITY</title>
+    <style>
+        .fig {
+         text-align: center; /* Выравнивание по центру */ 
+        }
+
+       table {
+       
+       font-size: 12px;
+
+}
+
+        TD, TH {
+            border: solid 1px;
+    padding: 5px; /* Поля вокруг текста */
+    
+   
+}
+.scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-top:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+        img {
+            max-width: 100%; /* Ограничивает размер изображения */
+            height: auto; /* Сохраняет пропорции */
+        }
+       
+        .fig {
+         text-align: center; /* Выравнивание по центру */ 
+        }
+        TD, TH {
+    padding: 5px; /* Поля вокруг текста */
+       }
+
+
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            background-color: #333;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .menu li {
+            position: relative;
+        }
+
+        .menu a {
+            display: block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            list-style-type: none;
+            padding: 0;
+            background-color: #444;
+            z-index: 1;
+        }
+
+        .submenu li {
+            display: block;
+        }
+
+        .submenu a {
+            padding: 10px 20px;
+            background-color: #444;
+            color: white;
+        }
+
+        .submenu a:hover {
+            background-color: #666;
+        }
+
+        /* Показывать подменю при наведении на родительский элемент */
+        .menu li:hover .submenu {
+            display: block;
+        }
+
+        /* Стили для мобильных устройств */
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+            }
+
+            .menu li {
+                width: 100%;
+            }
+
+            .submenu {
+                position: static;
+            }
+
+            .menu li:hover .submenu {
+                display: none; /* Отключаем поведение наведения на мобильных устройствах */
+            }
+
+            .menu li.active .submenu {
+                display: block; /* Показывать подменю, если элемент активен */
+            }
+        }
+        
+.scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .scroll-top:hover {
+            background-color: #333;
+            transform: scale(1.1);
+        }
+        img {
+            max-width: 100%; /* Ограничивает размер изображения */
+            height: auto; /* Сохраняет пропорции */
+        }
+       </style>
+<!--
+Neaty HTML Template
+http://www.templatemo.com/tm-501-neaty
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/magnific-popup.css">                                <!-- Magnific pop up style, http://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
+    <body>        
+        <div class="container">
+            <div class="row">
+                <div class="tm-left-right-container">
+                    <!-- Left column: logo and menu -->
+                    <div class="tm-blue-bg tm-left-column"> 
+                        <ul class="menu">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="obuch.html">Об учебнике</a></li>           
+                            <li><a href="authors.html">Авторы</a></li>
+                        </ul>
+                   
+                        
+                                
+                        <div class="tm-logo-div text-xs-center">
+                            
+                            <a href="index.html">
+                                
+                                <h1 class="tm-site-name">СОВРЕМЕННЫЕ СУБД</h1></a>
+                      
+                                Мизамова Г.Н. <br>
+       Жаксыбаев Д.О.
+ 
+                        </div>
+                        <nav class="tm-main-nav">
+                            <ul class="tm-main-nav-ul">
+                               
+                                <li class="tm-nav-item">
+                                    <a href="mazmuny.html" class="tm-nav-item-link"><ul>
+                                        <li>Предисловие</li></ul>
+                                        </a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="1.html" class="tm-nav-item-link"><ul>
+                                        <li>1. Знакомства с MS SQL Server 
+                                             </li></ul></li>
+                                        </a>
+                                </li>
+
+                                <li class="tm-nav-item">
+                                    <a href="2.html" class="tm-nav-item-link"><ul>
+                                        <li>2. Выборка данных из БД </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="3.html" class="tm-nav-item-link"><ul>
+                                        <li>3. Фильтрация данных</li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="4.html" class="tm-nav-item-link"><ul>
+                                        <li>4. Типы данных и встроенные функции</li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="5.html" class="tm-nav-item-link"><ul>
+                                        <li>5. Объединение данных
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="6.html" class="tm-nav-item-link"><ul>
+                                        <li>6. Вложенные запросы В SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="7.html" class="tm-nav-item-link"><ul>
+                                        <li>7. Основы DDL, DML
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="8.html" class="tm-nav-item-link"><ul>
+                                        <li>8. Программирование на SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="9.html" class="tm-nav-item-link"><ul>
+                                        <li>9. Пользовательские функции 
+                                             </li></ul></li>
+                                        </a>
+                                </li>
+
+                                <li class="tm-nav-item">
+                                    <a href="10.html" class="tm-nav-item-link"><ul>
+                                        <li>10. Хранимые процедуры </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="11.html" class="tm-nav-item-link"><ul>
+                                        <li>11. Триггеры DML </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="12.html" class="tm-nav-item-link"><ul>
+                                        <li>12. Представления и табличные объекты </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="13.html" class="tm-nav-item-link"><ul>
+                                        <li>13. Курсоры В SQL
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="14.html" class="tm-nav-item-link"><ul>
+                                        <li>14. Оконные функции
+                                             </li></ul></a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="15.html" class="tm-nav-item-link"><ul>
+                                        <li>15. Операторы получения итоговых данных 
+                                             </li></ul></a>
+                                </li>
+                             
+                                
+                                <li class="tm-nav-item">
+                                    <a href="literatura.html" class="tm-nav-item-link"><ul>
+                                        <li>Список использованных литератур
+                                             </li></ul></a>
+                                </li>      
+                                            
+                               
+                            </ul>
+                        </nav>   
+                        </div>
+                    </div>                               
+                    </div>  <!-- Left column: logo and menu -->
+                    
+                    <!-- Right column: content -->
+                    <div class="tm-right-column">
+                       <div class="tm-content-div">
+                            <!-- Welcome section -->
+                            <section id="welcome" class="tm-section">
+                                <header>  
+                                    <h3 class="tm-blue-text tm-welcome-title tm-margin-b-45">9. Пользовательские функции
+                                        </h3>
+                                   
+                                </header>
+                                <!-- #######  YAY, I AM THE SOURCE EDITOR! #########-->
+                   
+                                <p><strong>9.1. Скалярные функции.</strong></p>
+<p>На языке Transact-SQL очень много встроенных функций. Несмотря на этот факт, ино- гда требуются функции, которых нет в стандартной библиотеке. Transact-SQL предоставляет возможность создать собственную функцию для решения задач. Пользовательская скалярная функция возвращает в качестве ответа единственное значение.</p>
+<p>Пользовательскую функцию можно использовать следующими способами:</p>
+<ul>
+<li>В инструкциях Transact-SQL, например,</li>
+<li>В приложениях, вызывающих функцию.</li>
+<li>В определении другой пользовательской функции.</li>
+<li>Для определения столбца таблицы.</li>
+<li>Для определения ограничения CHECK на столбец.</li>
+</ul>
+<p>Пользовательские функции не могут выполнять действия, изменяющие состояние базы данных.</p>
+<p>Пользовательские функции не могут возвращать несколько результирующих наборов.</p>
+<p>Пользовательские функции не могут использовать динамический SQL и временные таблицы. Табличные переменные разрешены к использованию.</p>
+<p>Пользовательские функции могут быть вложенными, то есть из одной функции может быть вызвана другая. Вложенность функций не может превышать 32 уровней.</p>
+<p>Упрощенный синтаксис создания пользовательской скалярной функции имеет следую- щий вид:</p>
+<p>CREATE FUNCTION &lt;название&gt; (</p>
+<p>[{&lt;@параметр&gt; [AS] &lt;тип&gt; [= &lt;значение по умолчанию&gt;]}]</p>
+<p>)</p>
+<p>RETURNS &lt;тип возврата&gt; [AS]</p>
+<p>BEGIN</p>
+<p>&lt;команды&gt;</p>
+<p>RETURN &lt;значение&gt; END</p>
+<p>Значение, переменная или выражение после ключевого слова RETURN имеет такой же тип, который указан после ключевого слова RETURNS.</p>
+<p>Созданная функция может быть вызвана, как и обычная встроенная функция, но при этом должны вызываться с помощью имени владельца. Простой вызов имеет следующий вид:</p>
+<p>SELECT &lt;владелец&gt;.&lt;функция&gt;(&lt;параметры&gt;)</p>
+<p>Для пользовательских функций допускается не более 2100 параметров. При выполне- нии функции значение каждого из объявленных параметров должно быть указано пользовате- лем, если для них не определены значения по умолчанию.</p>
+<p>Имя параметра, как и имя переменных, использует знак @ как первый символ.</p>
+<p><strong>9.2. Табличные функции</strong></p>
+<p>&nbsp;</p>
+<p>Для INLINE функций ключевого слова RETURNS указывается тип TABLE без указания списка столбцов. Тело такой функции представляет собой единственный оператор SELECT, который начинается сразу после ключевого слово RETURN. Упрощенный синтаксис создания пользовательской функции INLINE имеет следующий вид:</p>
+<p>CREATE FUNCTION &lt;название&gt; (</p>
+<p>[{&lt;@параметр&gt; [AS] &lt;тип&gt; [= &lt;значение по умолчанию&gt;]}]</p>
+<p>)</p>
+<p>RETURNS TABLE AS</p>
+<p>RETURN ( SELECT</p>
+<p>&lt;список столбцов&gt; FROM</p>
+<p>&lt;таблица&gt; WHERE</p>
+<p>&lt;условие&gt;</p>
+<p>)</p>
+<p>В MULTI-STATEMENT функциях после ключевого слова RETURNS указывается тип TABLE с определением столбцов и их типов данных. Упрощенный синтаксис создания поль- зовательской MULTI-STATEMENT функции имеет следующий вид:</p>
+<p>CREATE FUNCTION &lt;название&gt; (</p>
+<p>[{&lt;@параметр&gt; [AS] &lt;тип&gt; [= &lt;значение по умолчанию&gt;]}]</p>
+<p>)</p>
+<p>RETURNS &lt;@таблица&gt; TABLE (&lt;определение таблицы&gt;) AS</p>
+<p>BEGIN</p>
+<p>&lt;команды&gt; RETURN END</p>
+<p>Для MULTI-STATEMENT функций оператор RETURN не имеет аргумента. Значение возвращаемой переменной функции возвращается как значение функции.</p>
+<p>Для удаления пользовательских функций используется команда DROP FUNCTION. Упрощенный синтаксис имеет следующий вид:</p>
+<p>DROP FUNCTION [IF EXISTS] &lt;название функции&gt;</p>
+<p>Ключевые слова IF EXISTS удаляют функцию только в том случае, если она уже суще- ствует.</p>
+<p><strong><em>Пример 1: </em></strong>Напишите функцию для вывода столицы данной страны, и вызовите ее:</p>
+<p>CREATE FUNCTION Пример1 (</p>
+<p>@Страна AS VARCHAR(50)</p>
+<p>)</p>
+<p>RETURNS VARCHAR(50) AS</p>
+<p>BEGIN</p>
+<p>DECLARE @S AS VARCHAR(50) SELECT</p>
+<p>@S = Столица</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>&nbsp;</p>
+<p>SELECT dbo.Пример1('Австрия')</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 2: </em></strong>Напишите функцию для перевода площади в тыс. кв. км., и вызовите ее:</p>
+<p>CREATE FUNCTION Пример2 (</p>
+<p>@Площадь AS FLOAT</p>
+<p>)</p>
+<p>RETURNS FLOAT AS</p>
+<p>BEGIN</p>
+<p>DECLARE @P AS FLOAT</p>
+<p>SET @P = ROUND(@Площадь / 1000, 2) RETURN @P</p>
+<p>END</p>
+<p>&nbsp;</p>
+<p>SELECT</p>
+<p>Название, Столица, Континент, Население,</p>
+<p>dbo.Пример2(Площадь) AS [Площадь тыс.кв.км]</p>
+<p>FROM</p>
+<p>Страны</p>
+<p><strong><em>Пример 3: </em></strong>Напишите функцию для вычисления плотности населения, и вызовите ее:</p>
+<p>CREATE FUNCTION Пример3 (</p>
+<p>@Население AS INT, @Площадь AS FLOAT</p>
+<p>)</p>
+<p>RETURNS FLOAT AS</p>
+<p>BEGIN</p>
+<p>DECLARE @P AS FLOAT</p>
+<p>SET @P = ROUND(CAST(@Население AS FLOAT) / @Площадь, 2) RETURN @P</p>
+<p>END</p>
+<p>&nbsp;</p>
+<p>SELECT</p>
+<p>Название, Столица, Континент, Население, Площадь,</p>
+<p>dbo.Пример3(Население, Площадь) AS Плотность</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>ORDER BY</p>
+<p>Плотность DESC</p>
+<p><strong><em>Пример 4: </em></strong>Напишите функцию для поиска страны второй по площади, и вызовите ее: CREATE FUNCTION Пример4()</p>
+<p>RETURNS VARCHAR(50) AS</p>
+<p>BEGIN</p>
+<p>DECLARE @P AS VARCHAR(50) DECLARE @M1 AS FLOAT DECLARE @M2 AS FLOAT</p>
+<p>SELECT</p>
+<p>@M1 = MAX(Площадь)</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>&nbsp;</p>
+<p>SELECT</p>
+<p>@M2 = MAX(Площадь)</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>WHERE</p>
+<p>Площадь &lt; @M1</p>
+<p>SELECT</p>
+<p>@P = Название</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>WHERE</p>
+<p>Площадь = @M2</p>
+<p>RETURN @P</p>
+<p>END</p>
+<p>SELECT</p>
+<p>dbo.Пример4() AS [Второй по площади страна]</p>
+<p><strong><em>Пример 5: </em></strong>Напишите функцию для поиска страны с минимальной площадью в задан- ной части света, и вызовите ее. Если часть света не указана, выбрать Европу:</p>
+<p>CREATE FUNCTION Пример5 (</p>
+<p>@Конт AS VARCHAR(50) = 'Европа'</p>
+<p>)</p>
+<p>RETURNS VARCHAR(50) AS</p>
+<p>BEGIN</p>
+<p>DECLARE @P AS VARCHAR(50) DECLARE @M AS FLOAT</p>
+<p>&nbsp;</p>
+<p>SELECT</p>
+<p>@M = MIN(Площадь)</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>WHERE</p>
+<p>Континент = @Конт</p>
+<p>&nbsp;</p>
+<p>SELECT</p>
+<p>@P = Название</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>WHERE</p>
+<p>Континент = @Конт AND</p>
+<p>Площадь = @M</p>
+<p>&nbsp;</p>
+<p>RETURN @P</p>
+<p>END</p>
+<p>&nbsp;</p>
+<p>SELECT</p>
+<p>dbo.Пример5('Азия') AS [Наименьшая по площади страна в Азии]</p>
+<p>&nbsp;</p>
+<p>SELECT</p>
+<p>dbo.Пример5(DEFAULT) AS [Наименьшая по площади страна в Европе]</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 6: </em></strong>Напишите функцию для замены букв в заданном слове от второй до пред- последней на точку, и примените ее для названия страны:</p>
+<p>CREATE FUNCTION Пример6 (</p>
+<p>@A AS VARCHAR(50)</p>
+<p>)</p>
+<p>RETURNS VARCHAR(50) AS</p>
+<p>BEGIN</p>
+<p>RETURN LEFT(@A, 1) + REPLICATE('.', LEN(@A) - 2) + RIGHT(@A, 1)</p>
+<p>END</p>
+<p>&nbsp;</p>
+<p>SELECT</p>
+<p>dbo.Пример6(Название) AS [Скрытое название]</p>
+<p>,Столица</p>
+<p>,Континент</p>
+<p>,Площадь</p>
+<p>,Население</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 7: </em></strong>Напишите функцию, которая возвращает количество стран, содержащих в названии заданную букву:</p>
+<p>CREATE FUNCTION Пример7 (</p>
+<p>@C AS CHAR(1)</p>
+<p>)</p>
+<p>RETURNS INT AS</p>
+<p>BEGIN</p>
+<p>DECLARE @K AS INT</p>
+<p>&nbsp;</p>
+<p>SELECT</p>
+<p>@K = COUNT(*)</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>WHERE</p>
+<p>CHARINDEX(@C, Название) &gt; 0</p>
+<p>&nbsp;</p>
+<p>RETURN @K</p>
+<p>END</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 8: </em></strong>Напишите функцию для вывода списка стран с населением больше задан- ного числа, и вызовите ее:</p>
+<p>CREATE FUNCTION Пример8 (</p>
+<p>@N AS INT</p>
+<p>)</p>
+<p>RETURNS TABLE AS</p>
+<p>RETURN (</p>
+<p>SELECT</p>
+<p>Название</p>
+<p>,Столица</p>
+<p>,Площадь</p>
+<p>,Население</p>
+<p>,Континент</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>FROM</p>
+<p>dbo.Пример8(100000000)</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 9: </em></strong>Напишите функцию для вывода списка стран с площадью в интервале за- данных значений, и вызовите ее:</p>
+<p>CREATE FUNCTION Пример9</p>
+<p>&nbsp;</p>
+<p>(</p>
+<p>@A AS FLOAT, @B AS FLOAT</p>
+<p>)</p>
+<p>RETURNS TABLE AS</p>
+<p>RETURN (</p>
+<p>SELECT</p>
+<p>Название</p>
+<p>,Столица</p>
+<p>,Площадь</p>
+<p>,Население</p>
+<p>,Континент</p>
+<p>FROM</p>
+<p>Страны</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 10: </em></strong>Напишите функцию для возврата таблицы с названием страны и плотно- стью населения, и вызовите ее:</p>
+<p>CREATE FUNCTION Пример10()</p>
+<p>RETURNS @Ст_Плот TABLE</p>
+<p>(</p>
+<p>Название VARCHAR(50), Плотность FLOAT</p>
+<p>)</p>
+<p>AS BEGIN</p>
+<p>INSERT</p>
+<p>@Ст_Плот SELECT</p>
+<p>Название</p>
+<p>, CAST(Население AS FLOAT) / Площадь AS Плотность</p>
+<p>FROM Страны RETURN END</p>
+<p>SELECT</p>
+<p>Название</p>
+<p>,Плотность</p>
+<p>FROM</p>
+<p>dbo.Пример10()</p>
+<p>&nbsp;</p>
+<p><strong><em>Пример 11: </em></strong>Удалите функцию из примера 10:</p>
+<p>DROP FUNCTION Пример10</p>
+<p>&nbsp;</p>
+<p><strong>9.3. Заданий</strong></p>
+<p><strong>&nbsp;</strong></p>
+<ol>
+<li>Напишите функцию для вывода названия страны с заданной столицей, и вызовите ее.</li>
+<li>Напишите функцию для перевода населения в млн. чел. и вызовите ее.</li>
+<li>Напишите функцию для вычисления плотности населения заданной части света и вызовите ее.</li>
+<li>Напишите функцию для поиска страны, третьей по населению и вызовите ее.</li>
+<li>Напишите функцию для поиска страны с максимальным населением в заданной ча- сти света и вызовите ее. Если часть света не указана, выбрать Азию.</li>
+<li>Напишите функцию для замены букв в заданном слове от третьей до предпослед- ней на &ldquo;тест&rdquo; и примените ее для столицы страны.</li>
+<li>Напишите функцию, которая возвращает количество стран, не содержащих в назва- нии заданную букву.</li>
+<li>Напишите функцию для возврата списка стран с площадью меньше заданного числа и вызовите ее.</li>
+<li>Напишите функцию для возврата списка стран с населением в интервале заданных значений и вызовите ее.</li>
+<li>Напишите функцию для возврата таблицы с названием континента и суммарным населением и вызовите ее.</li>
+<li>Напишите функцию IsPalindrom(P) целого типа, возвращающую 1, если целый па- раметр P (P &gt; 0) является палиндромом, и 0 в противном случае.</li>
+<li>Напишите функцию Quarter(x, y) целого типа, определяющую номер координатной четверти, содержащей точку с ненулевыми вещественными координатами (x, y).</li>
+<li>Напишите функцию IsPrime(N) целого типа, возвращающую 1, если целый пара- метр N (N &gt; 1) является простым числом, и 0 в противном случае.</li>
+<li>Напишите код для удаления созданных вами функций.</li>
+</ol>
+
+                            </section>
+                           
+                            
+                            <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+                        </div>  
+                        
+                    </div> <!-- Right column: content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+                
+                   
+</body>
+</html>
